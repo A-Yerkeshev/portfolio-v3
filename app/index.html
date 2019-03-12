@@ -48,5 +48,12 @@
         <script src="scripts/controllers/ProjectsController.js"></script>
         <script src="scripts/directives/ProjectDirective.js"></script>
         <!-- endbuild -->
+    <!-- templates -->
+    <script id="project-directive-tmpl" type="text/template">
+      <div class="project">
+        <div class="proj-title">{{project.title}}</div>
+        <img src={{project.image}}>
+      </div>
+    </script>
 </body>
 </html>

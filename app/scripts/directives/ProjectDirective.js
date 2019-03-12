@@ -1,7 +1,9 @@
 Portfolio.directive('projectDirective', function() {
   var Directive = {};
 
-  Directive.template = '<h1>{{project.name}}</h1><span>{{project.url}}</span>'
+  var template = $('#project-directive-tmpl').html();
+
+  Directive.template = template;
 
   return Directive;
 })
