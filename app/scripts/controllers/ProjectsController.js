@@ -1,3 +1,3 @@
-Portfolio.controller('ProjectsController', function($scope) {
-  $scope.projects = ProjectsService.getAllProjects();
+Portfolio.controller('ProjectsController', function($scope, ProjectsFactory) {
+  $scope.projects = ProjectsFactory.getAllProjects();
 });
