@@ -1,11 +1,24 @@
 Portfolio.factory('ProjectsFactory', function() {
-  var Service = {};
+  var Factory = {};
 
-  var projects = ['test1', 'test2', 'test3'];
+  var projects = [
+  {
+    name: 'Movie Trailers',
+    url: 'https://movie-trailers-webpage.herokuapp.com/'
+  }, {
+    name: 'Items Catalog',
+    url: 'https://itemscatalog.herokuapp.com/'
+  }, {
+    name: 'Neighborhood Map',
+    url: 'https://neigh-map.herokuapp.com/'
+  }, {
+    name: 'Lemon Chat',
+    url: 'https://lemon-chat-123.herokuapp.com/'
+  },];
 
-  Service.getAllProjects = function() {
+  Factory.getAllProjects = function() {
     return projects
   };
 
-  return Service;
+  return Factory;
 });
