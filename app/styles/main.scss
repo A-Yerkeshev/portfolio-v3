@@ -52,4 +52,21 @@ input, button {
   color: #004EFF;
 }
 
+.proj-descr > ul {
+  list-style: none;
+  overflow: hidden;
+}
+
+.proj-descr > ul li {
+  float: left;
+}
+
+.proj-descr > ul li::before {
+  content: "\2022";
+  color: blue;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+}
+
 
