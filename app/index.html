@@ -23,7 +23,10 @@
     <div class="header"></div>
 
     <div ng-controller="ProjectsController">
-      <project-directive ng-repeat="project in projects"></project-directive>
+      <h1>Hosted projects</h1>
+      <project-directive ng-repeat="project in activeProjects"></project-directive>
+      <h1>Inactive projects</h1>
+      <project-directive ng-repeat="project in inactiveProjects"></project-directive>
     </div>
 
     <!-- build:js(.) scripts/vendor.js -->
@@ -49,7 +52,7 @@
     <!-- templates -->
     <script id="project-directive-tmpl" type="text/template">
       <div class="project">
-        <div class="proj-descr" ng-mouseover="showTitle($event.currentTarget)" ng-mouseout="hideTitle($event.currentTarget)">
+        <div class="proj-prev" ng-mouseover="showTitle($event.currentTarget)" ng-mouseout="hideTitle($event.currentTarget)">
           <h2>{{project.name}}</h2>
           <p>{{project.title}}</p>
           <img src={{project.image}}>

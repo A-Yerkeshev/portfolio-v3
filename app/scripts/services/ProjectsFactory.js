@@ -1,13 +1,13 @@
 Portfolio.factory('ProjectsFactory', function() {
   var Factory = {};
 
-  var projects = [
+  var activeProjects = [
   {
     name: 'Lemon Chat',
     url: 'https://lemon-chat-123.herokuapp.com/',
     image: '/images/lemon-chat.png',
     title: 'Fancy looking chat application',
-    technologies: ['JavaScript', 'AngularJS', 'AnimeJS', 'HTML', 'CSS']
+    technologies: ['JavaScript', 'QJuery', 'AngularJS', 'AnimeJS', 'HTML', 'CSS']
   }, {
     name: 'Neighborhood Map',
     url: 'https://neigh-map.herokuapp.com/',
@@ -28,8 +28,25 @@ Portfolio.factory('ProjectsFactory', function() {
     technologies: ['Python', 'HTML', 'CSS', 'JavaScript']
   }];
 
-  Factory.getAllProjects = function() {
-    return projects
+  var inactiveProjects = [
+  {
+    name: 'Protfolio v-1',
+    image: '/images/portfolio.png',
+    title: 'First version of portfolio',
+    technologies: ['HTML', 'CSS']
+  }, {
+    name: 'Protfolio v-2',
+    image: '/images/portfolio-v2.png',
+    title: 'Second version of portfolio',
+    technologies: ['JavaScript', 'HTML', 'CSS']
+  }];
+
+  Factory.getActiveProjects = function() {
+    return activeProjects
+  };
+
+  Factory.getInactiveProjects = function() {
+    return inactiveProjects
   };
 
   return Factory;

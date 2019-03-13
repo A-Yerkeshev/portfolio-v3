@@ -1,5 +1,6 @@
 Portfolio.controller('ProjectsController', function($scope, ProjectsFactory) {
-  $scope.projects = ProjectsFactory.getAllProjects();
+  $scope.activeProjects = ProjectsFactory.getActiveProjects();
+  $scope.inactiveProjects = ProjectsFactory.getInactiveProjects();
 
   $scope.showTitle = function(element) {
     element.style.opacity = 1;
