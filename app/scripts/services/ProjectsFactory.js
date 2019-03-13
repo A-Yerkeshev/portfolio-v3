@@ -6,14 +6,14 @@ Portfolio.factory('ProjectsFactory', function() {
     name: 'Lemon Chat',
     url: 'https://lemon-chat-123.herokuapp.com/',
     image: '/images/lemon-chat.png',
-    title: 'Messenger application',
-    technologies: ['JavaScript', 'AngularJs', 'AnimeJS', 'HTML', 'CSS']
+    title: 'Fancy looking chat application',
+    technologies: ['JavaScript', 'AngularJS', 'AnimeJS', 'HTML', 'CSS']
   }, {
     name: 'Neighborhood Map',
     url: 'https://neigh-map.herokuapp.com/',
     image: '/images/neighborhood.png',
     title: 'The map that utilizes various APIs',
-    technologies: ['JavaScript', 'KnockoutJs', 'HTML', 'CSS', 'API']
+    technologies: ['JavaScript', 'KnockoutJS', 'HTML', 'CSS', 'API']
   }, {
     name: 'Items Catalog',
     url: 'https://itemscatalog.herokuapp.com/',

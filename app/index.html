@@ -23,9 +23,7 @@
     <div class="header"></div>
 
     <div ng-controller="ProjectsController">
-      <div ng-repeat="project in projects">
-        <project-directive></project-directive>
-      </div>
+      <project-directive ng-repeat="project in projects"></project-directive>
     </div>
 
     <!-- build:js(.) scripts/vendor.js -->
@@ -51,8 +49,12 @@
     <!-- templates -->
     <script id="project-directive-tmpl" type="text/template">
       <div class="project">
-        <div class="proj-title" ng-mouseover="showTitle($event.currentTarget)" ng-mouseout="hideTitle($event.currentTarget)">
+        <div class="proj-descr" ng-mouseover="showTitle($event.currentTarget)" ng-mouseout="hideTitle($event.currentTarget)">
+          <h2>{{project.name}}</h2>
           <p>{{project.title}}</p>
+          <ul>
+            <li ng-repeat="tech in project.technologies">{{tech}}</li>
+          </ul>
         </div>
         <img src={{project.image}}>
       </div>
