@@ -25,13 +25,17 @@ h1 {
   margin-bottom: 5px;
 }
 
-.nav-btn {
-  background-color: white;
-  height: 3em;
-  width: 5em;
+.home {
+  background-image: url('/images/home.png');
+  background-size: contain;
+  width: 2em;
+  height: 2em;
+  border-radius: 50%;
+  border: 1px solid white;
+  float: left;
 }
 
-.nav-btn:hover {
+.home:hover {
   box-shadow: 0px 0px 1px 1px #00FFF6;
 }
 
