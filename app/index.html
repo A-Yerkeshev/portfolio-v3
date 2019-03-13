@@ -51,7 +51,9 @@
     <!-- templates -->
     <script id="project-directive-tmpl" type="text/template">
       <div class="project">
-        <div class="proj-title" ng-mouseover="showTitle($event.currentTarget)" ng-mouseout="hideTitle($event.currentTarget)">{{project.title}}</div>
+        <div class="proj-title" ng-mouseover="showTitle($event.currentTarget)" ng-mouseout="hideTitle($event.currentTarget)">
+          <p>{{project.title}}</p>
+        </div>
         <img src={{project.image}}>
       </div>
     </script>
