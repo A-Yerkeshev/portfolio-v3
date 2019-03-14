@@ -49,12 +49,22 @@ Portfolio.factory('ProjectsFactory', function() {
     href: 'portfolio-v2'
   }];
 
+  var currentProject = null;
+
   Factory.getActiveProjects = function() {
     return activeProjects
   };
 
   Factory.getInactiveProjects = function() {
     return inactiveProjects
+  };
+
+  Factory.getCurrentProject = function() {
+    return currentProject;
+  };
+
+  Factory.setCurrentProject = function(project) {
+    currentProject = project;
   };
 
   return Factory;

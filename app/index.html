@@ -21,7 +21,7 @@
 
     <!-- Add your site or application content here -->
     <div class="header">
-      <a class="home" ng-href="/"></a>
+      <a class="home" ng-href="/" ng-click="setCurrentProject(null)"></a>
     </div>
 
     <ng-view></ng-view>
@@ -48,7 +48,7 @@
         <!-- endbuild -->
     <!-- templates -->
     <script id="project-directive-tmpl" type="text/template">
-      <a class="project" ng-href="{{project.href}}">
+      <a class="project" ng-href="#!/{{project.href}}" ng-click="setCurrentProject(project)">
         <div class="proj-prev" ng-mouseover="showTitle($event.currentTarget)" ng-mouseout="hideTitle($event.currentTarget)">
           <h2>{{project.name}}</h2>
           <p>{{project.title}}</p>

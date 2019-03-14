@@ -22,6 +22,9 @@ angular
       .when('/', {
         templateUrl: '/views/home.html'
       })
+      .when('/:project', {
+        templateUrl: '/views/project.html'
+      })
       .otherwise({
         redirectTo: '/'
       });
