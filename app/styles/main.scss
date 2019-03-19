@@ -56,7 +56,7 @@ h2 {
   text-decoration: none;
   border: solid 1px white;
   padding: 2%;
-  transition: padding 0.5s;
+  transition: padding 0.3s;
 }
 
 .home:hover {
@@ -125,4 +125,19 @@ h2 {
 .current-project > em {
   color: blue;
   text-align: center;
+}
+
+.current-project > button {
+  border: solid 2px blue;
+  color: blue;
+  background-color: white;
+  cursor: pointer;
+  margin: 1%;
+  margin-top: 5%;
+  padding: 2%;
+  transition: padding 0.3s;
+}
+
+.current-project > button:hover {
+  padding: 3%;
 }

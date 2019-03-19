@@ -5,6 +5,7 @@ Portfolio.factory('ProjectsFactory', function() {
   {
     name: 'Lemon Chat',
     url: 'https://lemon-chat-123.herokuapp.com/',
+    github: 'https://github.com/A-Yerkeshev/LemonChat',
     image: '/images/lemon-chat.png',
     title: 'Fancy looking chat application',
     technologies: ['JavaScript', 'QJuery', 'AngularJS', 'AnimeJS', 'HTML', 'CSS'],
@@ -21,6 +22,7 @@ Portfolio.factory('ProjectsFactory', function() {
   }, {
     name: 'Neighborhood Map',
     url: 'https://neigh-map.herokuapp.com/',
+    github: 'https://github.com/A-Yerkeshev/map',
     image: '/images/neighborhood.png',
     title: 'The map that utilizes various APIs',
     technologies: ['JavaScript', 'KnockoutJS', 'HTML', 'CSS', 'API'],
@@ -37,6 +39,7 @@ Portfolio.factory('ProjectsFactory', function() {
   }, {
     name: 'Items Catalog',
     url: 'https://itemscatalog.herokuapp.com/',
+    github: 'https://github.com/A-Yerkeshev/catalog',
     image: '/images/items-catalog.png',
     title: 'The web catalog of various items',
     technologies: ['Python', 'SQL', 'Flask', 'HTML', 'CSS'],
@@ -51,6 +54,7 @@ Portfolio.factory('ProjectsFactory', function() {
   }, {
     name: 'Movie Trailers',
     url: 'https://movie-trailers-webpage.herokuapp.com/',
+    github: 'https://github.com/A-Yerkeshev/movie-trailers',
     image: '/images/movie-trailers.png',
     title: 'Posters and trailers about movies',
     technologies: ['Python', 'HTML', 'CSS', 'JavaScript'],
@@ -70,7 +74,8 @@ Portfolio.factory('ProjectsFactory', function() {
   var inactiveProjects = [
   {
     name: 'Protfolio v-1',
-    url: 'https://github.com/A-Yerkeshev/portfolio-v1',
+    url: null,
+    github: 'https://github.com/A-Yerkeshev/portfolio-v1',
     image: '/images/portfolio.png',
     title: 'First version of portfolio',
     technologies: ['HTML', 'CSS'],
@@ -85,7 +90,8 @@ Portfolio.factory('ProjectsFactory', function() {
       accordance with the width of the device on which the website is viewed.`
   }, {
     name: 'Protfolio v-2',
-    url: 'https://github.com/A-Yerkeshev/portfolio-v2',
+    url: null,
+    github: 'https://github.com/A-Yerkeshev/portfolio-v2',
     image: '/images/portfolio-v2.png',
     title: 'Second version of portfolio',
     technologies: ['JavaScript', 'HTML', 'CSS'],
