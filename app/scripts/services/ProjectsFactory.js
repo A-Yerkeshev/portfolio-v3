@@ -9,6 +9,7 @@ Portfolio.factory('ProjectsFactory', function() {
     title: 'Fancy looking chat application',
     technologies: ['JavaScript', 'QJuery', 'AngularJS', 'AnimeJS', 'HTML', 'CSS'],
     href: 'lemon-chat',
+    date: 'March 2019',
     description: `This application aimed to represent the functionality of a
       messenger accompained with some animations that would make the interface
       more dynamic and responsive to user's actions. It has a sufficient
@@ -24,6 +25,7 @@ Portfolio.factory('ProjectsFactory', function() {
     title: 'The map that utilizes various APIs',
     technologies: ['JavaScript', 'KnockoutJS', 'HTML', 'CSS', 'API'],
     href: 'neighborhood-map',
+    date: 'June 2018',
     description: `Neighborhhod map project was done during graduation in Udacity.
       The main point of the application is to retrieve different information from
       various APIs: Wikipedia, GoogleImages and GoogleMaps APIs in this case, for
@@ -39,6 +41,7 @@ Portfolio.factory('ProjectsFactory', function() {
     title: 'The web catalog of various items',
     technologies: ['Python', 'SQL', 'Flask', 'HTML', 'CSS'],
     href: 'items-catalog',
+    date: 'May 2018',
     description: `The online catalog of various items made as fourth project in
       the Udacity graduation course. It's backend part is powered by Python,
       retrieving the data from database via SQLAlchemy library and after necessary
@@ -52,6 +55,7 @@ Portfolio.factory('ProjectsFactory', function() {
     title: 'Posters and trailers about movies',
     technologies: ['Python', 'HTML', 'CSS', 'JavaScript'],
     href: 'movie-trailers',
+    date: 'April 2018',
     description: `Movie trailers website was the first project done during
       graduation in Udacity. It shows posters of various movies and plays their
       trailers when poster is clicked. The goal of the project is to retrieve
@@ -71,6 +75,7 @@ Portfolio.factory('ProjectsFactory', function() {
     title: 'First version of portfolio',
     technologies: ['HTML', 'CSS'],
     href: 'portfolio-v1',
+    date: 'April 2018',
     description: `The first version of portfolio website. This was done as second
       project in Udacity graduation course. Therefore it had only empty slots for
       the future projects. It built exclusively with HTML and CSS, even the dynamic
@@ -85,6 +90,7 @@ Portfolio.factory('ProjectsFactory', function() {
     title: 'Second version of portfolio',
     technologies: ['JavaScript', 'HTML', 'CSS'],
     href: 'portfolio-v2',
+    date: 'July 2018',
     description: `Second version of portfolio website. Unlike the virst version
       which incorporated usage of only HTML and CSS, this version focuses mainly on
       plain JavaScript, aiming on making elements of the website more animated
