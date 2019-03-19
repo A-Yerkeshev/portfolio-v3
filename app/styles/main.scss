@@ -10,12 +10,37 @@ input, button {
   border: none;
 }
 
+ul {
+  list-style: none;
+  overflow: hidden;
+}
+
+ul li::before {
+  content: "\2022";
+  color: blue;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+}
+
+ul li {
+  float: left;
+}
+
 h1 {
   color: blue;
   text-align: center;
   font-size: 1.5em;
   margin: 0.5em;
 }
+
+h2 {
+  color: blue;
+  text-align: center;
+  font-size: 1.2em;
+  margin: 0.5em;
+}
+
 
 .header {
   background-image: linear-gradient(#7B00BB, #004EFF);
@@ -66,23 +91,6 @@ h1 {
   color: blue;
 }
 
-.proj-prev > ul {
-  list-style: none;
-  overflow: hidden;
-}
-
-.proj-prev > ul li {
-  float: left;
-}
-
-.proj-prev > ul li::before {
-  content: "\2022";
-  color: blue;
-  font-weight: bold;
-  display: inline-block;
-  width: 1em;
-}
-
 .proj-prev > img {
   width: 5em;
 }
@@ -94,14 +102,17 @@ h1 {
 .current-project > img {
   width: 70%;
   box-shadow: 0px 0px 2px 2px blue;
-  transition: box-shadow 0.5s;
+  transition: box-shadow 0.5s, width 0.5s;
   cursor: pointer;
 }
 
 .current-project > img:hover {
   box-shadow: 0px 0px 2px 2px white;
+  width: 72%;
 }
 
 .current-project > p {
   margin: 2%;
+  border-bottom: solid blue;
+  padding-bottom: 5%;
 }
