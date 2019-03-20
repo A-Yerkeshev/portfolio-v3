@@ -41,6 +41,11 @@ h2 {
   margin: 0.5em;
 }
 
+p {
+  margin: 2%;
+  border-bottom: solid blue;
+  padding-bottom: 5%;
+}
 
 .header {
   background-image: linear-gradient(#7B00BB, #004EFF);
@@ -50,20 +55,21 @@ h2 {
   margin-bottom: 5px;
 }
 
-.home {
+.nav-btn {
   float: left;
   color: white;
   text-decoration: none;
   border: solid 1px white;
   padding: 2%;
   transition: padding 0.3s;
+  margin: 1%;
 }
 
-.home:hover {
+.nav-btn:hover {
   padding: 3%;
 }
 
-.home:active {
+.nav-btn:active {
   background-color: white;
   color: blue;
   border: solid 1px blue;
@@ -116,12 +122,6 @@ h2 {
   width: 72%;
 }
 
-.current-project > p {
-  margin: 2%;
-  border-bottom: solid blue;
-  padding-bottom: 5%;
-}
-
 .current-project > em {
   color: blue;
   text-align: center;
@@ -146,4 +146,17 @@ h2 {
   color: white;
   background-color: blue;
   border: solid 2px white;
+}
+
+.profile {
+  text-align: center;
+}
+
+.profile > em {
+  color: blue;
+  font-size: 1.2em;
+}
+
+.profile > img {
+  width: 90%;
 }
