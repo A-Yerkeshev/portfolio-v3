@@ -20,7 +20,7 @@ angular
   .config(function ($routeProvider) {
     $routeProvider
       .when('/', {
-        templateUrl: '/views/home.html'
+        templateUrl: '/views/projects.html'
       })
       .when('/profile', {
         templateUrl: '/views/profile.html'
