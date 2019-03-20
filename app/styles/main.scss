@@ -141,3 +141,9 @@ h2 {
 .current-project > button:hover {
   padding: 3%;
 }
+
+.current-project > button:active {
+  color: white;
+  background-color: blue;
+  border: solid 2px white;
+}
