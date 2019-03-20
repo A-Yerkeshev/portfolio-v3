@@ -1,4 +1,4 @@
-Portfolio.controller('ProjectsController', function($scope, ProjectsFactory) {
+Portfolio.controller('ProjectsController', function($scope, $window, ProjectsFactory) {
   $scope.currentProject = ProjectsFactory.getCurrentProject();
   $scope.activeProjects = ProjectsFactory.getActiveProjects();
   $scope.inactiveProjects = ProjectsFactory.getInactiveProjects();
@@ -12,6 +12,10 @@ Portfolio.controller('ProjectsController', function($scope, ProjectsFactory) {
   };
 
   $scope.setCurrentProject = function(project) {
-    ProjectsFactory.setCurrentProject(project)
+    ProjectsFactory.setCurrentProject(project);
+  };
+
+  $scope.newTab = function(url) {
+    $window.open(url, '_blank');
   };
 });
