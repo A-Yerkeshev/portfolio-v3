@@ -181,7 +181,8 @@ table {
   cursor: pointer;
 }
 
-.current-project > img:hover {
+.current-project > img:hover,
+.current-project > img:focus {
   box-shadow: 0px 0px 2px 2px white;
   width: 72%;
 }
