@@ -60,18 +60,22 @@ p {
 
 .view.ng-enter {
   left: 100%;
+  opacity: 0;
 }
 
 .view.ng-enter-active {
   left: 0%;
+  opacity: 1;
 }
 
 .view.ng-leave {
   left: 0%;
+  opacity: 1;
 }
 
 .view.ng-leave-active {
   left: -100%;
+  opacity: 0;
 }
 
 .header {
