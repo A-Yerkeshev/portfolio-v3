@@ -43,7 +43,19 @@ h2 {
 
 p {
   margin: 2%;
-  border-bottom: solid blue;
+  padding-bottom: 5%;
+}
+
+td, th {
+  text-align: left;
+  padding: 1%;
+}
+
+table {
+  border-top: 2px solid blue;
+  border-bottom: 2px solid blue;
+  margin: 5%;
+  padding-top: 5%;
   padding-bottom: 5%;
 }
 
@@ -76,6 +88,27 @@ p {
 .view.ng-leave-active {
   left: -100%;
   opacity: 0;
+}
+
+.view button {
+  border: solid 2px blue;
+  color: blue;
+  background-color: white;
+  cursor: pointer;
+  margin: 1%;
+  margin-top: 5%;
+  padding: 2%;
+  transition: padding 0.3s;
+}
+
+.view button:hover {
+  padding: 3%;
+}
+
+.view button:active {
+  color: white;
+  background-color: blue;
+  border: solid 2px white;
 }
 
 .header {
@@ -158,25 +191,8 @@ p {
   text-align: center;
 }
 
-.current-project > button {
-  border: solid 2px blue;
-  color: blue;
-  background-color: white;
-  cursor: pointer;
-  margin: 1%;
-  margin-top: 5%;
-  padding: 2%;
-  transition: padding 0.3s;
-}
-
-.current-project > button:hover {
-  padding: 3%;
-}
-
-.current-project > button:active {
-  color: white;
-  background-color: blue;
-  border: solid 2px white;
+.current-project > p {
+  border-bottom: solid blue;
 }
 
 .profile {
@@ -190,4 +206,12 @@ p {
 
 .profile > img {
   width: 90%;
+}
+
+.profile > p {
+  border-bottom: solid blue;
+}
+
+.contacts {
+  text-align: center;
 }

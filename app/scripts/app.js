@@ -25,6 +25,9 @@ angular
       .when('/profile', {
         templateUrl: '/views/profile.html'
       })
+      .when('/contacts', {
+        templateUrl: '/views/contacts.html'
+      })
       .when('/:project', {
         templateUrl: '/views/project.html'
       })
