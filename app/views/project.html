@@ -1,6 +1,6 @@
 <div ng-controller="ProjectsController" class="current-project">
   <h1>{{currentProject.name}}</h1>
-  <img src={{currentProject.image}} ng-click="newTab(currentProject.url)"><br>
+  <img src={{currentProject.image}} ng-click="newTabByImage(currentProject)"><br>
   <em>{{currentProject.date}}</em>
   <p>{{currentProject.description}}</p>
   <h2>Technologies used</h2>

@@ -18,4 +18,13 @@ Portfolio.controller('ProjectsController', function($scope, $window, ProjectsFac
   $scope.newTab = function(url) {
     $window.open(url, '_blank');
   };
+
+  $scope.newTabByImage = function(project) {
+    if (project.url) {
+      $window.open(project.url, '_blank');
+    } else {
+      $window.open(project.github, '_blank');
+    };
+  };
+
 });
