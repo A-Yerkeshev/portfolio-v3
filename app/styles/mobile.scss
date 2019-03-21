@@ -116,7 +116,7 @@ table {
   background-image: linear-gradient(#7B00BB, #004EFF);
   color: white;
   padding: 1em;
-  height: 2em;
+  overflow: hidden;
   margin-bottom: 5px;
 }
 
@@ -147,6 +147,12 @@ table {
   text-decoration: none;
   display: block;
   color: black;
+}
+
+.project > em {
+  color: blue;
+  margin: 2%;
+  display: block;
 }
 
 .project > img {
