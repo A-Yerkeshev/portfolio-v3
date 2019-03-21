@@ -133,7 +133,6 @@ table {
 .nav-btn {
   float: left;
   color: white;
-  text-decoration: none;
   border: solid 1px white;
   padding: 2%;
   transition: padding 0.3s;
@@ -154,7 +153,6 @@ table {
   width: 100%;
   margin-bottom: 5px;
   position: relative;
-  text-decoration: none;
   display: block;
   color: black;
 }
@@ -184,7 +182,7 @@ table {
 }
 
 .proj-prev > img {
-  width: 5em;
+  width: 30%;
 }
 
 .current-project {
