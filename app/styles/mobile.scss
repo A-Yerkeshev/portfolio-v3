@@ -79,7 +79,7 @@ table {
 
 .view.ng-enter,
 .view.ng-leave {
-  transition: all 1s ease;
+  transition: all 10s ease;
 }
 
 .view.ng-enter {
@@ -257,6 +257,7 @@ table {
   color: white;
   font-size: 1.5em;
   margin: 10%;
+  padding-top: 5%;
 }
 
 .welcome > a {
@@ -264,6 +265,7 @@ table {
   background: transparent;
   border: solid 1px white;
   padding: 2%;
+  transition: padding 0.3s;
 }
 
 .welcome > a:hover {
