@@ -13,7 +13,7 @@
     <!-- build:css(.tmp) styles/*.css -->
     <link rel="stylesheet" href="styles/mobile.css">
     <link rel="stylesheet" media="(min-width: 300px)" href="styles/mobile-medium.css">
-    <link rel="stylesheet" media="(min-width: 400px)" href="styles/medium.css">
+    <link rel="stylesheet" media="(min-width: 500px)" href="styles/medium.css">
     <link rel="stylesheet" media="(min-width: 700px)" href="styles/large.css">
     <!-- endbuild -->
   </head>
@@ -62,7 +62,7 @@
             <li ng-repeat="tech in project.technologies">{{tech}}</li>
           </ul>
         </div>
-        <em>{{project.name}}</em>
+        <span>{{project.name}}</span>
         <img src={{project.image}}>
       </a>
     </script>

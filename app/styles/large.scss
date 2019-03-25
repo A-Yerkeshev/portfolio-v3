@@ -18,6 +18,10 @@
   width: 50%;
 }
 
+.proj-prev > p {
+  font-size: 1.1em;
+}
+
 .current-project > img {
   width: 50%;
 }
@@ -27,7 +31,11 @@
 }
 
 .project {
-  width: 30%;
+  width: 35%;
+}
+
+.project > span {
+  font-size: 1.3em;
 }
 
 .welcome > p {
