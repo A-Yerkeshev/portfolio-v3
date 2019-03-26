@@ -185,6 +185,12 @@ table {
 
 .proj-prev > img {
   width: 30%;
+  transition: box-shadow 0.3s, width 0.3s
+}
+
+.proj-prev > img:hover {
+  width: 32%;
+  box-shadow: 0px 0px 2px 2px blue;
 }
 
 .proj-prev > p {
