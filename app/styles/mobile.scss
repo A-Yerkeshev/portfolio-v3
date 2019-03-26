@@ -193,9 +193,24 @@ table {
 
 .proj-prev > h2 {
   margin-top: 0;
-  color: white;
+  color: blue;
   padding: 1%;
-  background-color: blue;
+  border-bottom: 2px solid blue;
+}
+
+.proj-prev > div {
+  display: none;
+  vertical-align: top;
+}
+
+.proj-prev button {
+  float: right;
+  padding: 5%;
+  transition: padding 0.3s;
+}
+
+.proj-prev button:hover {
+  padding: 7%;
 }
 
 .proj-prev > ul {
