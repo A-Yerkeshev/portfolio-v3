@@ -204,21 +204,6 @@ table {
   border-bottom: 2px solid blue;
 }
 
-.proj-prev > div {
-  display: none;
-  vertical-align: top;
-}
-
-.proj-prev button {
-  float: right;
-  padding: 5%;
-  transition: padding 0.3s;
-}
-
-.proj-prev button:hover {
-  padding: 7%;
-}
-
 .proj-prev > ul {
   border-top: 2px solid blue;
   padding-top: 2%;
