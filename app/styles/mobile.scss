@@ -68,6 +68,13 @@ table {
   padding-bottom: 5%;
 }
 
+footer {
+  width: 100%;
+  animation: Gradient 8s linear infinite;
+  background-image: linear-gradient(to bottom right, blue, indigo, blue);
+  background-size: 400% 400%;
+}
+
 .view {
   position: absolute;
   background-color: white;
@@ -251,13 +258,6 @@ table {
 
 .profile > p {
   border-bottom: solid blue;
-}
-
-.profile > footer {
-  width: 100%;
-  animation: Gradient 8s linear infinite;
-  background-image: linear-gradient(to bottom right, blue, indigo, blue);
-  background-size: 400% 400%;
 }
 
 .profile a {

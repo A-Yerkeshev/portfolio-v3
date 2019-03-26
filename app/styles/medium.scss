@@ -2,6 +2,12 @@ ul li {
   display: contents;
 }
 
+table {
+  border-top: 5px solid blue;
+  border-bottom: 5px solid blue;
+  font-size: 1.2em;
+}
+
 .project {
   width: 45%;
   vertical-align: top;
@@ -22,3 +28,4 @@ ul li {
 .proj-prev > ul {
   display: none;
 }
+
