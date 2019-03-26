@@ -253,6 +253,28 @@ table {
   border-bottom: solid blue;
 }
 
+.profile > footer {
+  width: 100%;
+  animation: Gradient 8s linear infinite;
+  background-image: linear-gradient(to bottom right, blue, indigo, blue);
+  background-size: 400% 400%;
+}
+
+.profile a {
+  display: inline-block;
+  border: solid 2px white;
+  color: white;
+  cursor: pointer;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  padding: 2%;
+  transition: padding 0.3s;
+}
+
+.profile a:hover {
+  padding: 3%;
+}
+
 .contacts {
   text-align: center;
 }
