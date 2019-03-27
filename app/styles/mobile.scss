@@ -339,3 +339,29 @@ footer {
 .carousel-btn {
   left: 0;
 }
+
+.carousel-dots {
+  position: static;
+}
+
+.carousel-dots li {
+  position: static;
+  margin: 0;
+  width: fit-content;
+  height: fit-content;
+  float: none;
+}
+
+.carousel-dots li button:before {
+  content: none;
+}
+
+.carousel-dots li:before {
+  font-size: 3em;
+  transition: font-size 0.2s;
+}
+
+.carousel-dots li:active:before {
+  color: white;
+}
+
