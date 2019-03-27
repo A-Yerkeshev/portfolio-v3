@@ -346,22 +346,43 @@ footer {
 
 .carousel-dots li {
   position: static;
-  margin: 0;
   width: fit-content;
   height: fit-content;
   float: none;
 }
 
-.carousel-dots li button:before {
+.carousel-dots li:before {
   content: none;
 }
 
-.carousel-dots li:before {
-  font-size: 3em;
+.carousel-dots li button {
+  font-size: 1.5em;
+  line-height: 1.5em;
+  width: fit-content;
+  height: fit-content;
+}
+
+.carousel-dots li button:before {
+  content: "\2022";
+  color: blue;
+  font-weight: bold;
+  display: inline-block;
+  width: 1.5em;
+  position: static;
+  font-size: 2em;
+  width: fit-content;
+  height: fit-content;
+  opacity: 1;
   transition: font-size 0.2s;
 }
 
-.carousel-dots li:active:before {
+.carousel-dots li button:active {
   color: white;
+  background-color: transparent;
+  border: none;
 }
 
+.carousel-dots li.carousel-active button:before {
+  font-size: 3em;
+  opacity: 1;
+}
