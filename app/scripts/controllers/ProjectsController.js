@@ -3,7 +3,6 @@ Portfolio.controller('ProjectsController', function($scope, $window, ProjectsFac
   $scope.currentProject = ProjectsFactory.getCurrentProject();
   $scope.activeProjects = ProjectsFactory.getActiveProjects();
   $scope.inactiveProjects = ProjectsFactory.getInactiveProjects();
-  $scope.imageNum = 0;
 
   $scope.showTitle = function(element) {
     element.style.opacity = 1;
@@ -28,9 +27,5 @@ Portfolio.controller('ProjectsController', function($scope, $window, ProjectsFac
       $window.open(project.github, '_blank');
     };
   };
-
-  setInterval(function() {
-    $scope.imageNum += 1;
-  }, 3000)
 
 });
