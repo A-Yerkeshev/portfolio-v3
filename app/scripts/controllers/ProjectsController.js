@@ -29,4 +29,8 @@ Portfolio.controller('ProjectsController', function($scope, $window, ProjectsFac
     };
   };
 
+  setInterval(function() {
+    $scope.imageNum += 1;
+  }, 3000)
+
 });
