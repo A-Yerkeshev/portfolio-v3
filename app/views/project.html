@@ -2,7 +2,10 @@
   <h1>{{currentProject.name}}</h1>
   <ui-carousel slides="currentProject.images" dots="true">
     <carousel-item>
-      <img src="{{item}}">
+      <img src="{{item.src}}">
+      <div class="img-descr">
+        {{item.descr}}
+      </div>
     </carousel-item>
   </ui-carousel>
   <em>{{currentProject.date}}</em>

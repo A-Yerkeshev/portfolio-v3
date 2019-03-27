@@ -7,12 +7,29 @@ Portfolio.factory('ProjectsFactory', function() {
     url: 'https://lemon-chat-123.herokuapp.com/',
     github: 'https://github.com/A-Yerkeshev/LemonChat',
     images: [
-      '/images/lemon-chat/lemon-chat-1.png',
-      '/images/lemon-chat/lemon-chat-2.png',
-      '/images/lemon-chat/lemon-chat-3.png',
-      '/images/lemon-chat/lemon-chat-4.png',
-      '/images/lemon-chat/lemon-chat-5.png',
-      '/images/lemon-chat/lemon-chat-6.png',
+      {
+        src:'/images/lemon-chat/lemon-chat-1.png',
+        descr: `Application is designed to represent the functionality of chat
+          and handles all types of necessary interaction types between users.`
+      }, {
+        src:'/images/lemon-chat/lemon-chat-2.png',
+        descr: `The classical for social networks "friends" system was implemented.
+          It allowed to organize and systemize the process of initiating new chats
+          between users, as well as management of existing ones.`
+      }, {
+        src:'/images/lemon-chat/lemon-chat-3.png',
+        descr: `Chats themselves follow standard practices and besides communication
+          functionality provide user with some additional data.`
+      }, {
+        src:'/images/lemon-chat/lemon-chat-4.png',
+        descr: `In order to keep chats organized with participants, the hirerachial
+          structure of administrators priviledges was implied.`
+      }, {
+        src:'/images/lemon-chat/lemon-chat-5.png',
+        descr: `Application provides some room for customization of profile for
+          registered users, in particular it allowes to change the profile image
+          or put some information to profile.`
+      }
     ],
     title: 'Fancy looking chat application',
     technologies: ['JavaScript', 'QJuery', 'AngularJS', 'AnimeJS', 'HTML', 'CSS'],
