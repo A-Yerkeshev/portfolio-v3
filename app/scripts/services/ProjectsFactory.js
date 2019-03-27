@@ -6,7 +6,14 @@ Portfolio.factory('ProjectsFactory', function() {
     name: 'Lemon Chat',
     url: 'https://lemon-chat-123.herokuapp.com/',
     github: 'https://github.com/A-Yerkeshev/LemonChat',
-    image: '/images/lemon-chat.png',
+    images: [
+      '/images/lemon-chat/lemon-chat-1.png',
+      '/images/lemon-chat/lemon-chat-2.png',
+      '/images/lemon-chat/lemon-chat-3.png',
+      '/images/lemon-chat/lemon-chat-4.png',
+      '/images/lemon-chat/lemon-chat-5.png',
+      '/images/lemon-chat/lemon-chat-6.png',
+    ],
     title: 'Fancy looking chat application',
     technologies: ['JavaScript', 'QJuery', 'AngularJS', 'AnimeJS', 'HTML', 'CSS'],
     href: 'lemon-chat',
@@ -23,7 +30,9 @@ Portfolio.factory('ProjectsFactory', function() {
     name: 'Neighborhood Map',
     url: 'https://neigh-map.herokuapp.com/',
     github: 'https://github.com/A-Yerkeshev/map',
-    image: '/images/neighborhood.png',
+    images: [
+      '/images/neighborhood/neighborhood-1.png'
+    ],
     title: 'The map that utilizes various APIs',
     technologies: ['JavaScript', 'KnockoutJS', 'HTML', 'CSS', 'API'],
     href: 'neighborhood-map',
@@ -40,7 +49,9 @@ Portfolio.factory('ProjectsFactory', function() {
     name: 'Items Catalog',
     url: 'https://itemscatalog.herokuapp.com/',
     github: 'https://github.com/A-Yerkeshev/catalog',
-    image: '/images/items-catalog.png',
+    images: [
+      '/images/items-catalog/items-catalog-1.png'
+    ],
     title: 'The web catalog of various items',
     technologies: ['Python', 'SQL', 'Flask', 'HTML', 'CSS'],
     href: 'items-catalog',
@@ -55,7 +66,9 @@ Portfolio.factory('ProjectsFactory', function() {
     name: 'Movie Trailers',
     url: 'https://movie-trailers-webpage.herokuapp.com/',
     github: 'https://github.com/A-Yerkeshev/movie-trailers',
-    image: '/images/movie-trailers.png',
+    images: [
+      '/images/movie-trailers/movie-trailers-1.png'
+    ],
     title: 'Posters and trailers about movies',
     technologies: ['Python', 'HTML', 'CSS', 'JavaScript'],
     href: 'movie-trailers',
@@ -76,7 +89,9 @@ Portfolio.factory('ProjectsFactory', function() {
     name: 'Protfolio v-1',
     url: null,
     github: 'https://github.com/A-Yerkeshev/portfolio-v1',
-    image: '/images/portfolio.png',
+    images: [
+      '/images/portfolio/portfolio-1.png'
+    ],
     title: 'First version of portfolio',
     technologies: ['HTML', 'CSS'],
     href: 'portfolio-v1',
@@ -92,7 +107,9 @@ Portfolio.factory('ProjectsFactory', function() {
     name: 'Protfolio v-2',
     url: null,
     github: 'https://github.com/A-Yerkeshev/portfolio-v2',
-    image: '/images/portfolio-v2.png',
+    images: [
+      '/images/portfolio-v2/portfolio-v2-1.png'
+    ],
     title: 'Second version of portfolio',
     technologies: ['JavaScript', 'HTML', 'CSS'],
     href: 'portfolio-v2',

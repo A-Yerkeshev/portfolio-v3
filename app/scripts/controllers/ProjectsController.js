@@ -1,7 +1,9 @@
 Portfolio.controller('ProjectsController', function($scope, $window, ProjectsFactory) {
+
   $scope.currentProject = ProjectsFactory.getCurrentProject();
   $scope.activeProjects = ProjectsFactory.getActiveProjects();
   $scope.inactiveProjects = ProjectsFactory.getInactiveProjects();
+  $scope.imageNum = 0;
 
   $scope.showTitle = function(element) {
     element.style.opacity = 1;

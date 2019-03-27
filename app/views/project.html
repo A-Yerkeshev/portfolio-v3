@@ -1,6 +1,8 @@
 <div ng-controller="ProjectsController" class="current-project">
   <h1>{{currentProject.name}}</h1>
-  <img src={{currentProject.image}} ng-click="newTabByImage(currentProject)"><br>
+  <div ng-switch="imageNum" ng-click="newTabByImage(currentProject)">
+    <img ng-repeat="image in currentProject.images" ng-switch-when="{{$index}}" src={{currentProject.images[$index]}}><br>
+  </div>
   <em>{{currentProject.date}}</em>
   <p>{{currentProject.description}}</p>
   <h2>Technologies used</h2>

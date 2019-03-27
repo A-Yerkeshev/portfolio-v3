@@ -220,14 +220,14 @@ footer {
   text-align: center;
 }
 
-.current-project > img {
+.current-project img {
   width: 70%;
   box-shadow: 0px 0px 2px 2px blue;
   transition: box-shadow 0.5s, width 0.5s;
   cursor: pointer;
 }
 
-.current-project > img:hover {
+.current-project img:hover {
   box-shadow: 0px 0px 2px 2px white;
   width: 72%;
 }

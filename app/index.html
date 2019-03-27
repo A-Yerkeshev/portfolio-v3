@@ -57,13 +57,13 @@
         <div class="proj-prev" ng-mouseover="showTitle($event.currentTarget)" ng-mouseout="hideTitle($event.currentTarget)">
           <h2>{{project.name}}</h2>
           <p>{{project.title}}</p>
-          <img src={{project.image}}>
+          <img src={{project.images[0]}}>
           <ul>
             <li ng-repeat="tech in project.technologies">{{tech}}</li>
           </ul>
         </div>
         <span>{{project.name}}</span>
-        <img src={{project.image}}>
+        <img src={{project.images[0]}}>
       </a>
     </script>
 </body>
