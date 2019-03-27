@@ -221,6 +221,7 @@ footer {
 }
 
 .current-project img {
+  margin-top: 1%;
   width: 70%;
   box-shadow: 0px 0px 2px 2px blue;
   transition: box-shadow 0.5s, width 0.5s;
@@ -313,4 +314,28 @@ footer {
 
 .welcome > a:hover {
   padding: 3%;
+}
+
+.ui-carousel
+.carousel-btn {
+  opacity: 1;
+  font-size: 3em;
+}
+
+.ui-carousel
+.carousel-btn:active {
+  background-color: transparent;
+  border: none;
+}
+
+.ui-carousel
+.carousel-next
+.carousel-btn {
+  reght: 0;
+}
+
+.ui-carousel
+.carousel-prev
+.carousel-btn {
+  left: 0;
 }
