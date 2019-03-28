@@ -61,11 +61,10 @@ td, th {
 }
 
 table {
-  border-top: 2px solid blue;
-  border-bottom: 2px solid blue;
   margin: 5%;
   padding-top: 5%;
   padding-bottom: 5%;
+  background-color: white;
 }
 
 footer {
@@ -399,4 +398,11 @@ footer {
 .carousel-item p {
   margin: 5%;
   margin-bottom: 0;
+}
+
+.contacts > div {
+  animation: Gradient 8s linear infinite;
+  background-image: linear-gradient(to bottom right, blue, indigo, blue);
+  background-size: 400% 400%;
+  display: flex;
 }
