@@ -178,7 +178,19 @@ Portfolio.factory('ProjectsFactory', function() {
     url: null,
     github: 'https://github.com/A-Yerkeshev/portfolio-v2',
     images: [
-      '/images/portfolio-v2/portfolio-v2-1.png'
+      {
+        src: '/images/portfolio-v2/portfolio-v2-1.png',
+        descr: `This is how second version of this site looked like. The projects
+          were listed in the bottom part of the screen.`
+      }, {
+        src: '/images/portfolio-v2/portfolio-v2-2.png',
+        descr: `When project was clicked the demo video of it was played on the
+          right hand side and description of the project replaced initial text.`
+      }, {
+        src: '/images/portfolio-v2/portfolio-v2-3.png',
+        descr: `Website had an option to interact with the project website right
+          on the portfolio website, without need of leaving it.`
+      }
     ],
     title: 'Second version of portfolio',
     technologies: ['JavaScript', 'HTML', 'CSS'],
