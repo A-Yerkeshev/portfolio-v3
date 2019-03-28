@@ -160,7 +160,14 @@ Portfolio.factory('ProjectsFactory', function() {
     url: null,
     github: 'https://github.com/A-Yerkeshev/portfolio-v1',
     images: [
-      '/images/portfolio/portfolio-1.png'
+      {
+        src: '/images/portfolio/portfolio-1.png',
+        descr: `This is how this website looked initially.`
+      }, {
+        src: '/images/portfolio/portfolio-2.png',
+        descr: `The window on the left changed content dinamically when projects
+          were selected, even that no JavaScript was used.`
+      }
     ],
     title: 'First version of portfolio',
     technologies: ['HTML', 'CSS'],
