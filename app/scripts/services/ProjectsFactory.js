@@ -89,7 +89,31 @@ Portfolio.factory('ProjectsFactory', function() {
     url: 'https://itemscatalog.herokuapp.com/',
     github: 'https://github.com/A-Yerkeshev/catalog',
     images: [
-      '/images/items-catalog/items-catalog-1.png'
+      {
+        src: '/images/items-catalog/items-catalog-1.png',
+        descr: `Online catalog of items retrieves data from database and renders
+          it on the page using Python libraries and frameworks.`
+      }, {
+        src: '/images/items-catalog/items-catalog-2.png',
+        descr: `All items on the website are sorted by category and most recent
+          ones are displayed on the frontpage.`
+      }, {
+        src: '/images/items-catalog/items-catalog-3.png',
+        descr: `Each item must have a name and category and optionally can have
+          an image and description.`
+      }, {
+        src: '/images/items-catalog/items-catalog-4.png',
+        descr: `In order to add your own items to the catalog, user should complete
+          simple registration process.`
+      }, {
+        src: '/images/items-catalog/items-catalog-5.png',
+        descr: `Registered users can access the page for creation of items, that
+          is otherwise hidden.`
+      }, {
+        src: '/images/items-catalog/items-catalog-6.png',
+        descr: `Users have a possibility to edit and delete items they created any
+          time they want.`
+      },
     ],
     title: 'The web catalog of various items',
     technologies: ['Python', 'SQL', 'Flask', 'HTML', 'CSS'],
