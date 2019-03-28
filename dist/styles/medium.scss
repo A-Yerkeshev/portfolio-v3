@@ -1,0 +1,41 @@
+ul li {
+  display: contents;
+}
+
+table {
+  font-size: 1.2em;
+}
+
+.project {
+  width: 45%;
+  vertical-align: top;
+}
+
+.contacts > p {
+  font-size: 1.2em;
+}
+
+.profile > img {
+  width: 70%;
+}
+
+.profile > p {
+  border-bottom: 5px solid blue;
+}
+
+.proj-prev > ul {
+  display: none;
+}
+
+.current-project img {
+  margin-top: 3%;
+}
+
+.carousel-dots {
+  display: inline-block;
+}
+
+.carousel-item p {
+  font-size: 1.3em;
+}
+

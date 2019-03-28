@@ -1,0 +1,21 @@
+<div ng-controller="ProjectsController" class="current-project">
+  <h1>{{currentProject.name}}</h1>
+  <ui-carousel slides="currentProject.images" autoplay="true" autoplay-speed="4000" dots="true">
+    <carousel-item>
+      <div>
+        <img src="{{item.src}}">
+        <p>
+          {{item.descr}}
+        </p>
+      </div>
+    </carousel-item>
+  </ui-carousel>
+  <em>{{currentProject.date}}</em>
+  <p>{{currentProject.description}}</p>
+  <h2>Technologies used</h2>
+  <ul>
+    <li ng-repeat="tech in currentProject.technologies">{{tech}}</li>
+  </ul>
+  <button ng-if="currentProject.url" ng-click="newTab(currentProject.url)">Visit website</button>
+  <button ng-click="newTab(currentProject.github)">View on GitHub</button>
+</div>

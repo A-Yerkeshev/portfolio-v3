@@ -1,0 +1,6 @@
+<div ng-controller="ProjectsController">
+  <h1>Hosted projects</h1>
+  <project-directive ng-repeat="project in activeProjects"></project-directive>
+  <h1>Inactive projects</h1>
+  <project-directive ng-repeat="project in inactiveProjects"></project-directive>
+</div>
