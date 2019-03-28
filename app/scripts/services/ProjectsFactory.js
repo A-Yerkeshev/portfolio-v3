@@ -130,7 +130,14 @@ Portfolio.factory('ProjectsFactory', function() {
     url: 'https://movie-trailers-webpage.herokuapp.com/',
     github: 'https://github.com/A-Yerkeshev/movie-trailers',
     images: [
-      '/images/movie-trailers/movie-trailers-1.png'
+      {
+        src: '/images/movie-trailers/movie-trailers-1.png',
+        descr: `Simple application that utilizes Python object-oriented programming.`
+      }, {
+        src: '/images/movie-trailers/movie-trailers-2.png',
+        descr: `When poster is clicked it openes a video player and runs the trailer
+          of that movie.`
+      }
     ],
     title: 'Posters and trailers about movies',
     technologies: ['Python', 'HTML', 'CSS', 'JavaScript'],
