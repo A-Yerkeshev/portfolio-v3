@@ -48,7 +48,29 @@ Portfolio.factory('ProjectsFactory', function() {
     url: 'https://neigh-map.herokuapp.com/',
     github: 'https://github.com/A-Yerkeshev/map',
     images: [
-      '/images/neighborhood/neighborhood-1.png'
+      {
+        src: '/images/neighborhood/neighborhood-1.png',
+        descr: `Map utilizes APIs to retrieve data from various sources and presents
+          it to the user in an interactable manner.`
+      }, {
+        src: '/images/neighborhood/neighborhood-2.png',
+        descr: `Map has some hard-coded locations that are visually present in a
+          form of markers. Sidebar on left hand side allows to filter the markers
+          by the category they belong.`
+      }, {
+        src: '/images/neighborhood/neighborhood-3.png',
+        descr: `Also, by clicking the marker or by selecting its name from the
+          list on the left, the map zoomes in to it and displays information about
+          place to the user, that is dinamically retrieved from the API.`
+      }, {
+        src: '/images/neighborhood/neighborhood-4.png',
+        descr: `Besides fixed markers, map allows user to retrieve relevant
+          information about any place, by simply typing its name to the search box.`
+      }, {
+        src: '/images/neighborhood/neighborhood-5.png',
+        descr: `Search box dinamically gives suggestions to the user, depending
+          on current zoom location.`
+      }
     ],
     title: 'The map that utilizes various APIs',
     technologies: ['JavaScript', 'KnockoutJS', 'HTML', 'CSS', 'API'],
