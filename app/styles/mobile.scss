@@ -320,6 +320,7 @@ footer {
 .carousel-btn {
   opacity: 1;
   font-size: 3em;
+  color: white;
 }
 
 .ui-carousel
@@ -386,4 +387,16 @@ footer {
 .carousel-dots li.carousel-active button:before {
   font-size: 3em;
   opacity: 1;
+}
+
+.carousel-item > div {
+  animation: Gradient 8s linear infinite;
+  background-image: linear-gradient(to bottom right, blue, indigo, blue);
+  background-size: 400% 400%;
+  color: white;
+}
+
+.carousel-item p {
+  margin: 5%;
+  margin-bottom: 0;
 }

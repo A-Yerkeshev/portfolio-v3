@@ -23,7 +23,7 @@ Portfolio.factory('ProjectsFactory', function() {
       }, {
         src:'/images/lemon-chat/lemon-chat-4.png',
         descr: `In order to keep chats organized with participants, the hirerachial
-          structure of administrators priviledges was implied.`
+          structure of administrators priviledges was implimented.`
       }, {
         src:'/images/lemon-chat/lemon-chat-5.png',
         descr: `Application provides some room for customization of profile for

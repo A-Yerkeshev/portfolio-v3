@@ -2,9 +2,11 @@
   <h1>{{currentProject.name}}</h1>
   <ui-carousel slides="currentProject.images" dots="true">
     <carousel-item>
-      <img src="{{item.src}}">
-      <div class="img-descr">
-        {{item.descr}}
+      <div>
+        <img src="{{item.src}}">
+        <p>
+          {{item.descr}}
+        </p>
       </div>
     </carousel-item>
   </ui-carousel>
