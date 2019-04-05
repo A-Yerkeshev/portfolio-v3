@@ -1,0 +1,50 @@
+/* line 1, ../../app/styles/medium.scss */
+ul li {
+  display: contents;
+}
+
+/* line 5, ../../app/styles/medium.scss */
+table {
+  font-size: 1.2em;
+}
+
+/* line 9, ../../app/styles/medium.scss */
+.project {
+  width: 45%;
+  vertical-align: top;
+}
+
+/* line 14, ../../app/styles/medium.scss */
+.contacts > p {
+  font-size: 1.2em;
+}
+
+/* line 18, ../../app/styles/medium.scss */
+.profile > img {
+  width: 70%;
+}
+
+/* line 22, ../../app/styles/medium.scss */
+.profile > p {
+  border-bottom: 5px solid blue;
+}
+
+/* line 26, ../../app/styles/medium.scss */
+.proj-prev > ul {
+  display: none;
+}
+
+/* line 30, ../../app/styles/medium.scss */
+.current-project img {
+  margin-top: 3%;
+}
+
+/* line 34, ../../app/styles/medium.scss */
+.carousel-dots {
+  display: inline-block;
+}
+
+/* line 38, ../../app/styles/medium.scss */
+.carousel-item p {
+  font-size: 1.3em;
+}
