@@ -125,9 +125,12 @@ Portfolio.factory('ProjectsFactory', function() {
       rendering inserts it into templates created by Flask. The website has
       functionalities to add, edit and delete the items, sort them by category
       and recency, upload the images, login and logout.`
-  }, {
+  }];
+
+  var inactiveProjects = [
+  {
     name: 'Movie Trailers',
-    url: 'https://movie-trailers-webpage.herokuapp.com/',
+    url: null,
     github: 'https://github.com/A-Yerkeshev/movie-trailers',
     images: [
       {
@@ -152,10 +155,7 @@ Portfolio.factory('ProjectsFactory', function() {
       movie on the webpage requires only data input to be initialized. The
       front-end templates were provided by Udacity and back-end was written by
       instructions.`
-  }];
-
-  var inactiveProjects = [
-  {
+  }, {
     name: 'Protfolio v-1',
     url: null,
     github: 'https://github.com/A-Yerkeshev/portfolio-v1',
