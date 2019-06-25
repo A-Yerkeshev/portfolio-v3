@@ -3,29 +3,70 @@ Portfolio.factory('ProjectsFactory', function() {
 
   var activeProjects = [
   {
+    name: 'Real Estate Demo App',
+    url: 'https://real-estate-demo-app.herokuapp.com/',
+    github: 'https://github.com/A-Yerkeshev/RealEstateDemoApp',
+    images: [
+      {
+        src: '/images/real-estate/real-estate-1.png',
+        descr: `Real estate demo application is an experiment project of
+          combining together two front-end technologies like AngularJS and
+          Three.js.`
+      }, {
+        src: '/images/real-estate/real-estate-2.png',
+        descr: `Various 3D models are loaded into the app through native Three.js
+          objects loaders such as OBJLoader and MTLLoader. Three.js has an object
+          loading suppprt for all popular 3D models formats.`
+      }, {
+        src: '/images/real-estate/real-estate-3.png',
+        descr: `AngularJS functionality can easilly be combined with Three.js
+          since they do not interfere with each other - one creates three
+          dimensional space on the webpage and second one handles two dimensional
+          templates.`
+      }, {
+        src: '/images/real-estate/real-estate-4.png',
+        descr: `While AngularJS handles dynamic templating, Three.js does not have
+          such native functionality, so dynamic work with 3D objects needs to be
+          coded manually.`
+      }
+    ],
+    title: 'Experiment of combining Three.js and AngularJS',
+    technologies: ['JavaScript', 'Three.js', 'AngularJS', 'HTML', 'CSS'],
+    href: 'real-estate'.
+    date: 'June 2019',
+    description: `This application was build as an experiment to see possibilities
+      of incorporating dynamic templates rendering with three dimensional data
+      representation. AngularJS and Three.js were choden for this task as most
+      popular technologies in their operational scope. Three.js turns flat surface
+      of the webpage into three dimensinal space without braking the AngularJS
+      functionality with dynamic templates rendering. So, basically instead of one
+      view we now have two - one plain and one 3D. Therefore the data can be rendered
+      in three or two dimensional way depending on its nature.`
+  },
+  {
     name: 'Lemon Chat',
     url: 'https://lemon-chat-123.herokuapp.com/',
     github: 'https://github.com/A-Yerkeshev/LemonChat',
     images: [
       {
-        src:'/images/lemon-chat/lemon-chat-1.png',
+        src: '/images/lemon-chat/lemon-chat-1.png',
         descr: `Application is designed to represent the functionality of chat
           and handles all types of necessary interaction types between users.`
       }, {
-        src:'/images/lemon-chat/lemon-chat-2.png',
+        src: '/images/lemon-chat/lemon-chat-2.png',
         descr: `The classical for social networks "friends" system was implemented.
           It allowed to organize and systemize the process of initiating new chats
           between users, as well as management of existing ones.`
       }, {
-        src:'/images/lemon-chat/lemon-chat-3.png',
+        src: '/images/lemon-chat/lemon-chat-3.png',
         descr: `Chats themselves follow standard practices and besides communication
           functionality provide user with some additional data.`
       }, {
-        src:'/images/lemon-chat/lemon-chat-4.png',
+        src: '/images/lemon-chat/lemon-chat-4.png',
         descr: `In order to keep chats organized with participants, the hirerachial
           structure of administrators priviledges was implimented.`
       }, {
-        src:'/images/lemon-chat/lemon-chat-5.png',
+        src: '/images/lemon-chat/lemon-chat-5.png',
         descr: `Application provides some room for customization of profile for
           registered users, in particular it allowes to change the profile image
           or put some information to profile.`
