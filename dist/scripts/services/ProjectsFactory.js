@@ -32,7 +32,7 @@ Portfolio.factory('ProjectsFactory', function() {
     ],
     title: 'Experiment of combining Three.js and AngularJS',
     technologies: ['JavaScript', 'Three.js', 'AngularJS', 'HTML', 'CSS'],
-    href: 'real-estate'.
+    href: 'real-estate',
     date: 'June 2019',
     description: `This application was build as an experiment to see possibilities
       of incorporating dynamic templates rendering with three dimensional data
