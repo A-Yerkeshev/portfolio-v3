@@ -401,6 +401,11 @@ footer {
   left: 0;
 }
 
+.ui-carousel
+.track-wrapper {
+  top: -3em;
+}
+
 /* line 343, ../../app/styles/mobile.scss */
 .carousel-dots {
   position: static;
@@ -480,6 +485,7 @@ footer {
 .carousel-item p {
   margin: 5%;
   margin-bottom: 0;
+  padding-top: 1em;
 }
 
 /* line 403, ../../app/styles/mobile.scss */

@@ -34,11 +34,6 @@ table {
   display: none;
 }
 
-/* line 30, ../../app/styles/medium.scss */
-.current-project img {
-  margin-top: 3%;
-}
-
 /* line 34, ../../app/styles/medium.scss */
 .carousel-dots {
   display: inline-block;
