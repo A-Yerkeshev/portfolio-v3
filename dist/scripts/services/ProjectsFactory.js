@@ -3,6 +3,45 @@ Portfolio.factory('ProjectsFactory', function() {
 
   var activeProjects = [
   {
+    name: 'All Movies',
+    url: 'https://all-movies-1.herokuapp.com/',
+    github: 'https://github.com/A-Yerkeshev/all-movies-1',
+    images: [
+      {
+        src: '/images/all-movies/all-movies-1',
+        descr: `This application untilizes AJAX requests and browser's local
+          storage to collect the data from the server and from user's interactions
+          with website to build the customised content. Application is created with
+          Angular and Bootstrap.`
+      }, {
+        src: '/images/all-movies/all-movies-2',
+        descr: `Local storage of the browser keeps track of user's activity
+          on the website to streighten UX. Bootstrap takes care of responsiveness
+          of the content for different devices.`
+      }, {
+        src: '/images/all-movies/all-movies-3',
+        descr: `User has an option to perform a search by keywords. This sends
+          an AJAX request to the server and outputs the result on the page.`
+      }, {
+        src: '/images/all-movies/all-movies-4',
+        descr: `Finally, application has mechanisms to suggest some content based
+          on user's previous activity. The data collected then analised by the application
+          and it sends several requests to the server based on analysis output.`
+      }
+    ],
+    title: 'All best movies in one app',
+    technologies: ['Angular', 'Bootstrap', 'Typescript', 'JQuery', 'HTML', 'CSS'],
+    href: 'all-movies',
+    date: 'October 2019',
+    description: `All Movies application is my first application build with leading
+      Front-end technologies such as Angular and Bootstrap. Unlike other previous
+      applications, the data for this one is not stored anywhere within app, or on
+      the server where app is hosted. Instead, all content is loaded dynamically from
+      OMDb database through AJAX requests. And moreover, application is using capabilities
+      of browser to collect some data about user's activity on the website to greatly
+      improve UX.`
+  },
+  {
     name: 'Real Estate Demo App',
     url: 'https://real-estate-demo-app.herokuapp.com/',
     github: 'https://github.com/A-Yerkeshev/RealEstateDemoApp',
@@ -125,9 +164,12 @@ Portfolio.factory('ProjectsFactory', function() {
       locations and their markers with the possibilty to manage them according to
       selected filters, as well as functionality to search any given place by its
       name and retrieve corresponding information about it from APIs.`
-  }, {
+  }];
+
+  var inactiveProjects = [
+  {
     name: 'Items Catalog',
-    url: 'https://itemscatalog.herokuapp.com/',
+    url: null,
     github: 'https://github.com/A-Yerkeshev/catalog',
     images: [
       {
@@ -166,10 +208,7 @@ Portfolio.factory('ProjectsFactory', function() {
       rendering inserts it into templates created by Flask. The website has
       functionalities to add, edit and delete the items, sort them by category
       and recency, upload the images, login and logout.`
-  }];
-
-  var inactiveProjects = [
-  {
+  }, {
     name: 'Movie Trailers',
     url: null,
     github: 'https://github.com/A-Yerkeshev/movie-trailers',
