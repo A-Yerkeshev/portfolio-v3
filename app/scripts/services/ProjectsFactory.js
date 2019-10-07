@@ -8,22 +8,22 @@ Portfolio.factory('ProjectsFactory', function() {
     github: 'https://github.com/A-Yerkeshev/all-movies-1',
     images: [
       {
-        src: '/images/all-movies/all-movies-1',
+        src: '/images/all-movies/all-movies-1.png',
         descr: `This application untilizes AJAX requests and browser's local
           storage to collect the data from the server and from user's interactions
           with website to build the customised content. Application is created with
           Angular and Bootstrap.`
       }, {
-        src: '/images/all-movies/all-movies-2',
+        src: '/images/all-movies/all-movies-2.png',
         descr: `Local storage of the browser keeps track of user's activity
           on the website to streighten UX. Bootstrap takes care of responsiveness
           of the content for different devices.`
       }, {
-        src: '/images/all-movies/all-movies-3',
+        src: '/images/all-movies/all-movies-3.png',
         descr: `User has an option to perform a search by keywords. This sends
           an AJAX request to the server and outputs the result on the page.`
       }, {
-        src: '/images/all-movies/all-movies-4',
+        src: '/images/all-movies/all-movies-4.png',
         descr: `Finally, application has mechanisms to suggest some content based
           on user's previous activity. The data collected then analised by the application
           and it sends several requests to the server based on analysis output.`
