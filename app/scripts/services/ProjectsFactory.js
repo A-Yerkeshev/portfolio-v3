@@ -4,8 +4,8 @@ Portfolio.factory('ProjectsFactory', function() {
   var activeProjects = [
   {
     name: 'All Movies',
-    url: 'https://all-movies-1.herokuapp.com/',
-    github: 'https://github.com/A-Yerkeshev/all-movies-1',
+    url: `https://all-movies-1.herokuapp.com/`,
+    github: `https://github.com/A-Yerkeshev/all-movies-1`,
     images: [
       {
         src: '/images/all-movies/all-movies-1.png',
@@ -40,52 +40,51 @@ Portfolio.factory('ProjectsFactory', function() {
       OMDb database through AJAX requests. And moreover, application is using capabilities
       of browser to collect some data about user's activity on the website to greatly
       improve UX.`
-  },
-  {
-    name: 'Real Estate Demo App',
-    url: 'https://real-estate-demo-app.herokuapp.com/',
-    github: 'https://github.com/A-Yerkeshev/RealEstateDemoApp',
+  }, {
+    name: 'Dashboard App',
+    url: `https://dashboard-500.herokuapp.com/`,
+    github: `https://github.com/A-Yerkeshev/dashboard`,
     images: [
       {
-        src: '/images/real-estate/real-estate-1.png',
-        descr: `Real estate demo application is an experiment project of
-          combining together two front-end technologies like AngularJS and
-          Three.js.`
+        src: '/images/lemon-chat/dashboard-1.png',
+        descr: `Simple application built on React that utilizes several APIs to
+          processes posts-like data and impliments basic registration and
+          authentification functionality.`
       }, {
-        src: '/images/real-estate/real-estate-2.png',
-        descr: `Various 3D models are loaded into the app through native Three.js
-          objects loaders such as OBJLoader and MTLLoader. Three.js has an object
-          loading suppprt for all popular 3D models formats.`
+        src: '/images/lemon-chat/dashboard-2.png',
+        descr: `The data of newly registered user gets send to server via API
+          call as well as passed to the state of client-side interface.`
       }, {
-        src: '/images/real-estate/real-estate-3.png',
-        descr: `AngularJS functionality can easilly be combined with Three.js
-          since they do not interfere with each other - one creates three
-          dimensional space on the webpage and second one handles two dimensional
-          templates.`
+        src: '/images/lemon-chat/dashboard-3.png',
+        descr: `Signed in user has possibility to edit or delete his previous
+          posts, as well as to add new ones.`
       }, {
-        src: '/images/real-estate/real-estate-4.png',
-        descr: `While AngularJS handles dynamic templating, Three.js does not have
-          such native functionality, so dynamic work with 3D objects needs to be
-          coded manually.`
+        src: '/images/lemon-chat/dashboard-4.png',
+        descr: `Possibility to upload pictures from user's computer is simulated
+          using local storage of the browser.`
+      }, {
+        src: '/images/lemon-chat/dashboard-5.png',
+        descr: `Finally, the database is exposed through API for usage to other
+        application, as well as client-side part of this application.`
       }
     ],
-    title: 'Experiment of combining Three.js and AngularJS',
-    technologies: ['JavaScript', 'Three.js', 'AngularJS', 'HTML', 'CSS'],
-    href: 'real-estate',
-    date: 'June 2019',
-    description: `This application was build as an experiment to see possibilities
-      of incorporating dynamic templates rendering with three dimensional data
-      representation. AngularJS and Three.js were choden for this task as most
-      popular technologies in their operational scope. Three.js turns flat surface
-      of the webpage into three dimensinal space without braking the AngularJS
-      functionality with dynamic templates rendering. So, basically instead of one
-      view we now have two - one plain and one 3D. Therefore the data can be rendered
-      in three or two dimensional way depending on its nature.`
-  },
-  {
+    title: 'Simple posts application on React',
+    technologies: ['React', 'JQuery', 'Axios', 'NodeJS', 'HTML', 'CSS'],
+    href: 'dashboard',
+    date: 'July 2020',
+    description: `This application utilizes React framework for front-end, NodeJS
+      and JSON-server for back-end and JSONPlaceholder for data. The communication
+      between all those is handled by Axios library. The posts data arrives both
+      from the database and JSONPlaceholder, then gets processed and displayed to
+      user with React. New users can be added to database as well as new posts.
+      States of database and application are syncronised. Pictures cannot be uploaded
+      due to Heroku server restrictions, but this functionality is simulated using
+      possibilities of local storage. Finally the database is exposed for usgae by
+      API.`
+  }, {
     name: 'Lemon Chat',
-    url: 'https://lemon-chat-123.herokuapp.com/',
-    github: 'https://github.com/A-Yerkeshev/LemonChat',
+    url: `https://lemon-chat-123.herokuapp.com/`,
+    github: `https://github.com/A-Yerkeshev/LemonChat`,
     images: [
       {
         src: '/images/lemon-chat/lemon-chat-1.png',
@@ -125,8 +124,8 @@ Portfolio.factory('ProjectsFactory', function() {
       scaffolding is provided by Yeoman.`
   }, {
     name: 'Neighborhood Map',
-    url: 'https://neigh-map.herokuapp.com/',
-    github: 'https://github.com/A-Yerkeshev/map',
+    url: `https://neigh-map.herokuapp.com/`,
+    github: `https://github.com/A-Yerkeshev/map`,
     images: [
       {
         src: '/images/neighborhood/neighborhood-1.png',
@@ -170,7 +169,7 @@ Portfolio.factory('ProjectsFactory', function() {
   {
     name: 'Items Catalog',
     url: null,
-    github: 'https://github.com/A-Yerkeshev/catalog',
+    github: `https://github.com/A-Yerkeshev/catalog`,
     images: [
       {
         src: '/images/items-catalog/items-catalog-1.png',
@@ -208,10 +207,49 @@ Portfolio.factory('ProjectsFactory', function() {
       rendering inserts it into templates created by Flask. The website has
       functionalities to add, edit and delete the items, sort them by category
       and recency, upload the images, login and logout.`
+  },  {
+    name: 'Real Estate Demo App',
+    github: `https://github.com/A-Yerkeshev/RealEstateDemoApp`,
+    images: [
+      {
+        src: '/images/real-estate/real-estate-1.png',
+        descr: `Real estate demo application is an experiment project of
+          combining together two front-end technologies like AngularJS and
+          Three.js.`
+      }, {
+        src: '/images/real-estate/real-estate-2.png',
+        descr: `Various 3D models are loaded into the app through native Three.js
+          objects loaders such as OBJLoader and MTLLoader. Three.js has an object
+          loading suppprt for all popular 3D models formats.`
+      }, {
+        src: '/images/real-estate/real-estate-3.png',
+        descr: `AngularJS functionality can easilly be combined with Three.js
+          since they do not interfere with each other - one creates three
+          dimensional space on the webpage and second one handles two dimensional
+          templates.`
+      }, {
+        src: '/images/real-estate/real-estate-4.png',
+        descr: `While AngularJS handles dynamic templating, Three.js does not have
+          such native functionality, so dynamic work with 3D objects needs to be
+          coded manually.`
+      }
+    ],
+    title: 'Experiment of combining Three.js and AngularJS',
+    technologies: ['JavaScript', 'Three.js', 'AngularJS', 'HTML', 'CSS'],
+    href: 'real-estate',
+    date: 'June 2019',
+    description: `This application was build as an experiment to see possibilities
+      of incorporating dynamic templates rendering with three dimensional data
+      representation. AngularJS and Three.js were choden for this task as most
+      popular technologies in their operational scope. Three.js turns flat surface
+      of the webpage into three dimensinal space without braking the AngularJS
+      functionality with dynamic templates rendering. So, basically instead of one
+      view we now have two - one plain and one 3D. Therefore the data can be rendered
+      in three or two dimensional way depending on its nature.`
   }, {
     name: 'Movie Trailers',
     url: null,
-    github: 'https://github.com/A-Yerkeshev/movie-trailers',
+    github: `https://github.com/A-Yerkeshev/movie-trailers`,
     images: [
       {
         src: '/images/movie-trailers/movie-trailers-1.png',
@@ -238,7 +276,7 @@ Portfolio.factory('ProjectsFactory', function() {
   }, {
     name: 'Protfolio v-1',
     url: null,
-    github: 'https://github.com/A-Yerkeshev/portfolio-v1',
+    github: `https://github.com/A-Yerkeshev/portfolio-v1`,
     images: [
       {
         src: '/images/portfolio/portfolio-1.png',
@@ -263,7 +301,7 @@ Portfolio.factory('ProjectsFactory', function() {
   }, {
     name: 'Protfolio v-2',
     url: null,
-    github: 'https://github.com/A-Yerkeshev/portfolio-v2',
+    github: `https://github.com/A-Yerkeshev/portfolio-v2`,
     images: [
       {
         src: '/images/portfolio-v2/portfolio-v2-1.png',
