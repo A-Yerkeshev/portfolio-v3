@@ -46,24 +46,24 @@ Portfolio.factory('ProjectsFactory', function() {
     github: `https://github.com/A-Yerkeshev/dashboard`,
     images: [
       {
-        src: '/images/lemon-chat/dashboard-1.png',
+        src: '/images/dashboard/dashboard-1.png',
         descr: `Simple application built on React that utilizes several APIs to
           processes posts-like data and impliments basic registration and
           authentification functionality.`
       }, {
-        src: '/images/lemon-chat/dashboard-2.png',
+        src: '/images/dashboard/dashboard-2.png',
         descr: `The data of newly registered user gets send to server via API
           call as well as passed to the state of client-side interface.`
       }, {
-        src: '/images/lemon-chat/dashboard-3.png',
+        src: '/images/dashboard/dashboard-3.png',
         descr: `Signed in user has possibility to edit or delete his previous
           posts, as well as to add new ones.`
       }, {
-        src: '/images/lemon-chat/dashboard-4.png',
+        src: '/images/dashboard/dashboard-4.png',
         descr: `Possibility to upload pictures from user's computer is simulated
           using local storage of the browser.`
       }, {
-        src: '/images/lemon-chat/dashboard-5.png',
+        src: '/images/dashboard/dashboard-5.png',
         descr: `Finally, the database is exposed through API for usage to other
         application, as well as client-side part of this application.`
       }
