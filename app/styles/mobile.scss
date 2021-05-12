@@ -10,20 +10,31 @@
   font-family: 'Lora', Georgia, serif;
 }
 
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background-color: whitesmoke;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background-color: lightgrey;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background-color: darkgrey;
+}
+
 body {
   margin: 0px;
   animation: Gradient 8s linear infinite;
   background-image: linear-gradient(to bottom right, blue, indigo, blue);
   background-size: 400% 400%;}
-
-/* Show navbar and change bg colour to white after content is loaded*/
-.loaded {
-  background-color: white;
-}
-
-.loaded > .header {
-  display: block;
-}
 
 a {
   text-decoration: none;
@@ -298,13 +309,14 @@ footer {
 .welcome {
   animation: Gradient 8s linear infinite;
   background-image: linear-gradient(to bottom right, blue, indigo, blue);
-  background-size: 400% 400%;
+  background-size: 400vw 400vh;
   position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
   text-align: center;
+  z-index: 1;
 }
 
 .welcome > h1 {
