@@ -65,7 +65,7 @@ h1 {
   color: blue;
   text-align: center;
   font-size: 1.5em;
-  margin: 0.5em;
+  margin: 0.5rem;
 }
 
 h2 {
@@ -326,9 +326,10 @@ footer {
 }
 
 .welcome > p {
+  border-top: 2px solid white;
   color: white;
   font-size: 1.5em;
-  margin: 0 10%;
+  margin: 0 10% 7%;
   padding-top: 5%;
 }
 
@@ -339,6 +340,7 @@ footer {
   font-weight: 600;
   padding: 2%;
   transition: padding 0.3s;
+  font-size: 1.7rem;
 }
 
 .welcome > a:hover {
