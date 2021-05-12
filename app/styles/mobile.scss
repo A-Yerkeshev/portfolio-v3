@@ -316,13 +316,23 @@ footer {
   width: 100vw;
   height: 100vh;
   text-align: center;
+  overflow: hidden;
   z-index: 1;
 }
 
-.welcome > h1 {
+h1.w-char {
   color: white;
+  position: relative;
+  top: 0;
   font-size: 4rem;
-  margin-top: 10%;
+  display: inline-block;
+  margin: 10vh 0 0 0;
+  transform: rotate(360deg);
+  transition: top 0.2s ease-out, transform 1s 2s;
+}
+
+h1.w-char.hidden {
+  top: 100vh;
 }
 
 .welcome > p {

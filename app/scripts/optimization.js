@@ -1,3 +1,12 @@
 document.addEventListener('DOMContentLoaded', function() {
-  document.getElementsByTagName('body')[0].classList.add('loaded');
+
+  // Animate welcome heading
+  let heading = document.querySelectorAll('.w-char');
+
+  heading.forEach((char, i) => {
+    // Move each characted from the bottom
+    setTimeout(() => {
+      char.classList.remove('hidden');
+    }, i*200)
+  })
 })
