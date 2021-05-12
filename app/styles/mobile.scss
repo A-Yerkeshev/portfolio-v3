@@ -1,15 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+
 @keyframes Gradient {
   0% {background-position: 0% 50%}
   50% {background-position: 100% 50%}
   100% {background-position: 0% 50%}
 }
 
-* {
-  font-family: Georgia, serif;
+::root {
+  font-family: 'Lora', Georgia, serif;
 }
 
 body {
   margin: 0px;
+  animation: Gradient 8s linear infinite;
+  background-image: linear-gradient(to bottom right, blue, indigo, blue);
+  background-size: 400% 400%;}
+
+/* Show navbar and change bg colour to white after content is loaded*/
+.loaded {
+  background-color: white;
+}
+
+.loaded > .header {
+  display: block;
 }
 
 a {
@@ -79,7 +92,6 @@ footer {
   background-color: white;
   left: 0;
   width: 100%;
-  height: 100%;
   text-align: center;
 }
 
@@ -134,9 +146,9 @@ footer {
   background-image: linear-gradient(to bottom right, blue, indigo, blue);
   background-size: 400% 400%;
   color: white;
-  padding: 5%;
   overflow: hidden;
   margin-bottom: 1%;
+  display: none;
 }
 
 .nav-btn {
@@ -293,20 +305,26 @@ footer {
   width: 100vw;
   height: 100vh;
   text-align: center;
-  opacity: 0.9;
+}
+
+.welcome > h1 {
+  color: white;
+  font-size: 4rem;
+  margin-top: 10%;
 }
 
 .welcome > p {
   color: white;
   font-size: 1.5em;
-  margin: 10%;
+  margin: 0 10%;
   padding-top: 5%;
 }
 
 .welcome > a {
   color: white;
   background: transparent;
-  border: solid 1px white;
+  border: solid 2px white;
+  font-weight: 600;
   padding: 2%;
   transition: padding 0.3s;
 }
