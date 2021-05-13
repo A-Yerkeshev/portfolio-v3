@@ -6,6 +6,15 @@
   100% {background-position: 0% 50%}
 }
 
+@keyframes Appear {
+  0% {
+    transform: translateY(100vh);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
 ::root {
   font-family: 'Lora', Georgia, serif;
 }
@@ -306,6 +315,10 @@ footer {
   padding-top: 2%;
 }
 
+
+/*** --- WELCOME PAGE --- ***/
+
+
 .welcome {
   animation: Gradient 8s linear infinite;
   background-image: linear-gradient(to bottom right, blue, indigo, blue);
@@ -317,34 +330,61 @@ footer {
   height: 100vh;
   text-align: center;
   overflow: hidden;
+  padding-top: 8vh;
   z-index: 1;
 }
 
 h1.w-char {
   color: white;
-  position: relative;
-  top: 0;
   font-size: 4rem;
   display: inline-block;
-  margin: 10vh 0 0 0;
-  transform: rotate(360deg);
-  transition: top 0.2s ease-out, transform 1s 2s;
+  margin: 0;
+  transform: translateY(100vh)
 }
 
+/* Animate each character in welcome heading */
+.w-char[data-index="1"] {
+  animation: Appear 0.5s 1s forwards;
+}
+
+.w-char[data-index="2"] {
+  animation: Appear 0.5s 1.2s forwards;
+}
+
+.w-char[data-index="3"] {
+  animation: Appear 0.5s 1.4s forwards;
+}
+
+.w-char[data-index="4"] {
+  animation: Appear 0.5s 1.6s forwards;
+}
+
+.w-char[data-index="5"] {
+  animation: Appear 0.5s 1.8s forwards;
+}
+
+.w-char[data-index="6"] {
+  animation: Appear 0.5s 2s forwards;
+}
+
+.w-char[data-index="7"] {
+  animation: Appear 0.5s 2.2s forwards;
+}
+
+.w-char[data-index="8"] {
+  animation: Appear 0.5s 2.4s forwards;
+}
+/* --- */
+
 .welcome > p {
-  position: relative;
   border-top: 2px solid white;
   color: white;
   font-size: 1.5em;
   margin: 0 10% 7%;
   padding-top: 5%;
-  top: 0;
-  transition: top 0.7s ease-out;
-}
-
-.w-char.hidden,
-p.hidden {
-  top: 100vh;
+  margin-top: 3vh;
+  transform: translateY(100vh);
+  animation: Appear 2.3s 2.6s forwards;
 }
 
 .welcome > a {
@@ -353,13 +393,17 @@ p.hidden {
   border: solid 2px white;
   font-weight: 600;
   padding: 3%;
-  transition: padding 0.3s;
+  transition: padding 0.3s, opacity 0.2s;
   font-size: 1.7rem;
+  opacity: 0;
+  transition: opacity 1s;
 }
 
 .welcome > a:hover {
   padding: 3%;
 }
+
+/*** --- --- ***/
 
 .ui-carousel
 .carousel-btn {
