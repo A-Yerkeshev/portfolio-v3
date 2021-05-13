@@ -7,12 +7,13 @@
 }
 
 @keyframes Appear {
-  0% {
-    transform: translateY(100vh);
-  }
-  100% {
-    transform: translateY(0);
-  }
+  from {transform: translateY(100vh);}
+  to {transform: translateY(0);}
+}
+
+@keyframes Rotate {
+  from {transform: rotate(0deg);}
+  to {transform: rotate(360deg);}
 }
 
 ::root {
@@ -316,7 +317,7 @@ footer {
 }
 
 
-/*** --- WELCOME PAGE --- ***/
+/*** --- WELCOME PAGE --------------------------------------------------->  ***/
 
 
 .welcome {
@@ -339,40 +340,40 @@ h1.w-char {
   font-size: 4rem;
   display: inline-block;
   margin: 0;
-  transform: translateY(100vh)
+  transform: translateY(100vh);
 }
 
 /* Animate each character in welcome heading */
 .w-char[data-index="1"] {
-  animation: Appear 0.5s 1s forwards;
+  animation: Appear 0.4s 1s forwards, Rotate 1.2s 2.6s;;
 }
 
 .w-char[data-index="2"] {
-  animation: Appear 0.5s 1.2s forwards;
+  animation: Appear 0.4s 1.2s forwards, Rotate 1.2s 2.6s;;
 }
 
 .w-char[data-index="3"] {
-  animation: Appear 0.5s 1.4s forwards;
+  animation: Appear 0.4s 1.4s forwards, Rotate 1.2s 2.6s;;
 }
 
 .w-char[data-index="4"] {
-  animation: Appear 0.5s 1.6s forwards;
+  animation: Appear 0.4s 1.6s forwards, Rotate 1.2s 2.6s;;
 }
 
 .w-char[data-index="5"] {
-  animation: Appear 0.5s 1.8s forwards;
+  animation: Appear 0.4s 1.8s forwards, Rotate 1.2s 2.6s;;
 }
 
 .w-char[data-index="6"] {
-  animation: Appear 0.5s 2s forwards;
+  animation: Appear 0.4s 2s forwards, Rotate 1.2s 2.6s;;
 }
 
 .w-char[data-index="7"] {
-  animation: Appear 0.5s 2.2s forwards;
+  animation: Appear 0.4s 2.2s forwards, Rotate 1.2s 2.6s;;
 }
 
 .w-char[data-index="8"] {
-  animation: Appear 0.5s 2.4s forwards;
+  animation: Appear 0.4s 2.4s forwards, Rotate 1.2s 2.6s;;
 }
 /* --- */
 
@@ -384,7 +385,7 @@ h1.w-char {
   padding-top: 5%;
   margin-top: 3vh;
   transform: translateY(100vh);
-  animation: Appear 2.3s 2.6s forwards;
+  animation: Appear 2s 2.6s forwards;
 }
 
 .welcome > a {
