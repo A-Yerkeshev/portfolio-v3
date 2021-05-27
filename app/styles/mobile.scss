@@ -16,6 +16,13 @@
   to {transform: rotate(360deg);}
 }
 
+@keyframes Spinner {
+  0% {transform: translateX(-100vw);}
+  30% {transform: translateX(0vw);}
+  70% {transform: translateX(0vw);}
+  100% {transform: translateX(100vw);}
+}
+
 ::root {
   font-family: 'Lora', Georgia, serif;
 }
@@ -317,7 +324,9 @@ footer {
 }
 
 
-/*** --- WELCOME PAGE --------------------------------------------------->  ***/
+/* --- WELCOME PAGE ------------------------------------------------------------ */
+/* ----------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------- */
 
 
 .welcome {
@@ -375,7 +384,6 @@ h1.w-char {
 .w-char[data-index="8"] {
   animation: Appear 0.4s 2.4s forwards, Rotate 1.2s 2.6s;;
 }
-/* --- */
 
 .welcome > p {
   border-top: 2px solid white;
@@ -388,6 +396,36 @@ h1.w-char {
   animation: Appear 2s 2.6s forwards;
 }
 
+/* Spinner */
+ul.spinner {
+  display: inline-block;
+  padding: 0;
+  margin: auto;
+  overflow: visible;
+}
+
+ul.spinner li::before {
+  content: "\2022";
+  color: white;
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+ul.spinner li:nth-of-type(1) {
+  transform: translateX(-100vw);
+  animation: Spinner 2.5s ease-in-out 5.1s infinite;
+}
+
+ul.spinner li:nth-of-type(2) {
+  transform: translateX(-100vw);
+  animation: Spinner 2.5s ease-in-out 4.8s infinite;
+}
+
+ul.spinner li:nth-of-type(3) {
+  transform: translateX(-100vw);
+  animation: Spinner 2.5s ease-in-out 4.5s infinite;
+}
+
 .welcome > a {
   color: white;
   background: transparent;
@@ -398,13 +436,16 @@ h1.w-char {
   font-size: 1.7rem;
   opacity: 0;
   transition: opacity 1s;
+  display: none;
 }
 
 .welcome > a:hover {
   padding: 3%;
 }
 
-/*** --- --- ***/
+/* ----------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------- */
 
 .ui-carousel
 .carousel-btn {
