@@ -403,6 +403,7 @@ ul.spinner {
   padding: 0;
   margin: auto;
   overflow: visible;
+  transition: opacity 1s;
 }
 
 ul.spinner li::before {
@@ -433,10 +434,9 @@ ul.spinner li:nth-of-type(3) {
   border: solid 2px white;
   font-weight: 600;
   padding: 3%;
-  transition: padding 0.3s, opacity 0.2s;
+  transition: padding 0.3s, opacity 1.5s;
   font-size: 1.7rem;
   opacity: 0;
-  transition: opacity 1s;
   display: none;
 }
 
