@@ -47,6 +47,10 @@
   background-color: darkgrey;
 }
 
+html {
+  font-size: 16px;
+}
+
 body {
   margin: 0px;
   animation: Gradient 8s linear infinite;
@@ -334,21 +338,21 @@ footer {
   background-image: linear-gradient(100deg, red, maroon, red);
   background-size: 400vw 400vh;
   position: fixed;
-  color: #eec;
+  color: #ffe;
   top: 0;
   left: 0;
   width: 98vw;
   height: 100vh;
   text-align: center;
   overflow: hidden;
-  padding: 8vh 1vw 0 1vw;
+  padding: 5vh 1vw 0 1vw;
   z-index: 1;
 }
 
 h1.w-char {
-  color: white;
   font-size: 3.5rem;
   display: inline-block;
+  color: #ffe;
   margin: 0;
   transform: translateY(100vh);
 }
@@ -387,15 +391,28 @@ h1.w-char {
 }
 
 .welcome > p {
-  border-top: 2px solid white;
-  color: white;
-  font-size: 1.5em;
-  margin: 0 auto 7%;
+  border-top: 2px solid #ffe;
+  font-size: 1.5rem;
+  margin: 0 auto 1rem;
   padding-top: 5%;
   margin-top: 3vh;
   transform: translateY(100vh);
   animation: Appear 2s 2.6s forwards;
   width: 80%;
+  height: 45vh;
+  overflow: hidden;
+}
+
+/* Expand button */
+.expand {
+  border: solid #ffe;
+  border-width: 0 6px 6px 0;
+  width: 24px;
+  height: 24px;
+  display: block;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  margin: 0 auto 1.4rem;
 }
 
 /* Spinner */
@@ -430,11 +447,11 @@ ul.spinner li:nth-of-type(3) {
 }
 
 .welcome > a {
-  color: white;
+  color: #ffe;
   background: transparent;
-  border: solid 2px white;
+  border: solid 2px #ffe;
   font-weight: 600;
-  padding: 3%;
+  padding: 1rem;
   transition: padding 0.3s, opacity 1.5s;
   font-size: 1.7rem;
   opacity: 0;
@@ -442,7 +459,7 @@ ul.spinner li:nth-of-type(3) {
 }
 
 .welcome > a:hover {
-  padding: 4%;
+  padding: 1.4rem;
 }
 
 /* ----------------------------------------------------------------------------- */
