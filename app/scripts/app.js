@@ -21,7 +21,7 @@ angular
   .config(function ($routeProvider) {
     $routeProvider
       .when('/', {
-        redirectTo: '/projects'
+        templateUrl: '/views/blank.html'
       })
       .when('/projects', {
         templateUrl: '/views/projects.html'
