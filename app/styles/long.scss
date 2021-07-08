@@ -1,58 +1,21 @@
 html {
-  font-size: 12px;
-}
-
-table {
-  width: 90%;
-}
-
-p {
-  margin: 5%;
+  font-size: 18px;
 }
 
 /* --- WELCOME PAGE ------------------------------------------------------------ */
 /* ----------------------------------------------------------------------------- */
 /* ----------------------------------------------------------------------------- */
 .w-char {
-  font-size: 4rem;
+  font-size: 5rem;
 }
 
 .w-par {
-  font-size: 2rem;
-}
-
-#continue-btn {
-  padding: 1rem;
-  font-size: 1.8rem;
-}
-
-#continue-btn:hover {
-  padding: 1.4rem;
-  font-size: 2rem;
-}
-
-.sn-icon > i {
-  font-size: 2.4rem;
+  margin: 2rem auto 0;
+  width: 50%;
+  height: 40vh;
+  margin: 2rem auto 5rem;
 }
 
 /* ----------------------------------------------------------------------------- */
 /* ----------------------------------------------------------------------------- */
 /* ----------------------------------------------------------------------------- */
-
-.project {
-  margin: 1%;
-  width: 90%;
-  display: inline-block;
-}
-
-.header {
-  padding: 2%;
-}
-
-.proj-prev > img {
-  width: 40%;
-}
-
-.proj-prev > img:hover {
-  width: 42%;
-}

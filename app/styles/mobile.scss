@@ -350,8 +350,8 @@ footer {
   box-sizing: border-box;
 }
 
-h1.w-char {
-  font-size: 3.5rem;
+.w-char {
+  font-size: 3.6rem;
   display: inline-block;
   color: $light;
   margin: 0;
@@ -397,7 +397,7 @@ h1.w-char {
   border-image-slice: 32;
   border-image-repeat: repeat;
 
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   width: 80%;
   height: 50vh;
 
@@ -448,16 +448,16 @@ ul.spinner li:nth-of-type(3) {
   background: transparent;
   border: solid 2px $light;
   font-weight: 600;
-  padding: 1rem;
+  padding: 0.6rem;
   transition: padding 0.3s, opacity 1.5s;
-  font-size: 1.7rem;
+  font-size: 1.4rem;
   opacity: 0;
   display: none;
 }
 
 #continue-btn:hover {
-  font-size: 1.8rem;
-  padding: 1.2rem;
+  font-size: 1.6rem;
+  padding: 0.8rem;
 }
 
 .sn-icon {
@@ -467,11 +467,11 @@ ul.spinner li:nth-of-type(3) {
 }
 
 .sn-icon > i {
-  font-size: 32px;
+  font-size: 2rem;
 }
 
 .sn-icon:nth-of-type(2) {
-  right: calc(32px + 2rem);
+  right: 4.4rem
 }
 
 .sn-icon:last-of-type {

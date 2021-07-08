@@ -10,17 +10,23 @@ table {
 /* ----------------------------------------------------------------------------- */
 /* ----------------------------------------------------------------------------- */
 
-h1.w-char {
-  font-size: 4.5rem;
+.w-char {
+  font-size: 4.8rem;
 }
 
-.welcome > p {
+.w-par {
   width: 60%;
   text-align: justify;
 }
 
-.welcome > a {
-  font-size: 1.5rem;
+#continue-btn {
+  padding: 1.4rem;
+  font-size: 2rem;
+}
+
+#continue-btn:hover {
+  padding: 1.6rem;
+  font-size: 2.2rem;
 }
 
 /* ----------------------------------------------------------------------------- */
