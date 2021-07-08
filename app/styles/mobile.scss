@@ -1,5 +1,7 @@
 $light: #ffe;
 $red-text: #d00;
+$cinzel: cinzel, "Times New Roman", serif;
+$quattrocento: quattrocento, "Times New Roman", serif;
 
 /* Font Cinzel by ndiscovered https://www.1001fonts.com/cinzel-font.html*/
 @font-face {
@@ -60,14 +62,13 @@ $red-text: #d00;
 
 html {
   font-size: 14px;
-  font-family: quattrocento;
+  font-family: $quattrocento;
 }
 
 body {
-  margin: 0px;
-  animation: Gradient 8s linear infinite;
-  background-image: linear-gradient(100deg, red, maroon, red);
-  background-size: 400% 400%;}
+  margin: 0;
+  overflow: hidden;
+}
 
 a {
   text-decoration: none;
@@ -131,17 +132,37 @@ footer {
   background-size: 400% 400%;
 }
 
+/* --- Page sliding ------------------------------------------------------------ */
+/* ----------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------- */
+body .ng-enter,
+body .ng-leave {
+  transition: all 1.8s ease;
+}
+
+body .ng-enter {
+  left: 100%;
+}
+
+body .ng-enter-active {
+  left: 0%;
+}
+
+body .ng-leave {
+  left: 0%;
+}
+
+body .ng-leave-active {
+  left: -100%;
+}
+
 .view {
   position: absolute;
   background-color: white;
   left: 0;
+  top: 0;
   width: 100%;
   text-align: center;
-}
-
-.view.ng-enter,
-.view.ng-leave {
-  transition: all 1s ease;
 }
 
 .view.ng-enter {
@@ -163,6 +184,10 @@ footer {
   left: -100%;
   opacity: 0;
 }
+
+/* ----------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------- */
 
 .view button {
   border: solid 2px var(--red-text);
@@ -365,7 +390,7 @@ footer {
 
 .w-char {
   font-size: 3.6rem;
-  font-family: cinzel;
+  font-family: $cinzel;
   display: inline-block;
   color: $light;
   margin: 0;
@@ -459,7 +484,7 @@ ul.spinner li:nth-of-type(3) {
 }
 
 #continue-btn {
-  font-family: cinzel;
+  font-family: $cinzel;
   background: transparent;
   border: solid 2px $light;
   font-weight: 600;
