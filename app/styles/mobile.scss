@@ -1,4 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+$light: #ffe;
+$red-text: #d00;
+
+/* Font Cinzel by ndiscovered https://www.1001fonts.com/cinzel-font.html*/
+@font-face {
+  font-family: cinzel;
+  src: url(/fonts/cinzel.regular.ttf);
+}
+
+/* Font Qattrocento by Impallari Type https://www.1001fonts.com/quattrocento-font.html*/
+@font-face {
+  font-family: quattrocento;
+  src: url(/fonts/quattrocento.regular.ttf);
+}
+
+@font-face {
+  font-family: quattrocento;
+  src: url(/fonts/quattrocento.bold.ttf);
+  font-weight: bold;
+}
 
 @keyframes Gradient {
   0% {background-position: 0% 50%}
@@ -23,13 +42,6 @@
   100% {transform: translateX(100vw);}
 }
 
-::root {
-  font-family: 'Lora', Georgia, serif;
-}
-
-$light: #ffe;
-$red-text: #d00;
-
 ::-webkit-scrollbar {
   width: 8px;
 }
@@ -48,6 +60,7 @@ $red-text: #d00;
 
 html {
   font-size: 14px;
+  font-family: quattrocento;
 }
 
 body {
@@ -352,6 +365,7 @@ footer {
 
 .w-char {
   font-size: 3.6rem;
+  font-family: cinzel;
   display: inline-block;
   color: $light;
   margin: 0;
@@ -445,6 +459,7 @@ ul.spinner li:nth-of-type(3) {
 }
 
 #continue-btn {
+  font-family: cinzel;
   background: transparent;
   border: solid 2px $light;
   font-weight: 600;
