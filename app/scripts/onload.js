@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-  const body = document.getElementsByTagName('body');
+  const body = document.querySelector('body');
   const welcome = document.querySelector('.welcome');
   const spinner = document.querySelector('.spinner');
   const continueBtn = document.querySelector('#continue-btn');
@@ -25,7 +25,8 @@ document.addEventListener('DOMContentLoaded', function() {
       welcome.classList.remove('ng-leave', 'ng-leave-active');
       view.classList.remove('ng-enter', 'ng-enter-active');
       body.style.overflowY = 'scroll';
-    }, 12000)
+      welcome.style.display = 'none';
+    }, 2000)
   })
 })
 
