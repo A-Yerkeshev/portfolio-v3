@@ -45,11 +45,22 @@
     <![endif]-->
 
     <!-- Add your site or application content here -->
-    <div class="header">
-      <a class="nav-btn" ng-href="#!/projects" ng-click="setCurrentProject(null)">Projects</a>
-      <a class="nav-btn" ng-href="#!/profile" ng-click="setCurrentProject(null)">Profile</a>
-      <a class="nav-btn" ng-href="#!/contacts" ng-click="setCurrentProject(null)">Contacts</a>
-    </div>
+    <header>
+      <div class="top-container">
+        <a class="sn-icon" href="https://github.com/A-Yerkeshev" target="_blank"><i class="fab fa-github"></i></a>
+        <ul class="header-decor">
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+        <a class="sn-icon" href="https://www.linkedin.com/in/arman-yerkesh-29b8a7165/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+      <nav>
+        <a class="nav-btn" ng-href="#!/projects" ng-click="setCurrentProject(null)">Projects</a>
+        <a class="nav-btn" ng-href="#!/profile" ng-click="setCurrentProject(null)">Profile</a>
+        <a class="nav-btn" ng-href="#!/contacts" ng-click="setCurrentProject(null)">Contacts</a>
+      </nav>
+    </header>
 
     <ng-view class="view"></ng-view>
 

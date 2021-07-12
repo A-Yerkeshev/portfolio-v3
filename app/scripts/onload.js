@@ -1,6 +1,6 @@
 "use strict";
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', (event) => {
   const body = document.querySelector('body');
   const welcome = document.querySelector('.welcome');
   const spinner = document.querySelector('.spinner');
@@ -31,4 +31,3 @@ document.addEventListener('DOMContentLoaded', function() {
     }, 2000);
   });
 });
-

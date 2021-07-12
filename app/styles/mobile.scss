@@ -1,5 +1,5 @@
 $light: #ffe;
-$red-text: #d00;
+$red: #d00;
 $cinzel: cinzel, "Times New Roman", serif;
 $quattrocento: quattrocento, "Times New Roman", serif;
 
@@ -81,29 +81,22 @@ input, button {
 ul {
   list-style: none;
   overflow: hidden;
+  margin: 0;
 }
 
 ul li::before {
-  content: "\2022";
-  color: $red-text;
-  font-weight: bold;
-  display: inline-block;
-  width: 1em;
-}
-
-ul li {
-  float: left;
+  content: "";
 }
 
 h1 {
-  color: $red-text;
+  color: $red;
   text-align: center;
   font-size: 1.5em;
   margin: 0.5rem;
 }
 
 h2 {
-  color: $red-text;
+  color: $red;
   text-align: center;
   font-size: 1.2em;
 }
@@ -156,14 +149,38 @@ body .ng-leave-active {
   left: -100%;
 }
 
+/* --- View -------------------------------------------------------------------- */
+
 .view {
   position: absolute;
   background-color: white;
   left: 0;
-  top: 0;
   width: 100%;
   text-align: center;
 }
+
+.view button {
+  border: solid 2px $red;
+  color: $red;
+  background-color: white;
+  cursor: pointer;
+  margin: 1%;
+  margin-top: 5%;
+  padding: 2%;
+  transition: padding 0.3s;
+}
+
+.view button:hover {
+  padding: 3%;
+}
+
+.view button:active {
+  color: white;
+  background-color: $red;
+  border: solid 2px white;
+}
+
+/* ------------------------------------------------------------------------------- */
 
 .view.ng-enter {
   left: 100%;
@@ -185,39 +202,38 @@ body .ng-leave-active {
   opacity: 0;
 }
 
+/* ---Header-------------------------------------------------------------------- */
 /* ----------------------------------------------------------------------------- */
 /* ----------------------------------------------------------------------------- */
-/* ----------------------------------------------------------------------------- */
 
-.view button {
-  border: solid 2px $red-text;
-  color: $red-text;
-  background-color: white;
-  cursor: pointer;
-  margin: 1%;
-  margin-top: 5%;
-  padding: 2%;
-  transition: padding 0.3s;
-}
-
-.view button:hover {
-  padding: 3%;
-}
-
-.view button:active {
-  color: white;
-  background-color: $red-text;
-  border: solid 2px white;
-}
-
-.header {
+header {
   animation: Gradient 8s linear infinite;
   background-image: linear-gradient(100deg, red, maroon, red);
   background-size: 400% 400%;
-  color: white;
+
+  width: 100%;
+  height: 4rem;
+  box-sizing: border-box;
+
   overflow: hidden;
-  margin-bottom: 1%;
-  display: none;
+  padding: 0.6rem;
+  margin-bottom: 0.2rem;
+}
+
+.top-container, nav {
+  display: flex;
+}
+
+.top-container {
+  justify-content: space-between;
+}
+
+header .sn-icon {
+  color: $light;
+}
+
+nav {
+  color: $light
 }
 
 .nav-btn {
@@ -235,9 +251,13 @@ body .ng-leave-active {
 
 .nav-btn:active {
   background-color: white;
-  color: $red-text;
-  border: solid 1px $red-text;
+  color: $red;
+  border: solid 1px $red;
 }
+
+/* ----------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------- */
 
 .project {
   width: 100%;
@@ -251,8 +271,8 @@ body .ng-leave-active {
   color: white;
   padding: 2%;
   display: block;
-  background-color: indigo;
-  border-bottom: 3px solid $red-text;
+  background-color: $red;
+  border-bottom: 3px solid $red;
 }
 
 .project > img {
@@ -277,7 +297,7 @@ body .ng-leave-active {
 
 .proj-prev > img:hover {
   width: 32%;
-  box-shadow: 0px 0px 2px 2px $red-text;
+  box-shadow: 0px 0px 2px 2px $red;
 }
 
 .proj-prev > p {
@@ -286,13 +306,13 @@ body .ng-leave-active {
 
 .proj-prev > h2 {
   margin-top: 0;
-  color: $red-text;
+  color: $red;
   padding: 1%;
-  border-bottom: 2px solid $red-text;
+  border-bottom: 2px solid $red;
 }
 
 .proj-prev > ul {
-  border-top: 2px solid $red-text;
+  border-top: 2px solid $red;
   padding-top: 2%;
 }
 
@@ -303,7 +323,7 @@ body .ng-leave-active {
 .current-project img {
   margin-bottom: 3%;
   width: 70%;
-  box-shadow: 0px 0px 2px 2px $red-text;
+  box-shadow: 0px 0px 2px 2px $red;
   transition: box-shadow 0.5s, width 0.5s;
   cursor: pointer;
 }
@@ -314,12 +334,12 @@ body .ng-leave-active {
 }
 
 .current-project > em {
-  color: $red-text;
+  color: $red;
   text-align: center;
 }
 
 .current-project > p {
-  border-bottom: solid $red-text;
+  border-bottom: solid $red;
 }
 
 .profile {
@@ -327,7 +347,7 @@ body .ng-leave-active {
 }
 
 .profile > em {
-  color: $red-text;
+  color: $red;
   font-size: 1.2em;
   margin-bottom: 5%;
   display: block;
@@ -338,7 +358,7 @@ body .ng-leave-active {
 }
 
 .profile > p {
-  border-bottom: solid $red-text;
+  border-bottom: solid $red;
 }
 
 .profile a {
@@ -371,6 +391,9 @@ body .ng-leave-active {
 
 
 .welcome {
+  // Temporary
+  display: none;
+
   animation: Gradient 8s linear infinite;
   background-image: linear-gradient(100deg, red, maroon, red);
   background-size: 400vw 400vh;
@@ -384,7 +407,7 @@ body .ng-leave-active {
   padding: 5vh 0 0 1vw;
   z-index: 1;
   overflow: hidden;
-  position: relative;
+  position: absolute;
   box-sizing: border-box;
 }
 
@@ -500,21 +523,21 @@ ul.spinner li:nth-of-type(3) {
   padding: 0.8rem;
 }
 
-.sn-icon {
+.welcome .sn-icon {
   position: absolute;
   bottom: 1rem;
   font-size: 1.2rem;
 }
 
-.sn-icon > i {
+.welcome .sn-icon > i {
   font-size: 2rem;
 }
 
-.sn-icon:nth-of-type(2) {
+.welcome .sn-icon:nth-of-type(2) {
   right: 4.4rem
 }
 
-.sn-icon:last-of-type {
+.welcome .sn-icon:last-of-type {
   right: 1rem;
 }
 
@@ -577,7 +600,7 @@ ul.spinner li:nth-of-type(3) {
 
 .carousel-dots li button:before {
   content: "\2022";
-  color: $red-text;
+  color: $red;
   font-weight: bold;
   display: inline-block;
   width: 1.5em;
