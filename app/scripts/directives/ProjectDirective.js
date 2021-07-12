@@ -1,3 +1,5 @@
+"use strict";
+
 Portfolio.directive('projectDirective', function() {
   var Directive = {};
 
@@ -6,4 +8,4 @@ Portfolio.directive('projectDirective', function() {
   Directive.template = template;
 
   return Directive;
-})
+});

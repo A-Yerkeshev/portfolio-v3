@@ -85,7 +85,7 @@ ul {
 
 ul li::before {
   content: "\2022";
-  color: var(--red-text);
+  color: $red-text;
   font-weight: bold;
   display: inline-block;
   width: 1em;
@@ -96,14 +96,14 @@ ul li {
 }
 
 h1 {
-  color: var(--red-text);
+  color: $red-text;
   text-align: center;
   font-size: 1.5em;
   margin: 0.5rem;
 }
 
 h2 {
-  color: var(--red-text);
+  color: $red-text;
   text-align: center;
   font-size: 1.2em;
 }
@@ -190,8 +190,8 @@ body .ng-leave-active {
 /* ----------------------------------------------------------------------------- */
 
 .view button {
-  border: solid 2px var(--red-text);
-  color: var(--red-text);
+  border: solid 2px $red-text;
+  color: $red-text;
   background-color: white;
   cursor: pointer;
   margin: 1%;
@@ -206,7 +206,7 @@ body .ng-leave-active {
 
 .view button:active {
   color: white;
-  background-color: var(--red-text);
+  background-color: $red-text;
   border: solid 2px white;
 }
 
@@ -235,8 +235,8 @@ body .ng-leave-active {
 
 .nav-btn:active {
   background-color: white;
-  color: var(--red-text);
-  border: solid 1px var(--red-text);
+  color: $red-text;
+  border: solid 1px $red-text;
 }
 
 .project {
@@ -252,7 +252,7 @@ body .ng-leave-active {
   padding: 2%;
   display: block;
   background-color: indigo;
-  border-bottom: 3px solid var(--red-text);
+  border-bottom: 3px solid $red-text;
 }
 
 .project > img {
@@ -277,7 +277,7 @@ body .ng-leave-active {
 
 .proj-prev > img:hover {
   width: 32%;
-  box-shadow: 0px 0px 2px 2px var(--red-text);
+  box-shadow: 0px 0px 2px 2px $red-text;
 }
 
 .proj-prev > p {
@@ -286,13 +286,13 @@ body .ng-leave-active {
 
 .proj-prev > h2 {
   margin-top: 0;
-  color: var(--red-text);
+  color: $red-text;
   padding: 1%;
-  border-bottom: 2px solid var(--red-text);
+  border-bottom: 2px solid $red-text;
 }
 
 .proj-prev > ul {
-  border-top: 2px solid var(--red-text);
+  border-top: 2px solid $red-text;
   padding-top: 2%;
 }
 
@@ -303,7 +303,7 @@ body .ng-leave-active {
 .current-project img {
   margin-bottom: 3%;
   width: 70%;
-  box-shadow: 0px 0px 2px 2px var(--red-text);
+  box-shadow: 0px 0px 2px 2px $red-text;
   transition: box-shadow 0.5s, width 0.5s;
   cursor: pointer;
 }
@@ -314,12 +314,12 @@ body .ng-leave-active {
 }
 
 .current-project > em {
-  color: var(--red-text);
+  color: $red-text;
   text-align: center;
 }
 
 .current-project > p {
-  border-bottom: solid var(--red-text);
+  border-bottom: solid $red-text;
 }
 
 .profile {
@@ -327,7 +327,7 @@ body .ng-leave-active {
 }
 
 .profile > em {
-  color: var(--red-text);
+  color: $red-text;
   font-size: 1.2em;
   margin-bottom: 5%;
   display: block;
@@ -338,7 +338,7 @@ body .ng-leave-active {
 }
 
 .profile > p {
-  border-bottom: solid var(--red-text);
+  border-bottom: solid $red-text;
 }
 
 .profile a {
@@ -577,7 +577,7 @@ ul.spinner li:nth-of-type(3) {
 
 .carousel-dots li button:before {
   content: "\2022";
-  color: var(--red-text);
+  color: $red-text;
   font-weight: bold;
   display: inline-block;
   width: 1.5em;

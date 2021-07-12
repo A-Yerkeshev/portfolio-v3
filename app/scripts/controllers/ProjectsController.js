@@ -1,3 +1,5 @@
+"use strict";
+
 Portfolio.controller('ProjectsController', function($scope, $window, ProjectsFactory) {
 
   $scope.currentProject = ProjectsFactory.getCurrentProject();
@@ -25,7 +27,7 @@ Portfolio.controller('ProjectsController', function($scope, $window, ProjectsFac
       $window.open(project.url, '_blank');
     } else {
       $window.open(project.github, '_blank');
-    };
+    }
   };
 
 });

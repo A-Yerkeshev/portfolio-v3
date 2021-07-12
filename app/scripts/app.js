@@ -40,4 +40,4 @@ angular
       });
   });
 
-  var Portfolio = angular.module('portfolioApp');
+var Portfolio = angular.module('portfolioApp');

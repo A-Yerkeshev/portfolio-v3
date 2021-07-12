@@ -1,3 +1,5 @@
+"use strict";
+
 document.addEventListener('DOMContentLoaded', function() {
   const body = document.querySelector('body');
   const welcome = document.querySelector('.welcome');
@@ -10,10 +12,10 @@ document.addEventListener('DOMContentLoaded', function() {
   setTimeout(() => {
     spinner.style.display = 'none';
     continueBtn.style.display = 'inline-block';
-  }, 1000)
+  }, 1000);
   setTimeout(() => {
     continueBtn.style.opacity = 1;
-  }, 1200)
+  }, 1200);
 
   // Remove welcome block on continue button click
   continueBtn.addEventListener('click', () => {
@@ -26,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function() {
       view.classList.remove('ng-enter', 'ng-enter-active');
       body.style.overflowY = 'scroll';
       welcome.style.display = 'none';
-    }, 2000)
-  })
-})
+    }, 2000);
+  });
+});
 

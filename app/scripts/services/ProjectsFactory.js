@@ -1,3 +1,5 @@
+"use strict";
+
 Portfolio.factory('ProjectsFactory', function() {
   var Factory = {};
 
@@ -334,11 +336,11 @@ Portfolio.factory('ProjectsFactory', function() {
   var currentProject = null;
 
   Factory.getActiveProjects = function() {
-    return activeProjects
+    return activeProjects;
   };
 
   Factory.getInactiveProjects = function() {
-    return inactiveProjects
+    return inactiveProjects;
   };
 
   Factory.getCurrentProject = function() {
