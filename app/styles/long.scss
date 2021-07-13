@@ -1,19 +1,33 @@
+$light: #ffe;
+$red: #d00;
+$cinzel: cinzel, "Times New Roman", serif;
+$quattrocento: quattrocento, "Times New Roman", serif;
+
 html {
-  font-size: 18px;
+  font-size: 22px;
 }
 
 /* --- WELCOME PAGE ------------------------------------------------------------ */
 /* ----------------------------------------------------------------------------- */
 /* ----------------------------------------------------------------------------- */
 .w-char {
-  font-size: 5rem;
+  font-size: 3.8rem;
 }
 
 .w-par {
   margin: 2rem auto 0;
   width: 50%;
-  height: 40vh;
-  margin: 2rem auto 5rem;
+  height: 45vh;
+  margin: 1.8rem auto 4rem;
+  font-size: 1.3rem;
+}
+
+.sn-icon > i {
+  font-size: 2rem;
+}
+
+.welcome .sn-icon:nth-of-type(2) {
+  right: 4rem;
 }
 
 /* ----------------------------------------------------------------------------- */

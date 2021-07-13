@@ -1,3 +1,8 @@
+$light: #ffe;
+$red: #d00;
+$cinzel: cinzel, "Times New Roman", serif;
+$quattrocento: quattrocento, "Times New Roman", serif;
+
 h1 {
   font-size: 2em;
   margin-bottom: 5%;
@@ -25,9 +30,7 @@ table {
 }
 
 .w-par {
-  width: 50%;
-  margin: 2rem auto 2rem;
-  height: 40vh;
+  width: 50%;  height: 45vh;
   font-size: 1.2rem;
 }
 

@@ -1,3 +1,8 @@
+$light: #ffe;
+$red: #d00;
+$cinzel: cinzel, "Times New Roman", serif;
+$quattrocento: quattrocento, "Times New Roman", serif;
+
 html {
   font-size: 20px;
 }
@@ -8,6 +13,16 @@ ul li {
 
 table {
   font-size: 1.2em;
+}
+
+.btn {
+  padding: 0.6rem;
+  border: 2px solid $red;
+}
+
+.btn:hover {
+  padding: 0.8rem;
+  font-size: 1.3rem;
 }
 
 /* --- WELCOME PAGE ------------------------------------------------------------ */
@@ -21,16 +36,7 @@ table {
 .w-par {
   width: 60%;
   text-align: justify;
-}
-
-.btn {
-  padding: 1.4rem;
-  font-size: 2rem;
-}
-
-.btn:hover {
-  padding: 1.6rem;
-  font-size: 2.2rem;
+  margin: 2rem auto 1rem;
 }
 
 .welcome .sn-icon:nth-of-type(2) {
