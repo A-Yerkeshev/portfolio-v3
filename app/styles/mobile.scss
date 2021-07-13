@@ -82,6 +82,7 @@ ul {
   list-style: none;
   overflow: hidden;
   margin: 0;
+  padding: 0;
 }
 
 ul li::before {
@@ -115,7 +116,7 @@ table {
   margin: 5%;
   padding-top: 5%;
   padding-bottom: 5%;
-  background-color: white;
+  background-color: $light;
 }
 
 footer {
@@ -123,6 +124,20 @@ footer {
   animation: Gradient 8s linear infinite;
   background-image: linear-gradient(100deg, red, maroon, red);
   background-size: 400% 400%;
+}
+
+.btn {
+  font-family: $cinzel;
+  border: solid 2px $light;
+  font-weight: 600;
+  padding: 0.6rem;
+  transition: padding 0.3s, opacity 1.5s;
+  font-size: 1.4rem;
+}
+
+.btn:hover {
+  font-size: 1.6rem;
+  padding: 0.8rem;
 }
 
 /* --- WELCOME PAGE ------------------------------------------------------------ */
@@ -293,7 +308,7 @@ header {
   height: 4rem;
   box-sizing: border-box;
 
-  overflow: hidden;
+  overflow-x: hidden;
   margin-bottom: 0.2rem;
 }
 
@@ -318,8 +333,8 @@ nav {
 
 .nav-btn {
   float: left;
-  color: white;
-  border: solid 1px white;
+  color: $light;
+  border: solid 1px $light;
   padding: 2%;
   transition: padding 0.3s;
   margin: 1%;
@@ -330,7 +345,7 @@ nav {
 }
 
 .nav-btn:active {
-  background-color: white;
+  background-color: $light;
   color: $red;
   border: solid 1px $red;
 }
@@ -364,7 +379,7 @@ body .ng-leave-active {
 
 .view {
   position: absolute;
-  background-color: white;
+  background-color: $light;
   left: 0;
   width: 100%;
   text-align: center;
@@ -373,7 +388,7 @@ body .ng-leave-active {
 .view button {
   border: solid 2px $red;
   color: $red;
-  background-color: white;
+  background-color: $light;
   cursor: pointer;
   margin: 1%;
   margin-top: 5%;
@@ -386,9 +401,9 @@ body .ng-leave-active {
 }
 
 .view button:active {
-  color: white;
+  color: $light;
   background-color: $red;
-  border: solid 2px white;
+  border: solid 2px $light;
 }
 
 /* ------------------------------------------------------------------------------- */
@@ -426,7 +441,7 @@ body .ng-leave-active {
 }
 
 .project > span {
-  color: white;
+  color: $light;
   padding: 2%;
   display: block;
   background-color: $red;
@@ -440,7 +455,7 @@ body .ng-leave-active {
 .proj-prev {
   opacity: 0;
   position: absolute;
-  background-color: white;
+  background-color: $light;
   width: 100%;
   height: 100%;
   transition: opacity 0.5s;
@@ -487,7 +502,7 @@ body .ng-leave-active {
 }
 
 .current-project img:hover {
-  box-shadow: 0px 0px 2px 2px white;
+  box-shadow: 0px 0px 2px 2px $light;
   width: 72%;
 }
 
@@ -521,8 +536,8 @@ body .ng-leave-active {
 
 .profile a {
   display: inline-block;
-  border: solid 2px white;
-  color: white;
+  border: solid 2px $light;
+  color: $light;
   cursor: pointer;
   margin-top: 2%;
   margin-bottom: 2%;
@@ -549,7 +564,7 @@ body .ng-leave-active {
 .carousel-btn {
   opacity: 1;
   font-size: 3em;
-  color: white;
+  color: $light;
 }
 
 .ui-carousel
@@ -613,7 +628,7 @@ body .ng-leave-active {
 }
 
 .carousel-dots li button:active {
-  color: white;
+  color: $light;
   background-color: transparent;
   border: none;
 }
@@ -627,7 +642,7 @@ body .ng-leave-active {
   animation: Gradient 8s linear infinite;
   background-image: linear-gradient(100deg, red, maroon, red);
   background-size: 400% 400%;
-  color: white;
+  color: $light;
 }
 
 .carousel-item p {
