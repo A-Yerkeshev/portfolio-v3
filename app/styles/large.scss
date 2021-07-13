@@ -21,13 +21,30 @@ table {
 /* ----------------------------------------------------------------------------- */
 /* ----------------------------------------------------------------------------- */
 .w-char {
-  font-size: 5rem;
+  font-size: 3.6rem;
 }
 
 .w-par {
   width: 50%;
-  margin: 3rem auto 2rem;
+  margin: 2rem auto 2rem;
   height: 40vh;
+  font-size: 1.2rem;
+}
+
+.welcome .sn-icon {
+  bottom: 0.8rem;
+}
+
+.sn-icon > i {
+  font-size: 1.4rem;
+}
+
+.welcome .sn-icon:nth-of-type(2) {
+  right: 3rem;
+}
+
+.welcome .sn-icon:last-of-type {
+  right: 0.8rem;
 }
 
 /* ---Header-------------------------------------------------------------------- */
