@@ -61,7 +61,7 @@ $quattrocento: quattrocento, "Times New Roman", serif;
 }
 
 html {
-  font-size: 14px;
+  font-size: 18px;
   font-family: $quattrocento;
 }
 
@@ -132,11 +132,11 @@ footer {
   font-weight: 600;
   padding: 0.6rem;
   transition: padding 0.3s, opacity 1.5s;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
 }
 
 .btn:hover {
-  font-size: 1.6rem;
+  font-size: 1.3rem;
   padding: 0.8rem;
 }
 
@@ -145,8 +145,8 @@ footer {
 /* ----------------------------------------------------------------------------- */
 
 .welcome {
-  // Temporary
-  display: none;
+  // // Temporary
+  // display: none;
 
   animation: Gradient 8s linear infinite;
   background-image: linear-gradient(100deg, red, maroon, red);
@@ -166,7 +166,7 @@ footer {
 }
 
 .w-char {
-  font-size: 3.6rem;
+  font-size: 2.2rem;
   font-family: $cinzel;
   display: inline-block;
   color: $light;
@@ -213,7 +213,7 @@ footer {
   border-image-slice: 32;
   border-image-repeat: repeat;
 
-  font-size: 1.6rem;
+  font-size: 1.2rem;
   width: 80%;
   height: 50vh;
 
@@ -267,28 +267,27 @@ ul.spinner li:nth-of-type(3) {
   font-weight: 600;
   padding: 0.6rem;
   transition: padding 0.3s, opacity 1.5s;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   opacity: 0;
   display: none;
 }
 
 #continue-btn:hover {
-  font-size: 1.6rem;
+  font-size: 1.3rem;
   padding: 0.8rem;
 }
 
 .welcome .sn-icon {
   position: absolute;
-  bottom: 1rem;
-  font-size: 1.2rem;
+  bottom: 1.6rem;
 }
 
-.welcome .sn-icon > i {
-  font-size: 2rem;
+.sn-icon > i {
+  font-size: 1.8rem;
 }
 
 .welcome .sn-icon:nth-of-type(2) {
-  right: 4.4rem
+  right: 3.4rem;
 }
 
 .welcome .sn-icon:last-of-type {
@@ -567,9 +566,6 @@ body .ng-leave-active {
 .contacts > p {
   padding-top: 2%;
 }
-
-
-
 
 .ui-carousel
 .carousel-btn {
