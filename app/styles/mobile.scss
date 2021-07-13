@@ -316,7 +316,7 @@ header {
 }
 
 .top-container {
-  padding: 0.6rem;
+  padding: 0.4rem 0.6rem;
   justify-content: space-between;
   align-items: center;
 }
@@ -324,15 +324,23 @@ header {
 header .sn-icon {
   color: $light;
   font-size: 1.8rem;
+  display: flex;
+}
+
+.header-decor > li {
+  display: flex;
 }
 
 .logo {
   width: 4rem;
+  position: absolute;
+  top: 0.2rem;
+  left: calc(50vw - 2rem);
 }
 
 nav {
   background-color: $light;
-  padding: 0.6rem;
+  padding: calc(4.2rem - 1.8rem - 0.8rem + 0.8rem) 0.6rem 0.6rem;
   justify-content: center;
   flex-wrap: wrap;
   gap: 0.8rem;
