@@ -204,7 +204,7 @@ footer {
 
 .w-par {
   border-top: 24px solid transparent;;
-  border-image-source: url(/images/ornament-light.png);
+  border-image-source: url(/images/decor/ornament-light.png);
   border-image-slice: 32;
   border-image-repeat: repeat;
 
@@ -279,6 +279,8 @@ ul.spinner li:nth-of-type(3) {
 
 .sn-icon > i {
   font-size: 1.8rem;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .welcome .sn-icon:nth-of-type(2) {
@@ -305,14 +307,16 @@ header {
   margin-bottom: 0.2rem;
 }
 
+/* Top bar */
 .top-container, nav {
   display: flex;
-  align-items: center;
 }
 
 .top-container {
   padding: 0.4rem 0.6rem;
   justify-content: space-between;
+  align-items: stretch;
+  gap: 0.6rem;
 }
 
 header .sn-icon {
@@ -321,8 +325,11 @@ header .sn-icon {
   display: flex;
 }
 
-.header-decor > li {
+.header-decor {
+  flex-grow: 1;
   display: flex;
+  align-items: stretch;
+  gap: 0.6rem;
 }
 
 .logo {
@@ -332,10 +339,12 @@ header .sn-icon {
   left: calc(50vw - 2rem);
 }
 
+/* Navbar */
 nav {
   background-color: $light;
   padding: calc(4.2rem - 1.8rem - 0.8rem + 0.8rem) 0.6rem 0.6rem;
   justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
   gap: 0.8rem;
 }

@@ -66,6 +66,13 @@ table {
 
 .top-container {
   padding: 0.6rem 1.2rem;
+  gap: 1.2rem;
+  height: 2rem;
+}
+
+// Provide a gap for logo image
+.header-decor li:nth-child(2) {
+  flex-basis: 6rem;
 }
 
 .logo {
