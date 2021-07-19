@@ -336,6 +336,7 @@ header .sn-icon {
   position: absolute;
   top: 0.2rem;
   left: calc(50vw - 2rem);
+  z-index: 1;
 }
 
 /* Navbar */
@@ -353,11 +354,27 @@ nav {
   border: solid 1px $red;
 }
 
-.nav-btn::before {
-  content: url(/images/decor/ornament-small-left-red.png) " ";
+.nav-btn::before,
+.nav-btn::after {
+  content: '';
+  background-size: contain;
   display: inline-block;
   width: 1rem;
   height: 1rem;
+  vertical-align: middle;
+  opacity: 0.8;
+}
+
+.nav-btn::before {
+  content: '';
+  background-image: url(/images/decor/ornament-small-left-red.png);
+  margin-right: 0.4rem;
+}
+
+.nav-btn::after {
+  content: '';
+  background-image: url(/images/decor/ornament-small-right-red.png);
+  margin-left: 0.4rem;
 }
 
 .nav-btn:active {
