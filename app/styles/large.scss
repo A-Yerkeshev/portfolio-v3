@@ -25,11 +25,10 @@ table {
 .btn {
   padding: 0.4rem;
   border: 2px solid $red;
-  font-size: 1rem;
 }
 
 .btn:hover {
-  font-size: 1.2rem;
+  padding: 0.6rem 0.4rem;
 }
 
 /* --- WELCOME PAGE ------------------------------------------------------------ */
@@ -81,7 +80,7 @@ table {
 }
 
 nav {
-  padding: 0.6rem;
+  padding: 0.6rem 1.6rem;
 }
 
 .nav-btn:nth-child(3) {
