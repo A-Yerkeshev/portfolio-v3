@@ -101,12 +101,12 @@ h1, h2, h3, h4, h5 {
 }
 
 h1 {
-  font-size: 1.5em;
-  margin: 0.5rem;
+  font-size: 1.6rem;
+  margin: 0.4rem;
 }
 
 h2 {
-  font-size: 1.2em;
+  font-size: 1.2rem;
 }
 
 td, th {
@@ -423,6 +423,15 @@ body .ng-leave-active {
 }
 
 @media only screen and (min-width: 500px) {
+  .btn {
+    border: 2px solid $red;
+    font-size: 1rem;
+  }
+
+  .btn:hover {
+    padding: 0.6rem 0.4rem;
+  }
+
   details p {
     border: solid 1px $frame-dark;
     padding: 0.4rem;
@@ -430,5 +439,12 @@ body .ng-leave-active {
 }
 
 @media only screen and (min-width: 700px) {
+  h1 {
+    font-size: 1.8rem;
+    margin: 0.6rem;
+  }
 
+  .btn {
+    padding: 0.4rem;
+  }
 }
