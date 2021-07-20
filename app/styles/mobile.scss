@@ -163,58 +163,6 @@ body .ng-leave-active {
   left: -100%;
 }
 
-/* --- View -------------------------------------------------------------------- */
-
-.view {
-  position: absolute;
-  background-color: $light;
-  left: 0;
-  width: 100%;
-}
-
-.view button {
-  border: solid 2px $red;
-  color: $red;
-  background-color: $light;
-  cursor: pointer;
-  margin: 1%;
-  margin-top: 5%;
-  padding: 2%;
-  transition: padding 0.3s;
-}
-
-.view button:hover {
-  padding: 3%;
-}
-
-.view button:active {
-  color: $light;
-  background-color: $red;
-  border: solid 2px $light;
-}
-
-/* ------------------------------------------------------------------------------- */
-
-.view.ng-enter {
-  left: 100%;
-  opacity: 0;
-}
-
-.view.ng-enter-active {
-  left: 0%;
-  opacity: 1;
-}
-
-.view.ng-leave {
-  left: 0%;
-  opacity: 1;
-}
-
-.view.ng-leave-active {
-  left: -100%;
-  opacity: 0;
-}
-
 /* ----------------------------------------------------------------------------- */
 /* ----------------------------------------------------------------------------- */
 /* ----------------------------------------------------------------------------- */
