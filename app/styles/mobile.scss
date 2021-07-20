@@ -1,5 +1,6 @@
 $light: #ffe;
 $red: #d00;
+$frame-dark: #983;
 $dark: #333;
 $cinzel: cinzel, "Times New Roman", serif;
 $quattrocento: quattrocento, "Times New Roman", serif;
@@ -108,11 +109,6 @@ h2 {
   font-size: 1.2em;
 }
 
-p {
-  margin: 2%;
-  padding-bottom: 5%;
-}
-
 td, th {
   text-align: left;
   padding: 1%;
@@ -139,6 +135,35 @@ footer {
   padding: 0.4rem;
   transition: padding 0.2s, opacity 1.5s;
   font-size: 1.1rem;
+}
+
+summary {
+  list-style-type: none;
+  cursor: pointer;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+summary::before {
+  content: '';
+  display: inline-block;
+  background-image: url(/images/decor/arrow-right-red.png);
+  background-size: contain;
+  width: 1rem;
+  height: 1rem;
+  transition: transform 0.3s;
+  margin-right: 0.2rem;
+}
+
+details[open] summary::before {
+  transform: rotate(90deg);
+}
+
+details p {
+  font-size: 1rem;
+  line-height: 1.4rem;
 }
 
 /* --- Page sliding ------------------------------------------------------------ */
@@ -391,4 +416,19 @@ body .ng-leave-active {
   background-image: linear-gradient(100deg, red, maroon, red);
   background-size: 400% 400%;
   display: flex;
+}
+
+@media only screen and (min-width: 300px) {
+
+}
+
+@media only screen and (min-width: 500px) {
+  details p {
+    border: solid 1px $frame-dark;
+    padding: 0.4rem;
+  }
+}
+
+@media only screen and (min-width: 700px) {
+
 }

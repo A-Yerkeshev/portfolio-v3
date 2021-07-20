@@ -3,25 +3,3 @@
   font-size: 1.2rem;
   line-height: 1.8rem;
 }
-
-summary {
-  list-style-type: none;
-}
-
-summary::-webkit-details-marker {
-  display: none;
-}
-
-summary::before {
-  content: '';
-  display: inline-block;
-  background-image: url(/images/decor/arrow-right-red.png);
-  background-size: contain;
-  width: 1rem;
-  height: 1rem;
-  transition: transform 0.2s;
-}
-
-details[open] summary::before {
-  transform: rotate(90deg);
-}
