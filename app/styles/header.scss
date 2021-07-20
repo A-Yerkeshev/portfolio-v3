@@ -1,0 +1,153 @@
+$light: #ffe;
+$red: #d00;
+
+header {
+  animation: Gradient 8s linear infinite;
+  background-image: linear-gradient(100deg, red, maroon, red);
+  background-size: 400% 400%;
+
+  width: 100%;
+  box-sizing: border-box;
+
+  overflow-x: hidden;
+  margin-bottom: 0.2rem;
+}
+
+/* Top bar */
+.top-container, nav {
+  display: flex;
+}
+
+.top-container {
+  padding: 0.4rem 0.6rem;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 0.6rem;
+}
+
+header .sn-icon {
+  color: $light;
+  font-size: 1.8rem;
+  display: flex;
+}
+
+.header-decor {
+  flex-grow: 1;
+  display: flex;
+  align-items: stretch;
+  gap: 0.6rem;
+}
+
+.logo {
+  width: 4rem;
+  position: absolute;
+  top: 0.2rem;
+  left: calc(50vw - 2rem);
+  z-index: 1;
+}
+
+/* Navbar */
+nav {
+  background-color: $light;
+  padding: calc(4.2rem - 1.8rem - 0.8rem + 0.8rem) 0.6rem 0.6rem;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+}
+
+.nav-btn {
+  color: $red;
+  border: solid 1px $red;
+}
+
+.nav-btn::before,
+.nav-btn::after {
+  content: '';
+  background-size: contain;
+  display: inline-block;
+  width: 0.8rem;
+  height: 0.8rem;
+  vertical-align: middle;
+}
+
+.nav-btn::before {
+  content: '';
+  background-image: url(/images/decor/ornament-small-left-red.png);
+  margin-right: 0.4rem;
+}
+
+.nav-btn::after {
+  content: '';
+  background-image: url(/images/decor/ornament-small-right-red.png);
+  margin-left: 0.4rem;
+}
+
+.nav-btn:active {
+  background-color: $red;
+  color: $light;
+}
+
+nav .fa-download {
+  margin-left: 0.8rem;
+}
+
+
+@media only screen and (min-width: 300px) {
+  .ornament-head {
+    flex-grow: 1;
+    background-size: contain;
+    background-repeat-y: no-repeat;
+    background-position-y: center;
+    opacity: 0.9;
+  }
+
+  .ornament-head:first-child {
+    background-image: url(/images/decor/ornament-head-left.png);
+    background-position-x: right;
+  }
+
+  .ornament-head:last-child {
+    background-image: url(/images/decor/ornament-head-right.png);
+  }
+
+  // Provide a gap for logo image
+  .header-decor li:nth-child(2) {
+    flex-basis: 4.4rem;
+  }
+
+  .logo {
+    width: 4.4rem;
+    left: calc(50vw - 2.1rem);
+  }
+}
+
+@media only screen and (min-width: 500px) {
+
+}
+
+@media only screen and (min-width: 700px) {
+  .top-container {
+    padding: 0.6rem 1.2rem;
+    gap: 1.2rem;
+    height: 2rem;
+  }
+
+  // Provide a gap for logo image
+  .header-decor li:nth-child(2) {
+    flex-basis: 6rem;
+  }
+
+  .logo {
+    width: 6rem;
+    left: calc(50vw - 3rem);
+  }
+
+  nav {
+    padding: 0.6rem 1.6rem;
+  }
+
+  .nav-btn:nth-child(3) {
+    margin-left: auto;
+  }
+}

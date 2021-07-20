@@ -6,41 +6,6 @@ p {
   margin: 5%;
 }
 
-/* ---Header-------------------------------------------------------------------- */
-/* ----------------------------------------------------------------------------- */
-/* ----------------------------------------------------------------------------- */
-
-.ornament-head {
-  flex-grow: 1;
-  background-size: contain;
-  background-repeat-y: no-repeat;
-  background-position-y: center;
-  opacity: 0.9;
-}
-
-.ornament-head:first-child {
-  background-image: url(/images/decor/ornament-head-left.png);
-  background-position-x: right;
-}
-
-.ornament-head:last-child {
-  background-image: url(/images/decor/ornament-head-right.png);
-}
-
-// Provide a gap for logo image
-.header-decor li:nth-child(2) {
-  flex-basis: 4.4rem;
-}
-
-.logo {
-  width: 4.4rem;
-  left: calc(50vw - 2.1rem);
-}
-
-/* ----------------------------------------------------------------------------- */
-/* ----------------------------------------------------------------------------- */
-/* ----------------------------------------------------------------------------- */
-
 .project {
   margin: 1%;
   width: 90%;
