@@ -5,14 +5,14 @@ $red: #d00;
   position: absolute;
   background-color: $light;
   left: 0;
-  width: 100%;
-  padding: 1rem;
+  width: 94vw;
+  margin: 3vw;
   box-sizing: border-box;
 
   border-top: 24px solid transparent;;
   border-image-source: url(/images/decor/ornament-red.png);
   border-image-slice: 32;
-  border-image-repeat: repeat;
+  border-image-repeat: round;
 }
 
 .view button {
