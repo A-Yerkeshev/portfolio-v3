@@ -1,0 +1,48 @@
+$light: #ffe;
+$red: #d00;
+
+#projects {
+  text-align: center;
+}
+
+/* --- Single project item ----------------------------------------------------- */
+/* ----------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------- */
+.proj-prev {
+  background-color: white;
+}
+
+.proj-prev > h2 {
+  background-color: $red;
+  color: $light;
+}
+
+.proj-prev > p {
+  font-weight: bold;
+  padding-bottom: 1rem;
+  border-bottom: solid 1px $red;
+}
+
+.proj-prev > ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.proj-prev > ul > li {
+  margin-right: 0.4rem;
+}
+
+.proj-prev > ul > li:first-child {
+  margin-left: 1.4rem;
+}
+
+.proj-prev > ul > li:not(li:first-child)::before {
+  content: "\25C6";
+  color: $red;
+  margin-right: 0.4rem;
+}
+
+/* ----------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------- */

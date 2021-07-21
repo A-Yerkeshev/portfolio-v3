@@ -23,6 +23,7 @@
     <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/view.css">
     <link rel="stylesheet" href="styles/summary.css">
+    <link rel="stylesheet" href="styles/projects.css">
     <!-- endbuild -->
   </head>
   <div class="welcome">
@@ -94,15 +95,13 @@
     <!-- templates -->
     <script id="project-directive-tmpl" type="text/template">
       <a class="project" ng-href="#!/{{project.href}}" ng-click="setCurrentProject(project)">
-        <div class="proj-prev" ng-mouseover="showTitle($event.currentTarget)" ng-mouseout="hideTitle($event.currentTarget)">
+        <div class="proj-prev">
           <h2>{{project.name}}</h2>
           <p>{{project.title}}</p>
-          <img ng-src="/images/{{project.href}}.jpg">
           <ul>
             <li ng-repeat="tech in project.technologies">{{tech}}</li>
           </ul>
         </div>
-        <span>{{project.name}}</span>
         <img ng-src="/images/{{project.href}}.jpg">
       </a>
     </script>
