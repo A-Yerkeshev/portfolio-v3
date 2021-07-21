@@ -15,7 +15,6 @@
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/*.css -->
     <link rel="stylesheet" href="styles/mobile.css">
-    <link rel="stylesheet" media="(min-width: 300px)" href="styles/mobile-medium.css">
     <link rel="stylesheet" media="(min-width: 500px)" href="styles/medium.css">
     <link rel="stylesheet" media="(min-width: 700px)" href="styles/large.css">
     <link rel="stylesheet" media="(min-height: 700px)" href="styles/long.css">
@@ -98,6 +97,7 @@
         <div class="proj-prev">
           <h2>{{project.name}}</h2>
           <p>{{project.title}}</p>
+          <img class="min" ng-src="/images/{{project.href}}.jpg">
           <ul>
             <li ng-repeat="tech in project.technologies">{{tech}}</li>
           </ul>

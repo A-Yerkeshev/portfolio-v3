@@ -1,5 +1,6 @@
 $light: #ffe;
 $red: #d00;
+$frame-dark: #983;
 
 #projects {
   text-align: center;
@@ -8,8 +9,27 @@ $red: #d00;
 /* --- Single project item ----------------------------------------------------- */
 /* ----------------------------------------------------------------------------- */
 /* ----------------------------------------------------------------------------- */
+.project {
+  display: block;
+  // Height equal to view width;
+  height: 94vw;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 3px $frame-dark;
+}
+
+.project > img {
+  width: 100%;
+}
+
 .proj-prev {
   background-color: white;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
 .proj-prev > h2 {
@@ -23,21 +43,25 @@ $red: #d00;
   border-bottom: solid 1px $red;
 }
 
+img.min {
+  width: 50%;
+  margin: 1rem 0;
+}
+
 .proj-prev > ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+
+  padding-top: 1rem;
+  border-top: solid 1px $red;
 }
 
 .proj-prev > ul > li {
   margin-right: 0.4rem;
 }
 
-.proj-prev > ul > li:first-child {
-  margin-left: 1.4rem;
-}
-
-.proj-prev > ul > li:not(li:first-child)::before {
+.proj-prev > ul > li::before {
   content: "\25C6";
   color: $red;
   margin-right: 0.4rem;
