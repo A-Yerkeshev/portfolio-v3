@@ -378,6 +378,10 @@ body .ng-leave-active {
 }
 
 @media only screen and (min-width: 500px) {
+  section {
+    margin-bottom: 1rem;
+  }
+
   .btn {
     border: 2px solid $red;
     font-size: 1rem;
@@ -394,6 +398,10 @@ body .ng-leave-active {
 }
 
 @media only screen and (min-width: 700px) {
+  section {
+    margin: 0 12vw 2rem;
+  }
+
   h1 {
     font-size: 1.8rem;
     margin: 0.6rem;
