@@ -2,24 +2,20 @@ $light: #ffe;
 $red: #d00;
 $frame-dark: #983;
 
-#projects {
-  text-align: center;
-}
-
 /* --- Single project item ----------------------------------------------------- */
 /* ----------------------------------------------------------------------------- */
 /* ----------------------------------------------------------------------------- */
 .project {
   display: block;
-
   // Dimentions equal to view width;
-  min-width: 94vw;
-  min-height: 94vw;
+  width: 94vw;
+  height: 94vw;
 
   overflow: hidden;
   position: relative;
-  margin-bottom: 1rem;
+  margin: 0 auto 1rem;
   box-shadow: 0 2px 3px $frame-dark;
+  text-align: center;
 }
 
 .project > img {
@@ -74,20 +70,69 @@ img.min {
 /* ----------------------------------------------------------------------------- */
 
 @media only screen and (min-width: 300px) {
-  img.min {
-    display: inline;
-    width: 50%;
-    margin: 0.2rem 0;
+  .project {
+    width: 80vw;
+    height: 80vw;
   }
 
   .proj-prev > p {
-    padding: 0 0.4rem 0.6rem;
     margin-bottom: 0.2rem;
+  }
+
+  img.min {
+    display: inline;
+    width: 40%;
+    margin: 0.4rem 0;
   }
 }
 
 @media only screen and (min-width: 500px) {
+  #projects > section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+  }
+
+  section > h1,
+  section > h2 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  .project {
+    width: 100%;
+    height: 100%;
+  }
+
+  .proj-prev > p {
+    border-bottom: solid 2px $red;
+  }
+
+  img.min {
+    display: none;
+  }
+
+  .proj-prev > ul {
+    border-top: solid 2px $red;
+  }
 }
 
 @media only screen and (min-width: 700px) {
+  #projects > section {
+    margin: 0 10vw;
+  }
+
+  .proj-prev > p {
+    margin: 1rem 0.4rem 0.2rem;
+  }
+
+  img.min {
+    display: inline;
+    width: 50%;
+    margin: 0.6rem 0;
+  }
+
+  .proj-prev > ul {
+    margin: 0 0.6rem;
+  }
 }
