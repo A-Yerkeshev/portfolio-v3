@@ -94,8 +94,8 @@
     <!-- templates -->
     <script id="project-directive-tmpl" type="text/template">
       <a class="project" ng-href="#!/{{project.href}}" ng-click="setCurrentProject(project)">
+        <h2>{{project.name}}</h2>
         <div class="proj-prev">
-          <h2>{{project.name}}</h2>
           <p>{{project.title}}</p>
           <img class="min" ng-src="/images/{{project.href}}.jpg">
           <ul>

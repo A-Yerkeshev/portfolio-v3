@@ -2,20 +2,24 @@ $light: #ffe;
 $red: #d00;
 $frame-dark: #983;
 
-/* --- Single project item ----------------------------------------------------- */
-/* ----------------------------------------------------------------------------- */
-/* ----------------------------------------------------------------------------- */
 .project {
   display: block;
   // Dimentions equal to view width;
   width: 94vw;
-  height: 94vw;
+  height: calc(94vw + 1.6rem);
 
   overflow: hidden;
   position: relative;
   margin: 0 auto 1rem;
   box-shadow: 0 2px 3px $frame-dark;
   text-align: center;
+}
+
+.project > h2 {
+  background-color: $red;
+  color: $light;
+  position: sticky;
+  z-index: 2;
 }
 
 .project > img {
@@ -25,15 +29,16 @@ $frame-dark: #983;
 .proj-prev {
   background-color: white;
   position: absolute;
-  top: 0;
+  top: 1.6rem;
   bottom: 0;
   left: 0;
   right: 0;
+  transform: translateY(-100%);
+  transition: transform 0.6s;
 }
 
-.proj-prev > h2 {
-  background-color: $red;
-  color: $light;
+.project:hover > .proj-prev {
+  transform: translateY(0);
 }
 
 .proj-prev > p {
@@ -65,14 +70,29 @@ img.min {
   margin-right: 0.4rem;
 }
 
-/* ----------------------------------------------------------------------------- */
-/* ----------------------------------------------------------------------------- */
-/* ----------------------------------------------------------------------------- */
-
 @media only screen and (min-width: 300px) {
   .project {
     width: 80vw;
-    height: 80vw;
+    height: calc(80vw + 1.6rem);
+  }
+
+  .project > h2::before,
+  .project > h2::after, {
+    content: '';
+    width: 1.2rem;
+    height: 1.2rem;
+    margin: 0.2rem;
+    background-image: url(/images/decor/flower-light.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .project > h2::before {
+    float: left;
+  }
+
+  .project > h2::after {
+    float: right;
   }
 
   .proj-prev > p {
@@ -104,6 +124,11 @@ img.min {
     height: 100%;
   }
 
+  .project > h2::before,
+  .project > h2::after, {
+    display: none;
+  }
+
   .proj-prev > p {
     border-bottom: solid 2px $red;
   }
@@ -118,24 +143,9 @@ img.min {
 }
 
 @media only screen and (min-width: 700px) {
-  .proj-prev > h2::before,
-  .proj-prev > h2::after, {
-    content: '';
-    width: 1.2rem;
-    height: 1.2rem;
-    margin: 0.2rem;
-    background-image: url(/images/decor/flower-light.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    opacity: 1;
-  }
-
-  .proj-prev > h2::before {
-    float: left;
-  }
-
-  .proj-prev > h2::after {
-    float: right;
+  .project > h2::before,
+  .project > h2::after, {
+    display: inline-block;
   }
 
   .proj-prev > p {

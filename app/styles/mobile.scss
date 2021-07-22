@@ -378,6 +378,10 @@ body .ng-leave-active {
 }
 
 @media only screen and (min-width: 500px) {
+  html {
+    font-size: 20px;
+  }
+
   section {
     margin-bottom: 1rem;
   }
