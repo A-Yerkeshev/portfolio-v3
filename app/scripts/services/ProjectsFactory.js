@@ -31,7 +31,7 @@ Portfolio.factory('ProjectsFactory', function() {
           and it sends several requests to the server based on analysis output.`
       }
     ],
-    title: 'All best movies in one app',
+    title: 'Movies browsing application using IMDb API',
     technologies: ['Angular', 'Bootstrap', 'Typescript', 'JQuery', 'HTML', 'CSS'],
     href: 'all-movies',
     date: 'October 2019',
@@ -70,7 +70,7 @@ Portfolio.factory('ProjectsFactory', function() {
         application, as well as client-side part of this application.`
       }
     ],
-    title: 'Simple posts application on React',
+    title: 'Posts application, supporting authentification and uploads',
     technologies: ['React', 'JQuery', 'Axios', 'NodeJS', 'HTML', 'CSS'],
     href: 'dashboard',
     date: 'July 2020',
@@ -112,7 +112,7 @@ Portfolio.factory('ProjectsFactory', function() {
           or put some information to profile.`
       }
     ],
-    title: 'Fancy looking chat application',
+    title: 'Chat application, supporting authentification',
     technologies: ['JavaScript', 'QJuery', 'AngularJS', 'AnimeJS', 'HTML', 'CSS'],
     href: 'lemon-chat',
     date: 'March 2019',
@@ -153,7 +153,7 @@ Portfolio.factory('ProjectsFactory', function() {
           on current zoom location.`
       }
     ],
-    title: 'The map that utilizes various APIs',
+    title: 'The map that utilizes Google Maps and Wikipedia APIs',
     technologies: ['JavaScript', 'KnockoutJS', 'HTML', 'CSS', 'API'],
     href: 'neighborhood-map',
     date: 'June 2018',
@@ -199,7 +199,7 @@ Portfolio.factory('ProjectsFactory', function() {
           time they want.`
       },
     ],
-    title: 'The web catalog of various items',
+    title: 'The web catalog with database, build on Python',
     technologies: ['Python', 'SQL', 'Flask', 'HTML', 'CSS'],
     href: 'items-catalog',
     date: 'May 2018',
@@ -236,7 +236,7 @@ Portfolio.factory('ProjectsFactory', function() {
           coded manually.`
       }
     ],
-    title: 'Experiment of combining Three.js and AngularJS',
+    title: 'Experiment of loading 3D models to a webpage',
     technologies: ['JavaScript', 'Three.js', 'AngularJS', 'HTML', 'CSS'],
     href: 'real-estate',
     date: 'June 2019',
@@ -262,7 +262,7 @@ Portfolio.factory('ProjectsFactory', function() {
           of that movie.`
       }
     ],
-    title: 'Posters and trailers about movies',
+    title: 'Webpage that shows posters and plays trailers',
     technologies: ['Python', 'HTML', 'CSS', 'JavaScript'],
     href: 'movie-trailers',
     date: 'April 2018',
@@ -289,7 +289,7 @@ Portfolio.factory('ProjectsFactory', function() {
           were selected, even that no JavaScript was used.`
       }
     ],
-    title: 'First version of portfolio',
+    title: 'First version of this website',
     technologies: ['HTML', 'CSS'],
     href: 'portfolio-v1',
     date: 'April 2018',
@@ -319,7 +319,7 @@ Portfolio.factory('ProjectsFactory', function() {
           on the portfolio website, without need of leaving it.`
       }
     ],
-    title: 'Second version of portfolio',
+    title: 'Second version of this website',
     technologies: ['JavaScript', 'HTML', 'CSS'],
     href: 'portfolio-v2',
     date: 'July 2018',

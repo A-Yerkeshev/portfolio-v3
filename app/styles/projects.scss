@@ -11,8 +11,11 @@ $frame-dark: #983;
 /* ----------------------------------------------------------------------------- */
 .project {
   display: block;
-  // Height equal to view width;
-  height: 94vw;
+
+  // Dimentions equal to view width;
+  min-width: 94vw;
+  min-height: 94vw;
+
   overflow: hidden;
   position: relative;
   margin-bottom: 1rem;
@@ -39,13 +42,12 @@ $frame-dark: #983;
 
 .proj-prev > p {
   font-weight: bold;
-  padding-bottom: 1rem;
   border-bottom: solid 1px $red;
+  padding: 0 0.4rem 0.6rem;
 }
 
 img.min {
-  width: 50%;
-  margin: 1rem 0;
+  display: none;
 }
 
 .proj-prev > ul {
@@ -70,3 +72,22 @@ img.min {
 /* ----------------------------------------------------------------------------- */
 /* ----------------------------------------------------------------------------- */
 /* ----------------------------------------------------------------------------- */
+
+@media only screen and (min-width: 300px) {
+  img.min {
+    display: inline;
+    width: 50%;
+    margin: 0.2rem 0;
+  }
+
+  .proj-prev > p {
+    padding: 0 0.4rem 0.6rem;
+    margin-bottom: 0.2rem;
+  }
+}
+
+@media only screen and (min-width: 500px) {
+}
+
+@media only screen and (min-width: 700px) {
+}
