@@ -118,6 +118,26 @@ img.min {
 }
 
 @media only screen and (min-width: 700px) {
+  .proj-prev > h2::before,
+  .proj-prev > h2::after, {
+    content: '';
+    width: 1.2rem;
+    height: 1.2rem;
+    margin: 0.2rem;
+    background-image: url(/images/decor/flower-light.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 1;
+  }
+
+  .proj-prev > h2::before {
+    float: left;
+  }
+
+  .proj-prev > h2::after {
+    float: right;
+  }
+
   .proj-prev > p {
     margin: 1rem 0.4rem 0.2rem;
   }
