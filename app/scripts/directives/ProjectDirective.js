@@ -1,9 +1,9 @@
 "use strict";
 
 Portfolio.directive('projectDirective', function() {
-  var Directive = {};
+  const Directive = {};
 
-  var template = $('#project-directive-tmpl').html();
+  const template = $('#project-directive-tmpl').html();
 
   Directive.template = template;
 

@@ -5,6 +5,7 @@ Portfolio.controller('ProjectsController', function($scope, $window, ProjectsFac
   $scope.currentProject = ProjectsFactory.getCurrentProject();
   $scope.activeProjects = ProjectsFactory.getActiveProjects();
   $scope.inactiveProjects = ProjectsFactory.getInactiveProjects();
+  $scope.jsfiddles = ProjectsFactory.getFiddles();
 
   $scope.showTitle = function(element) {
     element.style.opacity = 1;

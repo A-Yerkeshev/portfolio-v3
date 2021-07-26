@@ -1,9 +1,9 @@
 "use strict";
 
 Portfolio.factory('ProjectsFactory', function() {
-  var Factory = {};
+  const Factory = {};
 
-  var activeProjects = [
+  const activeProjects = [
   {
     name: 'All Movies',
     url: `https://all-movies-1.herokuapp.com/`,
@@ -167,7 +167,7 @@ Portfolio.factory('ProjectsFactory', function() {
       name and retrieve corresponding information about it from APIs.`
   }];
 
-  var inactiveProjects = [
+  const inactiveProjects = [
   {
     name: 'Items Catalog',
     url: null,
@@ -333,7 +333,24 @@ Portfolio.factory('ProjectsFactory', function() {
       JavaScript files follows this logic of MVC principle.`
   }];
 
-  var currentProject = null;
+  const jsfiddles = [
+  {
+    name: 'Debouncer',
+    url: `https://jsfiddle.net/A_Yerkesh/ctb3ga6o/5/`,
+    description: `Alternative approach to making debounced functions in JavaScript. This approach allows to
+      have debounce wrapper function, instead of debounce constructor function. In other words, you don't need
+      to return a function from debounce constructor and then assign it to the event listener. Instead, you can
+      just pass your function to the debounce wrapper.`
+  }, {
+    name: 'Custom Promise',
+    url: `https://jsfiddle.net/A_Yerkesh/7fux9gsL/1/`,
+    description: `Attempt to recreate ES6 Promise functionality. This is not a complete polyfill, as some
+      functionality differs from actual Promise. However, this custom promise can be initialized, chained, resolved
+      or rejected just like original ES6 Promise.`
+  }
+  ];
+
+  let currentProject = null;
 
   Factory.getActiveProjects = function() {
     return activeProjects;
@@ -346,6 +363,10 @@ Portfolio.factory('ProjectsFactory', function() {
   Factory.getCurrentProject = function() {
     return currentProject;
   };
+
+  Factory.getFiddles = function() {
+    return jsfiddles;
+  }
 
   Factory.setCurrentProject = function(project) {
     currentProject = project;
