@@ -71,6 +71,22 @@ img.min {
   margin-right: 0.4rem;
 }
 
+.fiddle {
+  border: solid 1px $frame-dark;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.fiddle h2 {
+  color: $red;
+  display: inline;
+}
+
+.fiddle i {
+  color: $red;
+  margin-left: 0.6rem;
+}
+
 @media only screen and (min-width: 300px) {
   .project {
     width: 80vw;
@@ -114,6 +130,10 @@ img.min {
     grid-gap: 1rem;
   }
 
+  #projects > section:nth-child(3) {
+    display: block;
+  }
+
   section > h1,
   section > h2 {
     grid-column-start: 1;
@@ -140,6 +160,10 @@ img.min {
 
   .proj-prev > ul {
     border-top: solid 2px $red;
+  }
+
+  .fiddle {
+    border: solid 2px $frame-dark;
   }
 }
 

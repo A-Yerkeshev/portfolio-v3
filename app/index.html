@@ -107,9 +107,10 @@
       </a>
     </template>
     <template id="fiddle-directive-tmpl">
-      <a href="{{fiddle.url}}"><h2>{{fiddle.name}}</h2></a>
-      <p>{{fiddle.description}}</p>
+      <div class="fiddle">
+        <a href="{{fiddle.url}}" target="_blank"><h2>{{fiddle.name}}</h2><i class="fas fa-external-link-alt"></i></a>
+        <p>{{fiddle.description}}</p>
+      </div>
     </template>
-
 </body>
 </html>
