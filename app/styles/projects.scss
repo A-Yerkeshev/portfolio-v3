@@ -20,6 +20,8 @@ $frame-dark: #983;
   color: $light;
   position: sticky;
   z-index: 2;
+  height: 1.6rem;
+  overflow: hidden;
 }
 
 .project > img {
@@ -112,6 +114,7 @@ img.min {
     float: right;
   }
 
+
   .proj-prev > p {
     margin-bottom: 0.2rem;
   }
@@ -126,7 +129,7 @@ img.min {
 @media only screen and (min-width: 500px) {
   #projects > section {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     grid-gap: 1rem;
   }
 
@@ -142,7 +145,7 @@ img.min {
 
   .project {
     width: 100%;
-    height: 100%;
+    height: min-content;
   }
 
   .project > h2::before,
