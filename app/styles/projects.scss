@@ -145,7 +145,7 @@ img.min {
 
   .project {
     width: 100%;
-    height: min-content;
+    height: calc(100% - 1.4rem);
   }
 
   .project > h2::before,
