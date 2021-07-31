@@ -1,0 +1,7 @@
+File from: [./images/main/all-movies-1.{jpg,JPG,jpeg,JPEG,png,svg,gif}]
+
+File to: [./images/minified/all-movies-1.{jpg,JPG,jpeg,JPEG,png,svg,gif}]
+
+Compression algorithm: [-]
+
+Description: File does not exist!

@@ -93,13 +93,13 @@
     <template id="project-directive-tmpl">
       <a class="project" ng-href="#!/{{project.href}}" ng-click="setCurrentProject(project)">
         <h2>{{project.name}}</h2>
-        <!--<div class="proj-prev">
+        <div class="proj-prev">
           <p>{{project.title}}</p>
-          <img class="min" ng-src="/images/-cropped/{{project.href}}-1.png">
+          <img class="min" ng-src="/images/minified/{{project.href}}-1.png">
           <ul>
             <li ng-repeat="tech in project.technologies">{{tech}}</li>
           </ul>
-        </div> -->
+        </div>
         <img ng-src="/images/-cropped/{{project.href}}-1.png">
       </a>
     </template>

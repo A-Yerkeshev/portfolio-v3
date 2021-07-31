@@ -114,7 +114,6 @@ img.min {
     float: right;
   }
 
-
   .proj-prev > p {
     margin-bottom: 0.2rem;
   }
@@ -146,6 +145,7 @@ img.min {
   .project {
     width: 100%;
     height: calc(100% - 1.4rem);
+    box-shadow: 0 4px 6px $frame-dark;
   }
 
   .project > h2::before,
@@ -154,6 +154,7 @@ img.min {
   }
 
   .proj-prev > p {
+    margin-bottom: 1rem;
     border-bottom: solid 2px $red;
   }
 
@@ -186,7 +187,7 @@ img.min {
 
   img.min {
     display: inline;
-    margin: 0.6rem 0;
+    margin: 0;
   }
 
   .proj-prev > ul {
