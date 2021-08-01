@@ -1,5 +1,14 @@
 "use strict";
 
+function expandImage(event) {
+  const imageNode = event.currentTarget;
+  const oldPath = imageNode.src;
+  const newPath = '/images/main/'.concat(oldPath.substring(oldPath.lastIndexOf('/')+1));
+
+  imageNode.removeAttribute('onload');
+  imageNode.src = newPath;
+}
+
 document.addEventListener('DOMContentLoaded', (event) => {
   const body = document.querySelector('body');
   const welcome = document.querySelector('.welcome');
