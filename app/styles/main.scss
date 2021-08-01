@@ -116,6 +116,7 @@ section {
   border-image-source: url(/images/decor/ornament-red.png);
   border-image-slice: 32;
   border-image-repeat: round;
+  position: relative;
 }
 
 p {
@@ -403,7 +404,30 @@ body .ng-leave-active {
 
 @media only screen and (min-width: 700px) {
   section {
-    margin: 0 12vw 2rem;
+    width: 80%;
+    margin: 0 auto 2rem;
+  }
+
+  section::before,
+  section::after {
+    content: '';
+    position: absolute;
+    top: 2rem;
+    bottom: 2rem;
+    opacity: 0.2;
+    width: 1.8rem;
+
+    background-image: url(/images/decor/ornament-vertical.png);
+    background-size: contain;
+    background-repeat-x: no-repeat;
+  }
+
+  section::before {
+    left: -6rem;
+  }
+
+  section::after {
+    right: -6rem;
   }
 
   h1 {
