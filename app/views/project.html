@@ -1,13 +1,8 @@
 <div ng-controller="ProjectsController" class="current-project">
   <h1>{{currentProject.name}}</h1>
-  <ui-carousel slides="currentProject.images" autoplay="false" autoplay-speed="4000" dots="true">
+  <ui-carousel slides="currentProject.images" autoplay="true" autoplay-speed="2000" dots="true">
     <carousel-item>
-      <div>
-        <p>
-          {{item.descr}}
-        </p>
-        <img src="/images/minified/{{item.src}}">
-      </div>
+        <img src="/images/minified/{{item}}">
     </carousel-item>
   </ui-carousel>
   <em>{{currentProject.date}}</em>
