@@ -1,0 +1,123 @@
+$light: #ffe;
+$red: #d00;
+
+.ui-carousel {
+  height: 18rem;
+  animation: Gradient 8s linear infinite;
+  background-image: linear-gradient(100deg, red, maroon, red);
+  background-size: 400% 400%;
+}
+
+.carousel-wrapper {
+  height: 100%;
+}
+
+.track-wrapper {
+  height: 100%;
+}
+
+.track {
+  height: 100%;
+}
+
+.carousel-item {
+  height: 100%;
+  text-align: center;
+}
+
+.carousel-item img {
+  height: 90%;
+  position: relative;
+  top: 5%;
+}
+
+/* --- Carousel interface ------------------------------------------------------ */
+/* ----------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------- */
+
+.carousel-btn {
+  display: none !important;
+}
+
+@media only screen and (min-width: 300px) {
+
+}
+
+@media only screen and (min-width: 500px) {
+
+}
+
+@media only screen and (min-width: 700px) {
+  // .ui-carousel
+  // .carousel-btn {
+  //   opacity: 1;
+  //   font-size: 3em;
+  //   color: $light;
+  // }
+
+  // .ui-carousel
+  // .carousel-btn:active {
+  //   background-color: transparent;
+  //   border: none;
+  // }
+
+  // .ui-carousel
+  // .carousel-next
+  // .carousel-btn {
+  //   right: 0;
+  // }
+
+  // .ui-carousel
+  // .carousel-prev
+  // .carousel-btn {
+  //   left: 0;
+  // }
+
+  // .carousel-dots {
+  //   position: static;
+  //   display: none;
+  // }
+
+  // .carousel-dots li {
+  //   position: static;
+  //   width: fit-content;
+  //   height: fit-content;
+  //   float: none;
+  // }
+
+  // .carousel-dots li:before {
+  //   content: none;
+  // }
+
+  // .carousel-dots li button {
+  //   font-size: 1.5em;
+  //   line-height: 1.5em;
+  //   width: fit-content;
+  //   height: fit-content;
+  // }
+
+  // .carousel-dots li button:before {
+  //   content: "\2022";
+  //   color: $red;
+  //   font-weight: bold;
+  //   display: inline-block;
+  //   width: 1.5em;
+  //   position: static;
+  //   font-size: 2em;
+  //   width: fit-content;
+  //   height: fit-content;
+  //   opacity: 1;
+  //   transition: font-size 0.2s;
+  // }
+
+  // .carousel-dots li button:active {
+  //   color: $light;
+  //   background-color: transparent;
+  //   border: none;
+  // }
+
+  // .carousel-dots li.carousel-active button:before {
+  //   font-size: 3em;
+  //   opacity: 1;
+  // }
+}
