@@ -40,3 +40,25 @@ document.addEventListener('DOMContentLoaded', (event) => {
     }, 2000);
   });
 });
+
+
+window.addEventListener('hashchange', (event) => {
+  // Add touch scroll event to carousel on mobile devices
+  const defRoutes = ['', 'projects', 'education', 'contacts'];
+  let hash;
+
+  // Strip last slash charachter if present;
+  if (event.newURL.endsWith('/')) {
+    hash = event.newURL.slice(0, -1);
+  } else {
+    hash = event.newURL;
+  }
+
+  hash = hash.substring(event.newURL.lastIndexOf('/')+1);
+  console.log(hash)
+  if (!defRoutes.includes(hash)) {
+    const carousel = document.querySelector('.ui-carousel');
+    console.log(carousel);
+  }
+
+})
