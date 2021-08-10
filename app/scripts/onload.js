@@ -55,10 +55,28 @@ window.addEventListener('hashchange', (event) => {
   }
 
   hash = hash.substring(event.newURL.lastIndexOf('/')+1);
-  console.log(hash)
+
   if (!defRoutes.includes(hash)) {
     const carousel = document.querySelector('.ui-carousel');
-    console.log(carousel);
+    let startPos = null;
+
+    // Track first position where the touch occured
+    carousel.addEventListener('touchstart', (event) => {
+      startPos = event.touches[0].clientX;
+    })
+
+    carousel.addEventListener('touchmove', (event) => {
+      const x = event.touches[0].clientX;
+
+      if (x-startPos >= 100) {
+        console.log('swap');
+      }
+
+      // Clear touch path after 1 sec;
+      setTimeout(() => {
+        startPos = null;
+      }, 1000);
+    })
   }
 
 })

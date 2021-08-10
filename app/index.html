@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="styles/view.css">
     <link rel="stylesheet" href="styles/summary.css">
     <link rel="stylesheet" href="styles/projects.css">
+    <link rel="stylesheet" href="styles/project.css">
     <link rel="stylesheet" href="styles/carousel.css">
     <!-- endbuild -->
   </head>
@@ -98,7 +99,7 @@
         <div class="proj-prev">
           <p>{{project.title}}</p>
           <img class="min" ng-src="/images/minified/{{project.href}}-1.png">
-          <ul>
+          <ul class="rombus">
             <li ng-repeat="tech in project.technologies">{{tech}}</li>
           </ul>
         </div>

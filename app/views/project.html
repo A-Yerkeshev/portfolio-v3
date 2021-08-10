@@ -8,7 +8,7 @@
   <em>{{currentProject.date}}</em>
   <p>{{currentProject.description}}</p>
   <h2>Technologies used</h2>
-  <ul>
+  <ul class="rombus">
     <li ng-repeat="tech in currentProject.technologies">{{tech}}</li>
   </ul>
   <button ng-if="currentProject.url" ng-click="newTab(currentProject.url)">Visit website</button>

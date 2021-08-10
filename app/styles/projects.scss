@@ -55,25 +55,6 @@ img.min {
   display: none;
 }
 
-.proj-prev > ul {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-
-  padding-top: 1rem;
-  border-top: solid 1px $red;
-}
-
-.proj-prev > ul > li {
-  margin-right: 0.4rem;
-}
-
-.proj-prev > ul > li::before {
-  content: "\25C6";
-  color: $red;
-  margin-right: 0.4rem;
-}
-
 .fiddle {
   border: solid 1px $frame-dark;
   padding: 1rem;
