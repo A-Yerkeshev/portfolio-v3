@@ -10,27 +10,9 @@ $red: #d00;
   box-sizing: border-box;
 }
 
-.view button {
-  border: solid 2px $red;
-  color: $red;
-  background-color: $light;
-  cursor: pointer;
-  margin: 1%;
-  margin-top: 5%;
-  padding: 2%;
-  transition: padding 0.3s;
-}
-
-.view button:hover {
-  padding: 3%;
-}
-
-.view button:active {
-  color: $light;
-  background-color: $red;
-  border: solid 2px $light;
-}
-
+/* --- View sliding ------------------------------------------------------------ */
+/* ----------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------- */
 .view.ng-enter {
   left: 100%;
   opacity: 0;
@@ -50,6 +32,9 @@ $red: #d00;
   left: -100%;
   opacity: 0;
 }
+/* ----------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------- */
 
 @media only screen and (min-width: 700px) {
   .view {

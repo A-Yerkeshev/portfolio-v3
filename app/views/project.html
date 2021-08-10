@@ -11,6 +11,8 @@
   <ul class="rombus">
     <li ng-repeat="tech in currentProject.technologies">{{tech}}</li>
   </ul>
-  <button ng-if="currentProject.url" ng-click="newTab(currentProject.url)">Visit website</button>
-  <button ng-click="newTab(currentProject.github)">View on GitHub</button>
+  <div class="buttons-container">
+    <a ng-if="currentProject.url" ng-click="newTab(currentProject.url)">Visit website</a>
+    <a ng-click="newTab(currentProject.github)">View on GitHub</a>
+  </div>
 </div>

@@ -142,13 +142,25 @@ p {
   letter-spacing: 1px;
 }
 
-.btn {
-  font-family: $cinzel;
-  border: solid 2px $light;
-  font-weight: 600;
+.btn-red,
+.btn-light {
+  transition: padding 0.2s;
   padding: 0.4rem;
-  transition: padding 0.2s, opacity 1.5s;
-  font-size: 1.1rem;
+}
+
+.btn-red {
+  color: $light;
+  border: solid 1px $light;
+}
+
+.btn-light {
+  color: $red;
+  border: solid 1px $red;
+}
+
+.btn-light:active {
+  background-color: $red;
+  color: $light;
 }
 
 summary {
@@ -289,13 +301,8 @@ body .ng-leave-active {
     margin-bottom: 1rem;
   }
 
-  .btn {
+  .btn-light {
     border: 2px solid $red;
-    font-size: 1rem;
-  }
-
-  .btn:hover {
-    padding: 0.6rem 0.4rem;
   }
 
   details p {
@@ -335,9 +342,5 @@ body .ng-leave-active {
   h1 {
     font-size: 1.8rem;
     margin: 0.6rem;
-  }
-
-  .btn {
-    padding: 0.4rem;
   }
 }

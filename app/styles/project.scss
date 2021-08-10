@@ -3,3 +3,18 @@ $red: #d00;
 .current-project em {
   color: $red;
 }
+
+.current-project ul {
+  margin-bottom: 1.8rem;
+}
+
+.buttons-container {
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+.buttons-container a {
+  border: 1px solid $red;
+  color: $red;
+  padding: 0.4rem;
+}
