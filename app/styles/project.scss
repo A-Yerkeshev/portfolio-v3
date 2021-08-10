@@ -14,7 +14,6 @@ $red: #d00;
 }
 
 .buttons-container a {
-  border: 1px solid $red;
-  color: $red;
-  padding: 0.4rem;
+  font-weight: bold;
+  border: 2px solid $red;
 }

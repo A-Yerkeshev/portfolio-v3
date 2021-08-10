@@ -301,13 +301,23 @@ body .ng-leave-active {
     margin-bottom: 1rem;
   }
 
-  .btn-light {
-    border: 2px solid $red;
-  }
 
   details p {
     border: solid 1px $frame-dark;
     padding: 0.4rem;
+  }
+
+  .btn-red,
+  .btn-light {
+    font-size: 1.2rem;
+  }
+
+  .btn-red {
+    border: 2px solid $light;
+  }
+
+  .btn-light {
+    border: 2px solid $red;
   }
 }
 
