@@ -1,0 +1,45 @@
+$frame-dark: #983;
+
+.education h2 {
+  margin-top: 1rem;
+}
+
+.education section {
+  clear: both;
+}
+
+.ed-unit h2 {
+  margin: 1.6rem 0;
+}
+
+.ed-unit img{
+  width: 100%;
+  margin: 0 0 1rem;
+  box-shadow: 0 2px 3px $frame-dark;
+}
+
+@media only screen and (min-width: 300px) {
+
+}
+
+@media only screen and (min-width: 500px) {
+  .ed-unit img{
+    width: 70%;
+    margin: 0 1rem 1rem;
+  }
+
+  .ed-unit:nth-child(even) img {
+    float: left;
+  }
+
+  .ed-unit:nth-child(odd) img {
+    float: right;
+  }
+}
+
+@media only screen and (min-width: 700px) {
+  .ed-unit img{
+    width: 50%;
+  }
+}
+

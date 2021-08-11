@@ -78,6 +78,7 @@ body {
 a {
   text-decoration: none;
   color: inherit;
+  cursor: pointer;
 }
 
 input, button {
@@ -136,6 +137,10 @@ section {
   border-image-slice: 32;
   border-image-repeat: round;
   position: relative;
+}
+
+em {
+  color: $red;
 }
 
 p {
@@ -301,7 +306,6 @@ body .ng-leave-active {
     margin-bottom: 1rem;
   }
 
-
   details p {
     border: solid 1px $frame-dark;
     padding: 0.4rem;
@@ -323,7 +327,7 @@ body .ng-leave-active {
 
 @media only screen and (min-width: 700px) {
   section {
-    width: 80%;
+    width: 65%;
     margin: 0 auto 2rem;
   }
 
@@ -342,11 +346,11 @@ body .ng-leave-active {
   }
 
   section::before {
-    left: -6rem;
+    left: -8rem;
   }
 
   section::after {
-    right: -6rem;
+    right: -8rem;
   }
 
   h1 {

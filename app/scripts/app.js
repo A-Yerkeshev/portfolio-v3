@@ -26,8 +26,8 @@ angular
       .when('/projects', {
         templateUrl: '/views/projects.html'
       })
-      .when('/profile', {
-        templateUrl: '/views/profile.html'
+      .when('/education', {
+        templateUrl: '/views/education.html'
       })
       .when('/contacts', {
         templateUrl: '/views/contacts.html'
@@ -36,7 +36,7 @@ angular
         templateUrl: '/views/project.html'
       })
       .otherwise({
-        redirectTo: '/projects'
+        redirectTo: '/'
       });
   });
 
