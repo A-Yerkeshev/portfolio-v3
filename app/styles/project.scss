@@ -4,6 +4,10 @@ $red: #d00;
   color: $red;
 }
 
+.current-project p {
+  text-align: justify;
+}
+
 .current-project ul {
   margin-bottom: 1.8rem;
 }
@@ -16,4 +20,62 @@ $red: #d00;
 .buttons-container a {
   font-weight: bold;
   border: 2px solid $red;
+}
+
+@media only screen and (min-width: 700px) {
+  .current-project {
+    display: grid;
+    grid-template-columns: minmax(300px, 1fr) 1.3fr;
+    grid-template-rows: repeat(2, min-content) 1fr repeat(3, min-content);
+    grid-column-gap: 3rem;
+  }
+
+  .current-project h1,
+  .current-project h2,
+  .current-project ul,
+  .buttons-container {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  .current-project h1 {
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+
+  .ui-carousel {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 4;
+  }
+
+  .current-project em {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+
+  .current-project p {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+  }
+
+  .current-project h2 {
+    grid-row-start: 4;
+    grid-row-end: 5;
+  }
+
+  .current-project ul {
+    grid-row-start: 5;
+    grid-row-end: 6;
+  }
+
+  .buttons-container {
+    grid-row-start: 6;
+    grid-row-end: 7;
+  }
 }
