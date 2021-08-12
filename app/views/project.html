@@ -13,6 +13,6 @@
   </ul>
   <div class="buttons-container">
     <a class="btn-light" ng-if="currentProject.url" ng-click="newTab(currentProject.url)">Visit website</a>
-    <a class="btn-light" ng-click="newTab(currentProject.github)">View on GitHub</a>
+    <a class="btn-light" ng-if="currentProject.github" ng-click="newTab(currentProject.github)">View on GitHub</a>
   </div>
 </div>
