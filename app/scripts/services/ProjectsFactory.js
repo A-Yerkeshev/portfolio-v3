@@ -14,15 +14,15 @@ Portfolio.factory('ProjectsFactory', function() {
       'tsaikka-4.png',
       'tsaikka-5.png'
     ],
-    title: 'Non-profit organization for Russian speaking elderly people in Helsinki',
+    title: 'Non-profit organization for Russian-speaking elderly people in Helsinki',
     technologies: ['Wordpress', 'CSS'],
     href: 'tsaikka',
     date: 'November 2020',
-    description: `Tsaikka.fi is a website, developed for non-profit organization for Russian speaking elderly
+    description: `Tsaikka.fi is a website, developed for non-profit organization for Russian-speaking elderly
       people in Helsinki. The development was performed by Alatau oy company, using Wordpress. My role in the
       project was to customize the design and appearance of the website, by adding custom CSS. Colour scheme
       was taken from their previous website, custom icons and little animation effects were added. Font size
-      and spacing was increased to suit better the needs of aged people.`
+      and spacing were increased to suit better the needs of aged people.`
   }, {
     name: 'Alatau oy',
     url: `http://alatau.fi/`,
@@ -40,7 +40,7 @@ Portfolio.factory('ProjectsFactory', function() {
     description: `This is a website, developed for Alatau oy company, where i had my work practice during
       studies in Careeria. The company focuses on development of websites, using Wordpress. I used my knowledge
       of HTML and CSS to slightly improve and customize appearance of the website. I replaced default images and
-      icons with custom ones, clightly changed colour scheme. Also, i decided to add multi-lingual support,
+      icons with custom ones, slightly changed colour scheme. Also, i decided to add multi-lingual support,
       portfolio section and contact form. This was aimed to provide better customer experience and help to cover
       larger target market.`
   }, {

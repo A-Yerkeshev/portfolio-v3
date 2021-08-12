@@ -2,9 +2,6 @@ $light: #ffe;
 $cinzel: cinzel, "Times New Roman", serif;
 
 .welcome {
-  // Temporary
-  display: none;
-
   animation: Gradient 8s linear infinite;
   background-image: linear-gradient(100deg, red, maroon, red);
   background-size: 400vw 400vh;
