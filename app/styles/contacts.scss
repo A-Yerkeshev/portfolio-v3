@@ -1,0 +1,24 @@
+$light: #ffe;
+$red: #d00;
+$frame-dark: #983;
+
+td, th {
+  text-align: left;
+  padding: 0.1rem;
+  margin-bottom: 0.6rem;
+  border-bottom: 1px solid $frame-dark;
+}
+
+td {
+  border-left: 1px solid $frame-dark;
+}
+
+table {
+  margin: 0 auto;
+  padding: 1rem;
+  background-color: $light;
+  border: 1px solid $frame-dark;
+  border-spacing: 0;
+  font-size: 1.2rem;
+}
+
