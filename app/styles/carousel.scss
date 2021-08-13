@@ -51,6 +51,7 @@ $red: #d00;
 @media only screen and (min-width: 500px) {
   .v-middle, .ui-carousel .carousel-btn {
     display: block;
+    cursor: pointer;
   }
 
   .ui-carousel .carousel-next .carousel-btn,
@@ -71,76 +72,4 @@ $red: #d00;
 }
 
 @media only screen and (min-width: 700px) {
-  // .ui-carousel
-  // .carousel-btn {
-  //   opacity: 1;
-  //   font-size: 3em;
-  //   color: $light;
-  // }
-
-  // .ui-carousel
-  // .carousel-btn:active {
-  //   background-color: transparent;
-  //   border: none;
-  // }
-
-  // .ui-carousel
-  // .carousel-next
-  // .carousel-btn {
-  //   right: 0;
-  // }
-
-  // .ui-carousel
-  // .carousel-prev
-  // .carousel-btn {
-  //   left: 0;
-  // }
-
-  // .carousel-dots {
-  //   position: static;
-  //   display: none;
-  // }
-
-  // .carousel-dots li {
-  //   position: static;
-  //   width: fit-content;
-  //   height: fit-content;
-  //   float: none;
-  // }
-
-  // .carousel-dots li:before {
-  //   content: none;
-  // }
-
-  // .carousel-dots li button {
-  //   font-size: 1.5em;
-  //   line-height: 1.5em;
-  //   width: fit-content;
-  //   height: fit-content;
-  // }
-
-  // .carousel-dots li button:before {
-  //   content: "\2022";
-  //   color: $red;
-  //   font-weight: bold;
-  //   display: inline-block;
-  //   width: 1.5em;
-  //   position: static;
-  //   font-size: 2em;
-  //   width: fit-content;
-  //   height: fit-content;
-  //   opacity: 1;
-  //   transition: font-size 0.2s;
-  // }
-
-  // .carousel-dots li button:active {
-  //   color: $light;
-  //   background-color: transparent;
-  //   border: none;
-  // }
-
-  // .carousel-dots li.carousel-active button:before {
-  //   font-size: 3em;
-  //   opacity: 1;
-  // }
 }
