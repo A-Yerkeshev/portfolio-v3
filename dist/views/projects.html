@@ -1,6 +1,14 @@
-<div ng-controller="ProjectsController">
-  <h1>Hosted projects</h1>
-  <project-directive ng-repeat="project in activeProjects"></project-directive>
-  <h1>Inactive projects</h1>
-  <project-directive ng-repeat="project in inactiveProjects"></project-directive>
+<div id="projects" ng-controller="ProjectsController">
+  <section>
+    <h1>Active projects</h1>
+    <project-directive ng-repeat="project in activeProjects"></project-directive>
+  </section>
+  <section>
+    <h1>Inactive projects</h1>
+    <project-directive ng-repeat="project in inactiveProjects"></project-directive>
+  </section>
+  <section>
+    <h1>JS Fiddles</h1>
+    <fiddle-directive ng-repeat="fiddle in jsfiddles"></fiddle-directive>
+  </section>
 </div>

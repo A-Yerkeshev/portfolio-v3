@@ -1,0 +1,201 @@
+/* line 5, ../../app/styles/projects.scss */
+.project {
+  display: block;
+  width: 94vw;
+  height: calc(94vw + 1.6rem);
+  overflow: hidden;
+  position: relative;
+  margin: 0 auto 1rem;
+  box-shadow: 0 2px 3px #983;
+  text-align: center;
+}
+
+/* line 18, ../../app/styles/projects.scss */
+.project > h2 {
+  background-color: #d00;
+  color: #ffe;
+  position: -webkit-sticky;
+  position: sticky;
+  z-index: 2;
+  height: 1.6rem;
+  overflow: hidden;
+}
+
+/* line 27, ../../app/styles/projects.scss */
+.project > img {
+  width: 100%;
+  height: calc(100% - 1.6rem);
+}
+
+/* line 32, ../../app/styles/projects.scss */
+.proj-prev {
+  background-color: white;
+  position: absolute;
+  top: 1.6rem;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transform: translateY(-100%);
+  transition: transform 0.8s ease-out;
+  overflow: hidden;
+}
+
+/* line 44, ../../app/styles/projects.scss */
+.project:hover > .proj-prev {
+  transform: translateY(0);
+}
+
+/* line 48, ../../app/styles/projects.scss */
+.proj-prev > p {
+  font-weight: bold;
+  border-bottom: solid 1px #d00;
+  padding: 0 0.4rem 0.6rem;
+}
+
+/* line 54, ../../app/styles/projects.scss */
+img.min {
+  display: none;
+}
+
+/* line 58, ../../app/styles/projects.scss */
+.fiddle {
+  border: solid 1px #983;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* line 64, ../../app/styles/projects.scss */
+.fiddle h2 {
+  color: #d00;
+  display: inline;
+}
+
+/* line 69, ../../app/styles/projects.scss */
+.fiddle i {
+  color: #d00;
+  margin-left: 0.6rem;
+}
+
+@media only screen and (min-width: 300px) {
+  /* line 75, ../../app/styles/projects.scss */
+  .project {
+    width: 80vw;
+    height: calc(80vw + 1.6rem);
+  }
+
+  /* line 80, ../../app/styles/projects.scss */
+  .project > h2::before,
+  .project > h2::after {
+    content: '';
+    width: 1.2rem;
+    height: 1.2rem;
+    margin: 0.2rem;
+    background-image: url(/images/decor/flower-light.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  /* line 91, ../../app/styles/projects.scss */
+  .project > h2::before {
+    float: left;
+  }
+
+  /* line 95, ../../app/styles/projects.scss */
+  .project > h2::after {
+    float: right;
+  }
+
+  /* line 99, ../../app/styles/projects.scss */
+  .proj-prev > p {
+    margin-bottom: 0.2rem;
+  }
+
+  /* line 103, ../../app/styles/projects.scss */
+  img.min {
+    display: inline;
+    width: 40%;
+    margin: 0.4rem 0;
+  }
+}
+@media only screen and (min-width: 500px) {
+  /* line 111, ../../app/styles/projects.scss */
+  #projects > section {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-gap: 1rem;
+  }
+
+  /* line 117, ../../app/styles/projects.scss */
+  #projects > section:nth-child(3) {
+    display: block;
+  }
+
+  /* line 121, ../../app/styles/projects.scss */
+  section > h1,
+  section > h2 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  /* line 127, ../../app/styles/projects.scss */
+  .project {
+    width: 100%;
+    height: calc(100% - 1.4rem);
+    box-shadow: 0 4px 6px #983;
+  }
+
+  /* line 133, ../../app/styles/projects.scss */
+  .project > h2::before,
+  .project > h2::after {
+    display: none;
+  }
+
+  /* line 138, ../../app/styles/projects.scss */
+  .proj-prev > p {
+    margin-bottom: 1rem;
+    border-bottom: solid 2px #d00;
+  }
+
+  /* line 143, ../../app/styles/projects.scss */
+  img.min {
+    display: none;
+  }
+
+  /* line 147, ../../app/styles/projects.scss */
+  .proj-prev > ul {
+    border-top: solid 2px #d00;
+  }
+
+  /* line 151, ../../app/styles/projects.scss */
+  .fiddle {
+    border: solid 2px #983;
+  }
+}
+@media only screen and (min-width: 700px) {
+  /* line 157, ../../app/styles/projects.scss */
+  #projects > section {
+    grid-gap: 1.6rem;
+  }
+
+  /* line 161, ../../app/styles/projects.scss */
+  .project > h2::before,
+  .project > h2::after {
+    display: inline-block;
+  }
+
+  /* line 166, ../../app/styles/projects.scss */
+  .proj-prev > p {
+    margin: 1rem 0.4rem 0.2rem;
+  }
+
+  /* line 170, ../../app/styles/projects.scss */
+  img.min {
+    display: inline;
+    margin: 0;
+  }
+
+  /* line 175, ../../app/styles/projects.scss */
+  .proj-prev > ul {
+    margin: 0 0.6rem;
+  }
+}

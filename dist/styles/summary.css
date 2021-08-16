@@ -1,0 +1,6 @@
+/* line 1, ../../app/styles/summary.scss */
+.summary-list {
+  list-style-type: upper-roman;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+}

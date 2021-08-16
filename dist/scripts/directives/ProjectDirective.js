@@ -1,9 +1,11 @@
-Portfolio.directive('projectDirective', function() {
-  var Directive = {};
+"use strict";
 
-  var template = $('#project-directive-tmpl').html();
+Portfolio.directive('projectDirective', function() {
+  const Directive = {};
+
+  const template = $('#project-directive-tmpl').html();
 
   Directive.template = template;
 
   return Directive;
-})
+});

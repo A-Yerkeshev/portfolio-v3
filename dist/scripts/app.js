@@ -21,13 +21,13 @@ angular
   .config(function ($routeProvider) {
     $routeProvider
       .when('/', {
-        templateUrl: 'views/welcome.html'
+        templateUrl: '/views/summary.html'
       })
       .when('/projects', {
         templateUrl: '/views/projects.html'
       })
-      .when('/profile', {
-        templateUrl: '/views/profile.html'
+      .when('/education', {
+        templateUrl: '/views/education.html'
       })
       .when('/contacts', {
         templateUrl: '/views/contacts.html'
@@ -36,8 +36,8 @@ angular
         templateUrl: '/views/project.html'
       })
       .otherwise({
-        redirectTo: '/projects'
+        redirectTo: '/'
       });
   });
 
-  var Portfolio = angular.module('portfolioApp');
+var Portfolio = angular.module('portfolioApp');

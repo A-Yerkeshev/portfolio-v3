@@ -5,6 +5,9 @@
     <title>Arman Yerkesh portfolio</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico" />
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css" />
+    <link rel="stylesheet" href="node_modules/angular-ui-carousel/dist/ui-carousel.min.css" />
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <!-- build:css(.) styles/vendor.css -->
     <!-- bower:css -->
@@ -12,37 +15,73 @@
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/*.css -->
-    <link rel="stylesheet" href="styles/mobile.css">
-    <link rel="stylesheet" media="(min-width: 300px)" href="styles/mobile-medium.css">
-    <link rel="stylesheet" media="(min-width: 500px)" href="styles/medium.css">
-    <link rel="stylesheet" media="(min-width: 700px)" href="styles/large.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/welcome.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/view.css">
+    <link rel="stylesheet" href="styles/summary.css">
+    <link rel="stylesheet" href="styles/projects.css">
+    <link rel="stylesheet" href="styles/project.css">
+    <link rel="stylesheet" href="styles/carousel.css">
+    <link rel="stylesheet" href="styles/education.css">
+    <link rel="stylesheet" href="styles/contacts.css">
     <!-- endbuild -->
   </head>
+  <div class="welcome">
+    <h1 class="w-char" data-index="1">W</h1>
+    <h1 class="w-char" data-index="2">e</h1>
+    <h1 class="w-char" data-index="3">l</h1>
+    <h1 class="w-char" data-index="4">c</h1>
+    <h1 class="w-char" data-index="5">o</h1>
+    <h1 class="w-char" data-index="6">m</h1>
+    <h1 class="w-char" data-index="7">e</h1>
+    <h1 class="w-char" data-index="8">!</h1>
+    <p class="w-par">My name is Arman Yerkesh, I am a Front-End developer graduated from Udacity in 2018. I have experience working with Angular, React, Bootstrap, TypeScript, NodeJS and other modern frameworks. I am interested in adaptive interfaces, data visualization technologies and data security. Currently i focus on in-depth study of HTML, CSS and JavaScript. </br> On this website you can find my portfolio, resume, contact details and links to my GitHub and LinkedIn profiles.</p>
+    <ul class="spinner">
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+    <a id="continue-btn" class="btn-red" ng-href="#!/">Continue</a>
+    <a class="sn-icon" href="https://github.com/A-Yerkeshev" target="_blank"><i class="fab fa-github"></i></a>
+    <a class="sn-icon" href="https://www.linkedin.com/in/arman-yerkesh-29b8a7165/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+  </div>
   <body ng-app="portfolioApp">
     <!--[if lte IE 8]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
     <!-- Add your site or application content here -->
-    <div class="header">
-      <a class="nav-btn" ng-href="#!/projects" ng-click="setCurrentProject(null)">Projects</a>
-      <a class="nav-btn" ng-href="#!/profile" ng-click="setCurrentProject(null)">Profile</a>
-      <a class="nav-btn" ng-href="#!/contacts" ng-click="setCurrentProject(null)">Contacts</a>
-    </div>
-
+    <header>
+      <div class="top-container">
+        <a class="sn-icon" href="https://github.com/A-Yerkeshev" target="_blank"><i class="fab fa-github"></i></a>
+        <ul class="header-decor">
+          <li class="ornament-head"></li>
+          <li><a href="/"><img class="logo" src="/images/logo.png" alt="logo image"></a></li>
+          <li class="ornament-head"></li>
+        </ul>
+        <a class="sn-icon" href="https://www.linkedin.com/in/arman-yerkesh-29b8a7165/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+      <nav>
+        <a class="nav-btn btn-light" ng-href="#!/projects" ng-click="setCurrentProject(null)">Projects</a>
+        <a class="nav-btn btn-light" ng-href="#!/education" ng-click="setCurrentProject(null)">Education</a>
+        <a class="nav-btn btn-light" ng-href="#!/contacts" ng-click="setCurrentProject(null)">Contacts</a>
+        <a class="nav-btn btn-light" href="/downloads/Arman-Yerkeshev-resume.pdf" download>Resume<i class="fa fa-download" aria-hidden="true"></i></a>
+      </nav>
+    </header>
     <ng-view class="view"></ng-view>
 
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
     <script src="bower_components/jquery/dist/jquery.js"></script>
-    <script src="bower_components/angular/angular.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
     <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap.js"></script>
-    <script src="bower_components/angular-animate/angular-animate.js"></script>
-    <script src="bower_components/angular-cookies/angular-cookies.js"></script>
-    <script src="bower_components/angular-resource/angular-resource.js"></script>
-    <script src="bower_components/angular-route/angular-route.js"></script>
-    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
-    <script src="bower_components/angular-touch/angular-touch.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular-animate.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular-cookies.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular-resource.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular-route.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular-sanitize.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular-touch.min.js"></script>
     <script src="bower_components/angular-ui-carousel/dist/ui-carousel.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
@@ -52,21 +91,28 @@
         <script src="scripts/services/ProjectsFactory.js"></script>
         <script src="scripts/controllers/ProjectsController.js"></script>
         <script src="scripts/directives/ProjectDirective.js"></script>
+        <script src="scripts/directives/FiddleDirective.js"></script>
+        <script src="scripts/onload.js"></script>
         <!-- endbuild -->
     <!-- templates -->
-    <script id="project-directive-tmpl" type="text/template">
+    <template id="project-directive-tmpl">
       <a class="project" ng-href="#!/{{project.href}}" ng-click="setCurrentProject(project)">
-        <div class="proj-prev" ng-mouseover="showTitle($event.currentTarget)" ng-mouseout="hideTitle($event.currentTarget)">
-          <h2>{{project.name}}</h2>
+        <h2>{{project.name}}</h2>
+        <div class="proj-prev">
           <p>{{project.title}}</p>
-          <img ng-src="/images/{{project.href}}.jpg">
-          <ul>
+          <img class="min" ng-src="/images/minified/{{project.href}}-1.png" alt="{{project.href}}">
+          <ul class="rombus">
             <li ng-repeat="tech in project.technologies">{{tech}}</li>
           </ul>
         </div>
-        <span>{{project.name}}</span>
-        <img ng-src="/images/{{project.href}}.jpg">
+        <img ng-src="/images/minified/{{project.images[0]}}" onLoad="expandImage(event)" alt="{{project.href}}">
       </a>
-    </script>
+    </template>
+    <template id="fiddle-directive-tmpl">
+      <div class="fiddle">
+        <a href="{{fiddle.url}}" target="_blank"><h2>{{fiddle.name}}</h2><i class="fas fa-external-link-alt"></i></a>
+        <p>{{fiddle.description}}</p>
+      </div>
+    </template>
 </body>
 </html>

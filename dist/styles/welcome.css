@@ -1,0 +1,241 @@
+/* line 4, ../../app/styles/welcome.scss */
+.welcome {
+  animation: Gradient 8s linear infinite;
+  background-image: linear-gradient(100deg, red, maroon, red);
+  background-size: 400vw 400vh;
+  position: fixed;
+  color: #ffe;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+  padding: 5vh 0 0 1vw;
+  z-index: 10;
+  overflow: hidden;
+  position: absolute;
+  box-sizing: border-box;
+}
+
+/* line 22, ../../app/styles/welcome.scss */
+.w-char {
+  font-size: 2.2rem;
+  font-family: cinzel, "Times New Roman", serif;
+  display: inline-block;
+  color: #ffe;
+  margin: 0;
+  transform: translateY(100vh);
+}
+
+/* Animate each character in welcome heading */
+/* line 32, ../../app/styles/welcome.scss */
+.w-char[data-index="1"] {
+  animation: Appear 0.6s 1s forwards, Rotate 1.4s 2.6s;
+}
+
+/* line 36, ../../app/styles/welcome.scss */
+.w-char[data-index="2"] {
+  animation: Appear 0.6s 1.2s forwards, Rotate 1.4s 2.6s;
+}
+
+/* line 40, ../../app/styles/welcome.scss */
+.w-char[data-index="3"] {
+  animation: Appear 0.6s 1.4s forwards, Rotate 1.4s 2.6s;
+}
+
+/* line 44, ../../app/styles/welcome.scss */
+.w-char[data-index="4"] {
+  animation: Appear 0.6s 1.6s forwards, Rotate 1.4s 2.6s;
+}
+
+/* line 48, ../../app/styles/welcome.scss */
+.w-char[data-index="5"] {
+  animation: Appear 0.6s 1.8s forwards, Rotate 1.4s 2.6s;
+}
+
+/* line 52, ../../app/styles/welcome.scss */
+.w-char[data-index="6"] {
+  animation: Appear 0.6s 2s forwards, Rotate 1.4s 2.6s;
+}
+
+/* line 56, ../../app/styles/welcome.scss */
+.w-char[data-index="7"] {
+  animation: Appear 0.6s 2.2s forwards, Rotate 1.4s 2.6s;
+}
+
+/* line 60, ../../app/styles/welcome.scss */
+.w-char[data-index="8"] {
+  animation: Appear 0.6s 2.4s forwards, Rotate 1.4s 2.6s;
+}
+
+/* line 64, ../../app/styles/welcome.scss */
+.w-par {
+  border-top: 24px solid transparent;
+  border-image-source: url(/images/decor/ornament-light.png);
+  border-image-slice: 32;
+  border-image-repeat: repeat;
+  font-size: 1.2rem;
+  width: 80%;
+  height: 50vh;
+  margin: 1rem auto 2rem;
+  padding: 1rem 0 0 8px;
+  transform: translateY(100vh);
+  animation: Appear 2.2s 2.6s forwards;
+  overflow-y: scroll;
+}
+
+/* Spinner */
+/* line 83, ../../app/styles/welcome.scss */
+ul.spinner {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: auto;
+  overflow: visible;
+  transition: opacity 1s;
+}
+
+/* line 92, ../../app/styles/welcome.scss */
+ul.spinner li {
+  margin: 0 0.1rem;
+}
+
+/* line 96, ../../app/styles/welcome.scss */
+ul.spinner li::before {
+  content: "\2022";
+  color: #ffe;
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+/* line 103, ../../app/styles/welcome.scss */
+ul.spinner li:nth-of-type(1) {
+  transform: translateX(-100vw);
+  animation: Spinner 2.5s ease-in-out 5.1s infinite;
+}
+
+/* line 108, ../../app/styles/welcome.scss */
+ul.spinner li:nth-of-type(2) {
+  transform: translateX(-100vw);
+  animation: Spinner 2.5s ease-in-out 4.8s infinite;
+}
+
+/* line 113, ../../app/styles/welcome.scss */
+ul.spinner li:nth-of-type(3) {
+  transform: translateX(-100vw);
+  animation: Spinner 2.5s ease-in-out 4.5s infinite;
+}
+
+/* line 118, ../../app/styles/welcome.scss */
+.welcome > a {
+  color: #ffe;
+}
+
+/* line 122, ../../app/styles/welcome.scss */
+#continue-btn {
+  font-family: cinzel, "Times New Roman", serif;
+  background: transparent;
+  border: solid 2px #ffe;
+  font-weight: 600;
+  padding: 0.6rem;
+  transition: padding 0.3s, opacity 1.5s;
+  font-size: 1.2rem;
+  opacity: 0;
+  display: none;
+}
+
+/* line 134, ../../app/styles/welcome.scss */
+#continue-btn:hover {
+  font-size: 1.3rem;
+  padding: 0.8rem;
+}
+
+/* line 139, ../../app/styles/welcome.scss */
+.welcome .sn-icon {
+  position: absolute;
+  bottom: 1.6rem;
+}
+
+/* line 144, ../../app/styles/welcome.scss */
+.sn-icon > i {
+  font-size: 1.8rem;
+  margin: auto 0;
+}
+
+/* line 149, ../../app/styles/welcome.scss */
+.welcome .sn-icon:nth-of-type(2) {
+  right: 3.4rem;
+}
+
+/* line 153, ../../app/styles/welcome.scss */
+.welcome .sn-icon:last-of-type {
+  right: 1rem;
+}
+
+@media only screen and (min-width: 300px) {
+  /* line 158, ../../app/styles/welcome.scss */
+  .w-char {
+    font-size: 2.4rem;
+  }
+
+  /* line 162, ../../app/styles/welcome.scss */
+  .w-par {
+    font-size: 1.3rem;
+  }
+}
+@media only screen and (min-width: 500px) {
+  /* line 168, ../../app/styles/welcome.scss */
+  .w-char {
+    font-size: 3rem;
+  }
+
+  /* line 172, ../../app/styles/welcome.scss */
+  .w-par {
+    width: 60%;
+    text-align: justify;
+    margin: 2rem auto 1rem;
+  }
+
+  /* line 178, ../../app/styles/welcome.scss */
+  .welcome .sn-icon:nth-of-type(2) {
+    right: 4.2rem;
+  }
+
+  /* line 182, ../../app/styles/welcome.scss */
+  .welcome .sn-icon:last-of-type {
+    right: 1.8rem;
+  }
+}
+@media only screen and (min-width: 700px) {
+  /* line 188, ../../app/styles/welcome.scss */
+  .w-char {
+    font-size: 3.6rem;
+  }
+
+  /* line 192, ../../app/styles/welcome.scss */
+  .w-par {
+    width: 50%;
+    height: 45vh;
+    font-size: 1.2rem;
+  }
+
+  /* line 197, ../../app/styles/welcome.scss */
+  .welcome .sn-icon {
+    bottom: 0.8rem;
+  }
+
+  /* line 201, ../../app/styles/welcome.scss */
+  .sn-icon > i {
+    font-size: 1.4rem;
+  }
+
+  /* line 205, ../../app/styles/welcome.scss */
+  .welcome .sn-icon:nth-of-type(2) {
+    right: 3rem;
+  }
+
+  /* line 209, ../../app/styles/welcome.scss */
+  .welcome .sn-icon:last-of-type {
+    right: 0.8rem;
+  }
+}

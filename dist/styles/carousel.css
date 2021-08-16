@@ -1,0 +1,76 @@
+/* line 4, ../../app/styles/carousel.scss */
+.ui-carousel {
+  height: 18rem;
+  animation: Gradient 8s linear infinite;
+  background-image: linear-gradient(100deg, red, maroon, red);
+  background-size: 400% 400%;
+  margin-bottom: 2.8rem;
+}
+
+/* line 12, ../../app/styles/carousel.scss */
+.carousel-wrapper {
+  height: 100%;
+}
+
+/* line 16, ../../app/styles/carousel.scss */
+.track-wrapper {
+  height: 100%;
+}
+
+/* line 20, ../../app/styles/carousel.scss */
+.track {
+  height: 100%;
+}
+
+/* line 24, ../../app/styles/carousel.scss */
+.carousel-item {
+  height: 100%;
+  text-align: center;
+}
+
+/* line 29, ../../app/styles/carousel.scss */
+.carousel-item img {
+  height: 90%;
+  position: relative;
+  top: 5%;
+}
+
+/* --- Carousel interface ------------------------------------------------------ */
+/* ----------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------- */
+/* line 39, ../../app/styles/carousel.scss */
+.v-middle, .ui-carousel .carousel-btn {
+  display: none;
+}
+
+/* line 43, ../../app/styles/carousel.scss */
+.carousel-dots {
+  bottom: -3rem;
+}
+
+@media only screen and (min-width: 500px) {
+  /* line 52, ../../app/styles/carousel.scss */
+  .v-middle, .ui-carousel .carousel-btn {
+    display: block;
+    cursor: pointer;
+  }
+
+  /* line 57, ../../app/styles/carousel.scss */
+  .ui-carousel .carousel-next .carousel-btn,
+  .ui-carousel .carousel-prev .carousel-btn {
+    font-size: 2rem;
+    color: #ffe;
+    opacity: 1;
+    text-shadow: 0 0 3px #d00;
+  }
+
+  /* line 65, ../../app/styles/carousel.scss */
+  .ui-carousel .carousel-next .carousel-btn {
+    right: 0;
+  }
+
+  /* line 69, ../../app/styles/carousel.scss */
+  .ui-carousel .carousel-prev .carousel-btn {
+    left: 0;
+  }
+}

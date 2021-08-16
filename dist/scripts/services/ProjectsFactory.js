@@ -1,35 +1,59 @@
-Portfolio.factory('ProjectsFactory', function() {
-  var Factory = {};
+"use strict";
 
-  var activeProjects = [
+Portfolio.factory('ProjectsFactory', function() {
+  const Factory = {};
+
+  const activeProjects = [
   {
+    name: 'Tsaikka.fi',
+    url: `https://tsaikka.fi/`,
+    images: [
+      'tsaikka-1.png',
+      'tsaikka-2.png',
+      'tsaikka-3.png',
+      'tsaikka-4.png',
+      'tsaikka-5.png'
+    ],
+    title: 'Non-profit organization for Russian-speaking elderly people in Helsinki',
+    technologies: ['Wordpress', 'CSS'],
+    href: 'tsaikka',
+    date: 'November 2020',
+    description: `Tsaikka.fi is a website, developed for non-profit organization for Russian-speaking elderly
+      people in Helsinki. The development was performed by Alatau oy company, using Wordpress. My role in the
+      project was to customize the design and appearance of the website, by adding custom CSS. Colour scheme
+      was taken from their previous website, custom icons and little animation effects were added. Font size
+      and spacing were increased to suit better the needs of aged people.`
+  }, {
+    name: 'Alatau oy',
+    url: `http://alatau.fi/`,
+    images: [
+      'alatau-1.png',
+      'alatau-2.png',
+      'alatau-3.png',
+      'alatau-4.png',
+      'alatau-5.png'
+    ],
+    title: 'Web development and hardware repair company in Helsinki',
+    technologies: ['Wordpress', 'CSS', 'HTML'],
+    href: 'alatau',
+    date: 'April 2021',
+    description: `This is a website, developed for Alatau oy company, where i had my work practice during
+      studies in Careeria. The company focuses on development of websites, using Wordpress. I used my knowledge
+      of HTML and CSS to slightly improve and customize appearance of the website. I replaced default images and
+      icons with custom ones, slightly changed colour scheme. Also, i decided to add multi-lingual support,
+      portfolio section and contact form. This was aimed to provide better customer experience and help to cover
+      larger target market.`
+  }, {
     name: 'All Movies',
     url: `https://all-movies-1.herokuapp.com/`,
     github: `https://github.com/A-Yerkeshev/all-movies-1`,
     images: [
-      {
-        src: '/images/all-movies/all-movies-1.png',
-        descr: `This application untilizes AJAX requests and browser's local
-          storage to collect the data from the server and from user's interactions
-          with website to build the customised content. Application is created with
-          Angular and Bootstrap.`
-      }, {
-        src: '/images/all-movies/all-movies-2.png',
-        descr: `Local storage of the browser keeps track of user's activity
-          on the website to streighten UX. Bootstrap takes care of responsiveness
-          of the content for different devices.`
-      }, {
-        src: '/images/all-movies/all-movies-3.png',
-        descr: `User has an option to perform a search by keywords. This sends
-          an AJAX request to the server and outputs the result on the page.`
-      }, {
-        src: '/images/all-movies/all-movies-4.png',
-        descr: `Finally, application has mechanisms to suggest some content based
-          on user's previous activity. The data collected then analised by the application
-          and it sends several requests to the server based on analysis output.`
-      }
+      'all-movies-1.png',
+      'all-movies-2.png',
+      'all-movies-3.png',
+      'all-movies-4.png'
     ],
-    title: 'All best movies in one app',
+    title: 'Movies browsing application using IMDb API',
     technologies: ['Angular', 'Bootstrap', 'Typescript', 'JQuery', 'HTML', 'CSS'],
     href: 'all-movies',
     date: 'October 2019',
@@ -45,30 +69,13 @@ Portfolio.factory('ProjectsFactory', function() {
     url: `https://dashboard-500.herokuapp.com/`,
     github: `https://github.com/A-Yerkeshev/dashboard`,
     images: [
-      {
-        src: '/images/dashboard/dashboard-1.png',
-        descr: `Simple application built on React that utilizes several APIs to
-          processes posts-like data and impliments basic registration and
-          authentification functionality.`
-      }, {
-        src: '/images/dashboard/dashboard-2.png',
-        descr: `The data of newly registered user gets send to server via API
-          call as well as passed to the state of client-side interface.`
-      }, {
-        src: '/images/dashboard/dashboard-3.png',
-        descr: `Signed in user has possibility to edit or delete his previous
-          posts, as well as to add new ones.`
-      }, {
-        src: '/images/dashboard/dashboard-4.png',
-        descr: `Possibility to upload pictures from user's computer is simulated
-          using local storage of the browser.`
-      }, {
-        src: '/images/dashboard/dashboard-5.png',
-        descr: `Finally, the database is exposed through API for usage to other
-        application, as well as client-side part of this application.`
-      }
+      'dashboard-1.png',
+      'dashboard-2.png',
+      'dashboard-3.png',
+      'dashboard-4.png',
+      'dashboard-5.png'
     ],
-    title: 'Simple posts application on React',
+    title: 'Posts application, supporting authentification and uploads',
     technologies: ['React', 'JQuery', 'Axios', 'NodeJS', 'HTML', 'CSS'],
     href: 'dashboard',
     date: 'July 2020',
@@ -86,31 +93,13 @@ Portfolio.factory('ProjectsFactory', function() {
     url: `https://lemon-chat-123.herokuapp.com/`,
     github: `https://github.com/A-Yerkeshev/LemonChat`,
     images: [
-      {
-        src: '/images/lemon-chat/lemon-chat-1.png',
-        descr: `Application is designed to represent the functionality of chat
-          and handles all types of necessary interaction types between users.`
-      }, {
-        src: '/images/lemon-chat/lemon-chat-2.png',
-        descr: `The classical for social networks "friends" system was implemented.
-          It allowed to organize and systemize the process of initiating new chats
-          between users, as well as management of existing ones.`
-      }, {
-        src: '/images/lemon-chat/lemon-chat-3.png',
-        descr: `Chats themselves follow standard practices and besides communication
-          functionality provide user with some additional data.`
-      }, {
-        src: '/images/lemon-chat/lemon-chat-4.png',
-        descr: `In order to keep chats organized with participants, the hirerachial
-          structure of administrators priviledges was implimented.`
-      }, {
-        src: '/images/lemon-chat/lemon-chat-5.png',
-        descr: `Application provides some room for customization of profile for
-          registered users, in particular it allowes to change the profile image
-          or put some information to profile.`
-      }
+      'lemon-chat-1.png',
+      'lemon-chat-2.png',
+      'lemon-chat-3.png',
+      'lemon-chat-4.png',
+      'lemon-chat-5.png'
     ],
-    title: 'Fancy looking chat application',
+    title: 'Chat application, supporting authentification',
     technologies: ['JavaScript', 'QJuery', 'AngularJS', 'AnimeJS', 'HTML', 'CSS'],
     href: 'lemon-chat',
     date: 'March 2019',
@@ -127,31 +116,13 @@ Portfolio.factory('ProjectsFactory', function() {
     url: `https://neigh-map.herokuapp.com/`,
     github: `https://github.com/A-Yerkeshev/map`,
     images: [
-      {
-        src: '/images/neighborhood/neighborhood-1.png',
-        descr: `Map utilizes APIs to retrieve data from various sources and presents
-          it to the user in an interactable manner.`
-      }, {
-        src: '/images/neighborhood/neighborhood-2.png',
-        descr: `Map has some hard-coded locations that are visually present in a
-          form of markers. Sidebar on left hand side allows to filter the markers
-          by the category they belong.`
-      }, {
-        src: '/images/neighborhood/neighborhood-3.png',
-        descr: `Also, by clicking the marker or by selecting its name from the
-          list on the left, the map zoomes in to it and displays information about
-          place to the user, that is dinamically retrieved from the API.`
-      }, {
-        src: '/images/neighborhood/neighborhood-4.png',
-        descr: `Besides fixed markers, map allows user to retrieve relevant
-          information about any place, by simply typing its name to the search box.`
-      }, {
-        src: '/images/neighborhood/neighborhood-5.png',
-        descr: `Search box dinamically gives suggestions to the user, depending
-          on current zoom location.`
-      }
+      'neighborhood-map-1.png',
+      'neighborhood-map-2.png',
+      'neighborhood-map-3.png',
+      'neighborhood-map-4.png',
+      'neighborhood-map-5.png'
     ],
-    title: 'The map that utilizes various APIs',
+    title: 'The map that utilizes Google Maps and Wikipedia APIs',
     technologies: ['JavaScript', 'KnockoutJS', 'HTML', 'CSS', 'API'],
     href: 'neighborhood-map',
     date: 'June 2018',
@@ -165,39 +136,20 @@ Portfolio.factory('ProjectsFactory', function() {
       name and retrieve corresponding information about it from APIs.`
   }];
 
-  var inactiveProjects = [
+  const inactiveProjects = [
   {
     name: 'Items Catalog',
     url: null,
     github: `https://github.com/A-Yerkeshev/catalog`,
     images: [
-      {
-        src: '/images/items-catalog/items-catalog-1.png',
-        descr: `Online catalog of items retrieves data from database and renders
-          it on the page using Python libraries and frameworks.`
-      }, {
-        src: '/images/items-catalog/items-catalog-2.png',
-        descr: `All items on the website are sorted by category and most recent
-          ones are displayed on the frontpage.`
-      }, {
-        src: '/images/items-catalog/items-catalog-3.png',
-        descr: `Each item must have a name and category and optionally can have
-          an image and description.`
-      }, {
-        src: '/images/items-catalog/items-catalog-4.png',
-        descr: `In order to add your own items to the catalog, user should complete
-          simple registration process.`
-      }, {
-        src: '/images/items-catalog/items-catalog-5.png',
-        descr: `Registered users can access the page for creation of items, that
-          is otherwise hidden.`
-      }, {
-        src: '/images/items-catalog/items-catalog-6.png',
-        descr: `Users have a possibility to edit and delete items they created any
-          time they want.`
-      },
+      'items-catalog-1.png',
+      'items-catalog-2.png',
+      'items-catalog-3.png',
+      'items-catalog-4.png',
+      'items-catalog-5.png',
+      'items-catalog-6.png'
     ],
-    title: 'The web catalog of various items',
+    title: 'The web catalog with database, build on Python',
     technologies: ['Python', 'SQL', 'Flask', 'HTML', 'CSS'],
     href: 'items-catalog',
     date: 'May 2018',
@@ -211,30 +163,12 @@ Portfolio.factory('ProjectsFactory', function() {
     name: 'Real Estate Demo App',
     github: `https://github.com/A-Yerkeshev/RealEstateDemoApp`,
     images: [
-      {
-        src: '/images/real-estate/real-estate-1.png',
-        descr: `Real estate demo application is an experiment project of
-          combining together two front-end technologies like AngularJS and
-          Three.js.`
-      }, {
-        src: '/images/real-estate/real-estate-2.png',
-        descr: `Various 3D models are loaded into the app through native Three.js
-          objects loaders such as OBJLoader and MTLLoader. Three.js has an object
-          loading suppprt for all popular 3D models formats.`
-      }, {
-        src: '/images/real-estate/real-estate-3.png',
-        descr: `AngularJS functionality can easilly be combined with Three.js
-          since they do not interfere with each other - one creates three
-          dimensional space on the webpage and second one handles two dimensional
-          templates.`
-      }, {
-        src: '/images/real-estate/real-estate-4.png',
-        descr: `While AngularJS handles dynamic templating, Three.js does not have
-          such native functionality, so dynamic work with 3D objects needs to be
-          coded manually.`
-      }
+      'real-estate-1.png',
+      'real-estate-2.png',
+      'real-estate-3.png',
+      'real-estate-4.png'
     ],
-    title: 'Experiment of combining Three.js and AngularJS',
+    title: 'Experiment of loading 3D models to a webpage',
     technologies: ['JavaScript', 'Three.js', 'AngularJS', 'HTML', 'CSS'],
     href: 'real-estate',
     date: 'June 2019',
@@ -251,16 +185,10 @@ Portfolio.factory('ProjectsFactory', function() {
     url: null,
     github: `https://github.com/A-Yerkeshev/movie-trailers`,
     images: [
-      {
-        src: '/images/movie-trailers/movie-trailers-1.png',
-        descr: `Simple application that utilizes Python object-oriented programming.`
-      }, {
-        src: '/images/movie-trailers/movie-trailers-2.png',
-        descr: `When poster is clicked it openes a video player and runs the trailer
-          of that movie.`
-      }
+      'movie-trailers-1.png',
+      'movie-trailers-2.png'
     ],
-    title: 'Posters and trailers about movies',
+    title: 'Webpage that shows posters and plays trailers',
     technologies: ['Python', 'HTML', 'CSS', 'JavaScript'],
     href: 'movie-trailers',
     date: 'April 2018',
@@ -278,16 +206,10 @@ Portfolio.factory('ProjectsFactory', function() {
     url: null,
     github: `https://github.com/A-Yerkeshev/portfolio-v1`,
     images: [
-      {
-        src: '/images/portfolio/portfolio-1.png',
-        descr: `This is how this website looked initially.`
-      }, {
-        src: '/images/portfolio/portfolio-2.png',
-        descr: `The window on the left changed content dinamically when projects
-          were selected, even that no JavaScript was used.`
-      }
+      'portfolio-v1-1.png',
+      'portfolio-v1-2.png'
     ],
-    title: 'First version of portfolio',
+    title: 'First version of this website',
     technologies: ['HTML', 'CSS'],
     href: 'portfolio-v1',
     date: 'April 2018',
@@ -303,21 +225,11 @@ Portfolio.factory('ProjectsFactory', function() {
     url: null,
     github: `https://github.com/A-Yerkeshev/portfolio-v2`,
     images: [
-      {
-        src: '/images/portfolio-v2/portfolio-v2-1.png',
-        descr: `This is how second version of this site looked like. The projects
-          were listed in the bottom part of the screen.`
-      }, {
-        src: '/images/portfolio-v2/portfolio-v2-2.png',
-        descr: `When project was clicked the demo video of it was played on the
-          right hand side and description of the project replaced initial text.`
-      }, {
-        src: '/images/portfolio-v2/portfolio-v2-3.png',
-        descr: `Website had an option to interact with the project website right
-          on the portfolio website, without need of leaving it.`
-      }
+      'portfolio-v2-1.png',
+      'portfolio-v2-2.png',
+      'portfolio-v2-3.png'
     ],
-    title: 'Second version of portfolio',
+    title: 'Second version of this website',
     technologies: ['JavaScript', 'HTML', 'CSS'],
     href: 'portfolio-v2',
     date: 'July 2018',
@@ -331,19 +243,40 @@ Portfolio.factory('ProjectsFactory', function() {
       JavaScript files follows this logic of MVC principle.`
   }];
 
-  var currentProject = null;
+  const jsfiddles = [
+  {
+    name: 'Debouncer',
+    url: `https://jsfiddle.net/A_Yerkesh/ctb3ga6o/5/`,
+    description: `Alternative approach to making debounced functions in JavaScript. This approach allows to
+      have debounce wrapper function, instead of debounce constructor function. In other words, you don't need
+      to return a function from debounce constructor and then assign it to the event listener. Instead, you can
+      just pass your function to the debounce wrapper.`
+  }, {
+    name: 'Custom Promise',
+    url: `https://jsfiddle.net/A_Yerkesh/7fux9gsL/1/`,
+    description: `Attempt to recreate ES6 Promise functionality. This is not a complete polyfill, as some
+      functionality differs from actual Promise. However, this custom promise can be initialized, chained, resolved
+      or rejected just like original ES6 Promise.`
+  }
+  ];
+
+  let currentProject = null;
 
   Factory.getActiveProjects = function() {
-    return activeProjects
+    return activeProjects;
   };
 
   Factory.getInactiveProjects = function() {
-    return inactiveProjects
+    return inactiveProjects;
   };
 
   Factory.getCurrentProject = function() {
     return currentProject;
   };
+
+  Factory.getFiddles = function() {
+    return jsfiddles;
+  }
 
   Factory.setCurrentProject = function(project) {
     currentProject = project;

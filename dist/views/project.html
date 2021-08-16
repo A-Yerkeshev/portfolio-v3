@@ -1,21 +1,18 @@
 <div ng-controller="ProjectsController" class="current-project">
   <h1>{{currentProject.name}}</h1>
-  <ui-carousel slides="currentProject.images" autoplay="true" autoplay-speed="4000" dots="true">
+  <ui-carousel slides="currentProject.images" autoplay="false" speed="1000" autoplay-speed="4000" dots="true">
     <carousel-item>
-      <div>
-        <p>
-          {{item.descr}}
-        </p>
-        <img src="{{item.src}}">
-      </div>
+        <img src="/images/minified/{{item}}" alt="{{item}}" onLoad="expandImage(event)">
     </carousel-item>
   </ui-carousel>
   <em>{{currentProject.date}}</em>
   <p>{{currentProject.description}}</p>
   <h2>Technologies used</h2>
-  <ul>
+  <ul class="rombus">
     <li ng-repeat="tech in currentProject.technologies">{{tech}}</li>
   </ul>
-  <button ng-if="currentProject.url" ng-click="newTab(currentProject.url)">Visit website</button>
-  <button ng-click="newTab(currentProject.github)">View on GitHub</button>
+  <div class="buttons-container">
+    <a class="btn-light" ng-if="currentProject.url" ng-click="newTab(currentProject.url)">Visit website</a>
+    <a class="btn-light" ng-if="currentProject.github" ng-click="newTab(currentProject.github)">View on GitHub</a>
+  </div>
 </div>

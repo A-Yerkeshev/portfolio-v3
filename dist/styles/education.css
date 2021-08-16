@@ -1,0 +1,58 @@
+/* line 4, ../../app/styles/education.scss */
+.education h2 {
+  margin-top: 1rem;
+}
+
+/* line 8, ../../app/styles/education.scss */
+.education section {
+  clear: both;
+}
+
+/* line 12, ../../app/styles/education.scss */
+.ed-unit h2 {
+  margin: 1.6rem 0 0.6rem;
+}
+
+/* line 16, ../../app/styles/education.scss */
+.ed-unit em {
+  display: block;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+/* line 22, ../../app/styles/education.scss */
+.ed-unit img {
+  width: 100%;
+  margin: 0 0 1rem;
+  box-shadow: 0 2px 3px #983;
+}
+
+/* line 28, ../../app/styles/education.scss */
+.ed-unit a {
+  color: #d00;
+  font-style: italic;
+}
+
+@media only screen and (min-width: 500px) {
+  /* line 38, ../../app/styles/education.scss */
+  .ed-unit img {
+    width: 70%;
+    margin: 0 1rem 1rem;
+  }
+
+  /* line 43, ../../app/styles/education.scss */
+  .ed-unit:nth-child(even) img {
+    float: left;
+  }
+
+  /* line 47, ../../app/styles/education.scss */
+  .ed-unit:nth-child(odd) img {
+    float: right;
+  }
+}
+@media only screen and (min-width: 700px) {
+  /* line 53, ../../app/styles/education.scss */
+  .ed-unit img {
+    width: 50%;
+  }
+}

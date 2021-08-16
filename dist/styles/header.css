@@ -1,0 +1,165 @@
+/* line 5, ../../app/styles/header.scss */
+header {
+  animation: Gradient 8s linear infinite;
+  background-image: linear-gradient(100deg, red, maroon, red);
+  background-size: 400% 400%;
+  width: 100%;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  margin-bottom: 0.2rem;
+}
+
+/* Top bar */
+/* line 18, ../../app/styles/header.scss */
+.top-container, nav {
+  display: flex;
+}
+
+/* line 22, ../../app/styles/header.scss */
+.top-container {
+  padding: 0.4rem 0.6rem;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 0.6rem;
+}
+
+/* line 29, ../../app/styles/header.scss */
+header .sn-icon {
+  color: #ffe;
+  font-size: 1.8rem;
+  display: flex;
+}
+
+/* line 35, ../../app/styles/header.scss */
+.header-decor {
+  flex-grow: 1;
+  display: flex;
+  align-items: stretch;
+  gap: 0.6rem;
+}
+
+/* line 42, ../../app/styles/header.scss */
+.logo {
+  width: 4rem;
+  position: absolute;
+  top: 0.2rem;
+  left: calc(50vw - 2rem);
+  z-index: 1;
+}
+
+/* Navbar */
+/* line 51, ../../app/styles/header.scss */
+nav {
+  background-color: #ffe;
+  padding: calc(4.2rem - 1.8rem - 0.8rem + 0.8rem) 0.6rem 0.6rem;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+}
+
+/* line 60, ../../app/styles/header.scss */
+.nav-btn {
+  font-size: 1.2rem;
+  font-family: cinzel, "Times New Roman", serif;
+  font-weight: bold;
+}
+
+/* line 66, ../../app/styles/header.scss */
+.nav-btn::before,
+.nav-btn::after {
+  content: '';
+  background-size: contain;
+  display: inline-block;
+  width: 0.8rem;
+  height: 0.8rem;
+  vertical-align: middle;
+}
+
+/* line 76, ../../app/styles/header.scss */
+.nav-btn::before {
+  content: '';
+  background-image: url(/images/decor/arrow-left-red.png);
+  margin-right: 0.4rem;
+}
+
+/* line 82, ../../app/styles/header.scss */
+.nav-btn::after {
+  content: '';
+  background-image: url(/images/decor/arrow-right-red.png);
+  margin-left: 0.4rem;
+}
+
+/* line 88, ../../app/styles/header.scss */
+nav .fa-download {
+  margin-left: 0.8rem;
+}
+
+@media only screen and (min-width: 300px) {
+  /* line 94, ../../app/styles/header.scss */
+  .ornament-head {
+    flex-grow: 1;
+    background-size: contain;
+    background-repeat-y: no-repeat;
+    background-position-y: center;
+    opacity: 0.8;
+  }
+
+  /* line 102, ../../app/styles/header.scss */
+  .ornament-head:first-child {
+    background-image: url(/images/decor/ornament-head-left.png);
+    background-position-x: right;
+  }
+
+  /* line 107, ../../app/styles/header.scss */
+  .ornament-head:last-child {
+    background-image: url(/images/decor/ornament-head-right.png);
+  }
+
+  /* line 112, ../../app/styles/header.scss */
+  .header-decor li:nth-child(2) {
+    flex-basis: 4.4rem;
+  }
+
+  /* line 116, ../../app/styles/header.scss */
+  .logo {
+    width: 4.4rem;
+    left: calc(50vw - 2.1rem);
+  }
+}
+@media only screen and (min-width: 500px) {
+  /* line 123, ../../app/styles/header.scss */
+  .nav-btn:hover {
+    padding: 0.6rem 0.4rem;
+  }
+}
+@media only screen and (min-width: 700px) {
+  /* line 129, ../../app/styles/header.scss */
+  .top-container {
+    padding: 0.6rem 1.2rem;
+    gap: 1.2rem;
+    height: 2rem;
+  }
+
+  /* line 136, ../../app/styles/header.scss */
+  .header-decor li:nth-child(2) {
+    flex-basis: 6rem;
+  }
+
+  /* line 140, ../../app/styles/header.scss */
+  .logo {
+    width: 6rem;
+    left: calc(50vw - 3rem);
+    border-bottom: 1rem solid #ffe;
+  }
+
+  /* line 146, ../../app/styles/header.scss */
+  nav {
+    padding: 1rem 1.6rem;
+  }
+
+  /* line 150, ../../app/styles/header.scss */
+  .nav-btn:nth-child(3) {
+    margin-left: auto;
+  }
+}

@@ -1,0 +1,35 @@
+/* line 5, ../../app/styles/contacts.scss */
+table {
+  margin: 0 auto;
+  padding: 0.6rem;
+  background-color: #ffe;
+  border: 1px solid #983;
+  border-spacing: 0;
+  font-size: 1.2rem;
+}
+
+/* line 14, ../../app/styles/contacts.scss */
+td, th {
+  text-align: left;
+  padding: 0.6rem 0.1rem 0;
+  border-bottom: 1px solid #983;
+}
+
+/* line 20, ../../app/styles/contacts.scss */
+th {
+  padding-right: 0.4rem;
+}
+
+/* line 24, ../../app/styles/contacts.scss */
+td {
+  border-left: 1px solid #983;
+  padding-left: 0.4rem;
+}
+
+@media only screen and (min-width: 500px) {
+  /* line 30, ../../app/styles/contacts.scss */
+  table {
+    padding: 1rem;
+    border: 2px solid #983;
+  }
+}
