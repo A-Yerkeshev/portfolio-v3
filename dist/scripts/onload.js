@@ -77,6 +77,6 @@ window.addEventListener('hashchange', (event) => {
   //       startPos = null;
   //     }, 1000);
   //   })
-  }
+  //}
 
 })
