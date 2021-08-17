@@ -43,40 +43,40 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
 
 window.addEventListener('hashchange', (event) => {
-  // Add touch scroll event to carousel on mobile devices
-  const defRoutes = ['', '#', '#!', 'projects', 'education', 'contacts'];
-  let hash;
+  // // Add touch scroll event to carousel on mobile devices
+  // const defRoutes = ['', '#', '#!', 'projects', 'education', 'contacts'];
+  // let hash;
 
-  // Strip last slash charachter if present;
-  if (event.newURL.endsWith('/')) {
-    hash = event.newURL.slice(0, -1);
-  } else {
-    hash = event.newURL;
-  }
+  // // Strip last slash charachter if present;
+  // if (event.newURL.endsWith('/')) {
+  //   hash = event.newURL.slice(0, -1);
+  // } else {
+  //   hash = event.newURL;
+  // }
 
-  hash = hash.substring(event.newURL.lastIndexOf('/')+1);
+  // hash = hash.substring(event.newURL.lastIndexOf('/')+1);
 
-  if (!defRoutes.includes(hash)) {
-    const carousel = document.querySelector('ui-carousel');
-    let startPos = null;
+  // if (!defRoutes.includes(hash)) {
+  //   const carousel = document.querySelector('ui-carousel');
+  //   let startPos = null;
 
-    // Track first position where the touch occured
-    carousel.addEventListener('touchstart', (event) => {
-      startPos = event.touches[0].clientX;
-    })
+  //   // Track first position where the touch occured
+  //   carousel.addEventListener('touchstart', (event) => {
+  //     startPos = event.touches[0].clientX;
+  //   })
 
-    carousel.addEventListener('touchmove', (event) => {
-      const x = event.touches[0].clientX;
+  //   carousel.addEventListener('touchmove', (event) => {
+  //     const x = event.touches[0].clientX;
 
-      if (startPos-x >= 75) {
-        console.log('swap');
-      }
+  //     if (startPos-x >= 75) {
+  //       console.log('swap');
+  //     }
 
-      // Clear touch path after 1 sec;
-      setTimeout(() => {
-        startPos = null;
-      }, 1000);
-    })
-  }
+  //     // Clear touch path after 1 sec;
+  //     setTimeout(() => {
+  //       startPos = null;
+  //     }, 1000);
+  //   })
+  // }
 
 })
