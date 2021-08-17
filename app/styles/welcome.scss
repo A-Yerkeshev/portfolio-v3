@@ -30,35 +30,35 @@ $cinzel: cinzel, "Times New Roman", serif;
 
 /* Animate each character in welcome heading */
 .w-char[data-index="1"] {
-  animation: Appear 0.6s 1s forwards, Rotate 1.4s 2.6s;;
+  animation: Appear 0.6s 1s forwards; //Rotate 1.4s 2.6s;
 }
 
 .w-char[data-index="2"] {
-  animation: Appear 0.6s 1.2s forwards, Rotate 1.4s 2.6s;;
+  animation: Appear 0.6s 1.2s forwards; //Rotate 1.4s 2.6s;
 }
 
 .w-char[data-index="3"] {
-  animation: Appear 0.6s 1.4s forwards, Rotate 1.4s 2.6s;;
+  animation: Appear 0.6s 1.4s forwards; //Rotate 1.4s 2.6s;
 }
 
 .w-char[data-index="4"] {
-  animation: Appear 0.6s 1.6s forwards, Rotate 1.4s 2.6s;;
+  animation: Appear 0.6s 1.6s forwards; //Rotate 1.4s 2.6s;
 }
 
 .w-char[data-index="5"] {
-  animation: Appear 0.6s 1.8s forwards, Rotate 1.4s 2.6s;;
+  animation: Appear 0.6s 1.8s forwards; //Rotate 1.4s 2.6s;
 }
 
 .w-char[data-index="6"] {
-  animation: Appear 0.6s 2s forwards, Rotate 1.4s 2.6s;;
+  animation: Appear 0.6s 2s forwards; //Rotate 1.4s 2.6s;
 }
 
 .w-char[data-index="7"] {
-  animation: Appear 0.6s 2.2s forwards, Rotate 1.4s 2.6s;;
+  animation: Appear 0.6s 2.2s forwards; //Rotate 1.4s 2.6s;
 }
 
 .w-char[data-index="8"] {
-  animation: Appear 0.6s 2.4s forwards, Rotate 1.4s 2.6s;;
+  animation: Appear 0.6s 2.4s forwards; //Rotate 1.4s 2.6s;
 }
 
 .w-par {
@@ -138,7 +138,7 @@ ul.spinner li:nth-of-type(3) {
 
 .welcome .sn-icon {
   position: absolute;
-  bottom: 1.6rem;
+  bottom: 2.8rem;
 }
 
 .sn-icon > i {

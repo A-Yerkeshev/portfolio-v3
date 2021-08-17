@@ -30,42 +30,42 @@
 /* Animate each character in welcome heading */
 /* line 32, ../../app/styles/welcome.scss */
 .w-char[data-index="1"] {
-  animation: Appear 0.6s 1s forwards, Rotate 1.4s 2.6s;
+  animation: Appear 0.6s 1s forwards;
 }
 
 /* line 36, ../../app/styles/welcome.scss */
 .w-char[data-index="2"] {
-  animation: Appear 0.6s 1.2s forwards, Rotate 1.4s 2.6s;
+  animation: Appear 0.6s 1.2s forwards;
 }
 
 /* line 40, ../../app/styles/welcome.scss */
 .w-char[data-index="3"] {
-  animation: Appear 0.6s 1.4s forwards, Rotate 1.4s 2.6s;
+  animation: Appear 0.6s 1.4s forwards;
 }
 
 /* line 44, ../../app/styles/welcome.scss */
 .w-char[data-index="4"] {
-  animation: Appear 0.6s 1.6s forwards, Rotate 1.4s 2.6s;
+  animation: Appear 0.6s 1.6s forwards;
 }
 
 /* line 48, ../../app/styles/welcome.scss */
 .w-char[data-index="5"] {
-  animation: Appear 0.6s 1.8s forwards, Rotate 1.4s 2.6s;
+  animation: Appear 0.6s 1.8s forwards;
 }
 
 /* line 52, ../../app/styles/welcome.scss */
 .w-char[data-index="6"] {
-  animation: Appear 0.6s 2s forwards, Rotate 1.4s 2.6s;
+  animation: Appear 0.6s 2s forwards;
 }
 
 /* line 56, ../../app/styles/welcome.scss */
 .w-char[data-index="7"] {
-  animation: Appear 0.6s 2.2s forwards, Rotate 1.4s 2.6s;
+  animation: Appear 0.6s 2.2s forwards;
 }
 
 /* line 60, ../../app/styles/welcome.scss */
 .w-char[data-index="8"] {
-  animation: Appear 0.6s 2.4s forwards, Rotate 1.4s 2.6s;
+  animation: Appear 0.6s 2.4s forwards;
 }
 
 /* line 64, ../../app/styles/welcome.scss */
@@ -153,7 +153,7 @@ ul.spinner li:nth-of-type(3) {
 /* line 139, ../../app/styles/welcome.scss */
 .welcome .sn-icon {
   position: absolute;
-  bottom: 1.6rem;
+  bottom: 2.8rem;
 }
 
 /* line 144, ../../app/styles/welcome.scss */
@@ -239,3 +239,5 @@ ul.spinner li:nth-of-type(3) {
     right: 0.8rem;
   }
 }
+
+/*# sourceMappingURL=welcome.css.map */
