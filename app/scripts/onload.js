@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
 window.addEventListener('hashchange', (event) => {
   // Add touch scroll event to carousel on mobile devices
-  const defRoutes = ['', 'projects', 'education', 'contacts'];
+  const defRoutes = ['', '#', '#!', 'projects', 'education', 'contacts'];
   let hash;
 
   // Strip last slash charachter if present;
@@ -57,7 +57,7 @@ window.addEventListener('hashchange', (event) => {
   hash = hash.substring(event.newURL.lastIndexOf('/')+1);
 
   if (!defRoutes.includes(hash)) {
-    const carousel = document.querySelector('.ui-carousel');
+    const carousel = document.querySelector('ui-carousel');
     let startPos = null;
 
     // Track first position where the touch occured
@@ -68,7 +68,7 @@ window.addEventListener('hashchange', (event) => {
     carousel.addEventListener('touchmove', (event) => {
       const x = event.touches[0].clientX;
 
-      if (x-startPos >= 100) {
+      if (startPos-x >= 75) {
         console.log('swap');
       }
 

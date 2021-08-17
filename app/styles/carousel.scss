@@ -37,7 +37,24 @@ $red: #d00;
 /* ----------------------------------------------------------------------------- */
 
 .v-middle, .ui-carousel .carousel-btn {
-  display: none
+  display: block;
+  cursor: pointer;
+}
+
+.ui-carousel .carousel-next .carousel-btn,
+.ui-carousel .carousel-prev .carousel-btn {
+  font-size: 2rem;
+  color: $light;
+  opacity: 1;
+  text-shadow: 0 0 3px $red;
+}
+
+.ui-carousel .carousel-next .carousel-btn {
+  right: 0;
+}
+
+.ui-carousel .carousel-prev .carousel-btn {
+  left: 0;
 }
 
 .carousel-dots {
@@ -49,26 +66,6 @@ $red: #d00;
 }
 
 @media only screen and (min-width: 500px) {
-  .v-middle, .ui-carousel .carousel-btn {
-    display: block;
-    cursor: pointer;
-  }
-
-  .ui-carousel .carousel-next .carousel-btn,
-  .ui-carousel .carousel-prev .carousel-btn {
-    font-size: 2rem;
-    color: $light;
-    opacity: 1;
-    text-shadow: 0 0 3px $red;
-  }
-
-  .ui-carousel .carousel-next .carousel-btn {
-    right: 0;
-  }
-
-  .ui-carousel .carousel-prev .carousel-btn {
-    left: 0;
-  }
 }
 
 @media only screen and (min-width: 700px) {
