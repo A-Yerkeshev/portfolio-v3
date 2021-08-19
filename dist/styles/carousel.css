@@ -38,13 +38,13 @@
 /* --- Carousel interface ------------------------------------------------------ */
 /* ----------------------------------------------------------------------------- */
 /* ----------------------------------------------------------------------------- */
-/* line 52, ../../app/styles/carousel.scss */
+/* line 39, ../../app/styles/carousel.scss */
 .v-middle, .ui-carousel .carousel-btn {
   display: block;
   cursor: pointer;
 }
 
-/* line 57, ../../app/styles/carousel.scss */
+/* line 44, ../../app/styles/carousel.scss */
 .ui-carousel .carousel-next .carousel-btn,
 .ui-carousel .carousel-prev .carousel-btn {
   font-size: 2rem;
@@ -53,20 +53,19 @@
   text-shadow: 0 0 3px #d00;
 }
 
-/* line 65, ../../app/styles/carousel.scss */
+/* line 52, ../../app/styles/carousel.scss */
 .ui-carousel .carousel-next .carousel-btn {
   right: 0;
 }
 
-/* line 69, ../../app/styles/carousel.scss */
+/* line 56, ../../app/styles/carousel.scss */
 .ui-carousel .carousel-prev .carousel-btn {
   left: 0;
 }
 
-/* line 43, ../../app/styles/carousel.scss */
+/* line 60, ../../app/styles/carousel.scss */
 .carousel-dots {
   bottom: -3rem;
 }
 
-@media only screen and (min-width: 500px) {
-}
+/*# sourceMappingURL=carousel.css.map */
