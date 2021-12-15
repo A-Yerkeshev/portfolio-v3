@@ -5,7 +5,7 @@ Portfolio.factory('ProjectsFactory', function() {
 
   const activeProjects = [
   {
-    name: 'Computer parts online store',
+    name: 'Online Store',
     url: `https://computer-spares-demo.herokuapp.com/`,
     images: [
       'shopping-cart-1.png',
@@ -14,10 +14,9 @@ Portfolio.factory('ProjectsFactory', function() {
       'shopping-cart-4.png',
       'shopping-cart-5.png',
       'shopping-cart-6.png',
-      'shopping-cart-7.png',
-      'shopping-cart-8.png'
+      'shopping-cart-7.png'
     ],
-    title: 'Online store with Stripe payment system integration',
+    title: 'Computer parts online store with Stripe payment system integration',
     technologies: ['Stripe', 'JavaScript', 'HTML', 'CSS', 'NodeJS', 'Express', 'JWT'],
     href: 'computer-store',
     date: 'December 2021',
