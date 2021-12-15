@@ -5,6 +5,29 @@ Portfolio.factory('ProjectsFactory', function() {
 
   const activeProjects = [
   {
+    name: 'Computer parts online store',
+    url: `https://computer-spares-demo.herokuapp.com/`,
+    images: [
+      'shopping-cart-1.png',
+      'shopping-cart-2.png',
+      'shopping-cart-3.png',
+      'shopping-cart-4.png',
+      'shopping-cart-5.png',
+      'shopping-cart-6.png',
+      'shopping-cart-7.png',
+      'shopping-cart-8.png'
+    ],
+    title: 'Online store with Stripe payment system integration',
+    technologies: ['Stripe', 'JavaScript', 'HTML', 'CSS', 'NodeJS', 'Express', 'JWT'],
+    href: 'computer-store',
+    date: 'December 2021',
+    description: `This is my first attempt to intergrate payment system into the application. Stripe provides great
+      API for that purpose. It handles all work related to charging the user and storing payment information, so we
+      do not have to worry for customers sensitive information, since it is not stored on our server. Besides that,
+      this app includes some useful utilities, developed by me for this project. They include single-page-application
+      routing, templates filling, users authentification, working with cookies and new way of organizing modules
+      communication. More info here: https://github.com/A-Yerkeshev/ChannelManager`
+  }, {
     name: 'Tsaikka.fi',
     url: `https://tsaikka.fi/`,
     images: [
@@ -111,9 +134,12 @@ Portfolio.factory('ProjectsFactory', function() {
       particular chat and its participants. App is built using primarily AngularJS
       and AnimeJS. The manipulations of the DOM is performed by JQuery and
       scaffolding is provided by Yeoman.`
-  }, {
+  }];
+
+  const inactiveProjects = [
+  {
     name: 'Neighborhood Map',
-    url: `https://neigh-map.herokuapp.com/`,
+    url: null,
     github: `https://github.com/A-Yerkeshev/map`,
     images: [
       'neighborhood-map-1.png',
@@ -134,10 +160,7 @@ Portfolio.factory('ProjectsFactory', function() {
       locations and their markers with the possibilty to manage them according to
       selected filters, as well as functionality to search any given place by its
       name and retrieve corresponding information about it from APIs.`
-  }];
-
-  const inactiveProjects = [
-  {
+  }, {
     name: 'Items Catalog',
     url: null,
     github: `https://github.com/A-Yerkeshev/catalog`,
