@@ -13,8 +13,7 @@ Portfolio.factory('ProjectsFactory', function() {
       'shopping-cart-3.png',
       'shopping-cart-4.png',
       'shopping-cart-5.png',
-      'shopping-cart-6.png',
-      'shopping-cart-7.png'
+      'shopping-cart-6.png'
     ],
     title: 'Computer parts online store with Stripe payment system integration',
     technologies: ['Stripe', 'JavaScript', 'HTML', 'CSS', 'NodeJS', 'Express', 'JWT'],
