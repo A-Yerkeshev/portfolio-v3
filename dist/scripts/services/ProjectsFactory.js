@@ -17,7 +17,7 @@ Portfolio.factory('ProjectsFactory', function() {
     ],
     title: 'Computer parts online store with Stripe payment system integration',
     technologies: ['Stripe', 'JavaScript', 'HTML', 'CSS', 'NodeJS', 'Express', 'JWT'],
-    href: 'computer-store',
+    href: 'shopping-cart',
     date: 'December 2021',
     description: `This is my first attempt to intergrate payment system into the application. Stripe provides great
       API for that purpose. It handles all work related to charging the user and storing payment information, so we
