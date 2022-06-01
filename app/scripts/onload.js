@@ -79,4 +79,4 @@ window.addEventListener('hashchange', (event) => {
   //   })
   // }
 
-})
+});

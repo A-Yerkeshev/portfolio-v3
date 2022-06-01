@@ -16,7 +16,7 @@ module.exports = function (grunt) {
   require('jit-grunt')(grunt, {
     useminPrepare: 'grunt-usemin',
     ngtemplates: 'grunt-angular-templates',
-    cdnify: 'grunt-google-cdn'
+    // cdnify: 'grunt-google-cdn'
   });
 
   // Configurable paths for the application
@@ -314,8 +314,8 @@ module.exports = function (grunt) {
     cssmin: {
       dist: {
         files: {
-          '<%= yeoman.dist %>/styles/*.css': [
-            '.tmp/styles/{,*/}*.css'
+         '<%= yeoman.dist %>/styles/*.css': [
+           '.tmp/styles/{,*/}*.css'
           ]
         }
       }
@@ -398,7 +398,7 @@ module.exports = function (grunt) {
       }
     },
 
-    // Replace Google CDN references
+    // // Replace Google CDN references
     cdnify: {
       dist: {
         html: ['<%= yeoman.dist %>/*.html']

@@ -1,8 +1,17 @@
 "use strict";
 
-Portfolio.controller('ProjectsController', function($scope, $window, ProjectsFactory) {
+Portfolio.controller('ProjectsController', function($scope, $window, $location, ProjectsFactory) {
+  // Get project id from url
+  const fullUrl = $location.url();
+  const projectId = fullUrl.substring(fullUrl.lastIndexOf('/')+1);
 
-  $scope.currentProject = ProjectsFactory.getCurrentProject();
+  // If project is found - set it as current
+  const currentProject = ProjectsFactory.getProject(projectId);
+  if (!currentProject) {
+    $location.url('projects');
+  }
+
+  $scope.currentProject = currentProject;
   $scope.activeProjects = ProjectsFactory.getActiveProjects();
   $scope.inactiveProjects = ProjectsFactory.getInactiveProjects();
   $scope.jsfiddles = ProjectsFactory.getFiddles();

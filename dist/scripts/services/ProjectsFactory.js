@@ -281,8 +281,6 @@ Portfolio.factory('ProjectsFactory', function() {
   }
   ];
 
-  let currentProject = null;
-
   Factory.getActiveProjects = function() {
     return activeProjects;
   };
@@ -291,16 +289,16 @@ Portfolio.factory('ProjectsFactory', function() {
     return inactiveProjects;
   };
 
-  Factory.getCurrentProject = function() {
-    return currentProject;
+  Factory.getProject = function(id) {
+    const allProjects = [...activeProjects, ...inactiveProjects];
+
+    for (let i=0; i<(allProjects.length); i++) {
+      if (allProjects[i]['href'] === id) {return allProjects[i];}
+    }
   };
 
   Factory.getFiddles = function() {
     return jsfiddles;
-  }
-
-  Factory.setCurrentProject = function(project) {
-    currentProject = project;
   };
 
   return Factory;

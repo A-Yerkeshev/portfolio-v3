@@ -51,10 +51,12 @@ $red: #d00;
 
 .ui-carousel .carousel-next .carousel-btn {
   right: 0;
+  z-index: 1;
 }
 
 .ui-carousel .carousel-prev .carousel-btn {
   left: 0;
+  z-index: 1;
 }
 
 .carousel-dots {

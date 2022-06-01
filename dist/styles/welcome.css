@@ -163,7 +163,7 @@ ul.spinner li:nth-of-type(3) {
 }
 
 /* line 149, ../../app/styles/welcome.scss */
-.welcome .sn-icon:nth-of-type(2) {
+.welcome .sn-icon:first-of-type {
   right: 3.4rem;
 }
 
@@ -239,5 +239,3 @@ ul.spinner li:nth-of-type(3) {
     right: 0.8rem;
   }
 }
-
-/*# sourceMappingURL=welcome.css.map */
