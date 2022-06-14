@@ -16,6 +16,31 @@ document.addEventListener('DOMContentLoaded', (event) => {
   const continueBtn = document.querySelector('#continue-btn');
   const view = document.querySelector('.view');
 
+  /* -------------------- */
+  /* - FUNCTIONS -------- */
+  /* -------------------- */
+
+  function hideWelcome() {
+    view.classList.add('ng-enter');
+    welcome.classList.add('ng-leave', 'ng-leave-active');
+    view.classList.add('ng-enter-active');
+
+    setTimeout(() => {
+      welcome.classList.remove('ng-leave', 'ng-leave-active');
+      view.classList.remove('ng-enter', 'ng-enter-active');
+      body.style.overflowY = 'scroll';
+      welcome.style.display = 'none';
+    }, 2000);
+  }
+
+  /* -------------------- */
+  /* - PROGRAM ---------- */
+  /* -------------------- */
+
+  // Hide welcome if current route is not root
+  const route = location.href.substring(location.href.indexOf('#!/')+3);
+  if (route !== '') { hideWelcome(); }
+
   // Replace spinner with continue button
   spinner.style.opacity = 0;
   setTimeout(() => {
@@ -28,16 +53,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
   // Remove welcome block on continue button click
   continueBtn.addEventListener('click', () => {
-    view.classList.add('ng-enter');
-    welcome.classList.add('ng-leave', 'ng-leave-active');
-    view.classList.add('ng-enter-active');
-
-    setTimeout(() => {
-      welcome.classList.remove('ng-leave', 'ng-leave-active');
-      view.classList.remove('ng-enter', 'ng-enter-active');
-      body.style.overflowY = 'scroll';
-      welcome.style.display = 'none';
-    }, 2000);
+    hideWelcome();
   });
 });
 
