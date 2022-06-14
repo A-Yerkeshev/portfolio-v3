@@ -267,7 +267,7 @@ Portfolio.factory('ProjectsFactory', function() {
   const jsfiddles = [
   {
     name: 'Debouncer',
-    url: `https://jsfiddle.net/A_Yerkesh/ctb3ga6o/5/`,
+    url: `https://jsfiddle.net/A_Yerkesh/ctb3ga6o/13/`,
     description: `Alternative approach to making debounced functions in JavaScript. This approach allows to
       have debounce wrapper function, instead of debounce constructor function. In other words, you don't need
       to return a function from debounce constructor and then assign it to the event listener. Instead, you can
