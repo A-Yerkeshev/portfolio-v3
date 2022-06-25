@@ -1,14 +1,5 @@
 "use strict";
 
-function expandImage(event) {
-  const imageNode = event.currentTarget;
-  const oldPath = imageNode.src;
-  const newPath = '/images/main/'.concat(oldPath.substring(oldPath.lastIndexOf('/')+1));
-
-  imageNode.removeAttribute('onload');
-  imageNode.src = newPath;
-}
-
 document.addEventListener('DOMContentLoaded', (event) => {
   const body = document.querySelector('body');
   const welcome = document.querySelector('.welcome');
@@ -16,29 +7,10 @@ document.addEventListener('DOMContentLoaded', (event) => {
   const continueBtn = document.querySelector('#continue-btn');
   const view = document.querySelector('.view');
 
-  /* -------------------- */
-  /* - FUNCTIONS -------- */
-  /* -------------------- */
-
-  function hideWelcome() {
-    view.classList.add('ng-enter');
-    welcome.classList.add('ng-leave', 'ng-leave-active');
-    view.classList.add('ng-enter-active');
-
-    setTimeout(() => {
-      welcome.classList.remove('ng-leave', 'ng-leave-active');
-      view.classList.remove('ng-enter', 'ng-enter-active');
-      body.style.overflowY = 'scroll';
-      welcome.style.display = 'none';
-    }, 2000);
-  }
-
-  /* -------------------- */
-  /* - PROGRAM ---------- */
-  /* -------------------- */
-
   // Hide welcome if current route is not root
-  const route = location.href.substring(location.href.indexOf('#!/')+3);
+  const hash = location.href.indexOf('#!/');
+  // If hash is -1, user has visited root page but the angular has not loaded yet
+  const route = hash>-1 ? location.href.substring(hash+3) : '';
   if (route !== '') { hideWelcome(); }
 
   // Replace spinner with continue button
@@ -55,6 +27,22 @@ document.addEventListener('DOMContentLoaded', (event) => {
   continueBtn.addEventListener('click', () => {
     hideWelcome();
   });
+
+  /* -------------------- */
+  /* - FUNCTIONS -------- */
+  /* -------------------- */
+  function hideWelcome() {
+    view.classList.add('ng-enter');
+    welcome.classList.add('ng-leave', 'ng-leave-active');
+    view.classList.add('ng-enter-active');
+
+    setTimeout(() => {
+      welcome.classList.remove('ng-leave', 'ng-leave-active');
+      view.classList.remove('ng-enter', 'ng-enter-active');
+      body.style.overflowY = 'scroll';
+      welcome.style.display = 'none';
+    }, 2000);
+  }
 });
 
 
@@ -96,3 +84,12 @@ window.addEventListener('hashchange', (event) => {
   // }
 
 });
+
+function expandImage(event) {
+  const imageNode = event.currentTarget;
+  const oldPath = imageNode.src;
+  const newPath = '/images/main/'.concat(oldPath.substring(oldPath.lastIndexOf('/')+1));
+
+  imageNode.removeAttribute('onload');
+  imageNode.src = newPath;
+}
