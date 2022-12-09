@@ -37,7 +37,7 @@
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.3",
     "angular-ui-carousel": "^0.1.10",
-    "express": "^4.16.4",
+    "express": "^4.17.3",
     "grunt-cli": "^1.4.2",
     "gzippo": "^0.2.0",
     "morgan": "^1.9.1",
